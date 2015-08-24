@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621B36921B8B467C0044A87F /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368A1B8B467C0044A87F /* XXBDeviceHelp.m */; };
+		621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368C1B8B467C0044A87F /* XXBHelpTools.m */; };
+		621B36941B8B467C0044A87F /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368E1B8B467C0044A87F /* XXBLog.m */; };
+		621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */; };
 		62C002D61B8B1D9300EDE6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D51B8B1D9300EDE6D9 /* main.m */; };
 		62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D81B8B1D9300EDE6D9 /* AppDelegate.m */; };
 		62C002DC1B8B1D9300EDE6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002DB1B8B1D9300EDE6D9 /* ViewController.m */; };
@@ -21,10 +25,6 @@
 		62C0031A1B8B1DDE00EDE6D9 /* UIImage+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C003051B8B1DDE00EDE6D9 /* UIImage+Help.m */; };
 		62C0031D1B8B1DDE00EDE6D9 /* UIView+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0030B1B8B1DDE00EDE6D9 /* UIView+Help.m */; };
 		62C0031E1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */; };
-		62C0032B1B8B220D00EDE6D9 /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0032A1B8B220D00EDE6D9 /* XXBLog.m */; };
-		62C0035D1B8B28C600EDE6D9 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C003571B8B28C600EDE6D9 /* XXBDeviceHelp.m */; };
-		62C0035E1B8B28C600EDE6D9 /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C003591B8B28C600EDE6D9 /* XXBHelpTools.m */; };
-		62C0035F1B8B28C600EDE6D9 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0035B1B8B28C600EDE6D9 /* XXBNetWorkExtion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		621B36891B8B467C0044A87F /* XXBDeviceHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBDeviceHelp.h; sourceTree = "<group>"; };
+		621B368A1B8B467C0044A87F /* XXBDeviceHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBDeviceHelp.m; sourceTree = "<group>"; };
+		621B368B1B8B467C0044A87F /* XXBHelpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBHelpTools.h; sourceTree = "<group>"; };
+		621B368C1B8B467C0044A87F /* XXBHelpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBHelpTools.m; sourceTree = "<group>"; };
+		621B368D1B8B467C0044A87F /* XXBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLog.h; sourceTree = "<group>"; };
+		621B368E1B8B467C0044A87F /* XXBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBLog.m; sourceTree = "<group>"; };
+		621B368F1B8B467C0044A87F /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
+		621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
+		621B36911B8B467C0044A87F /* XXBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSingleton.h; sourceTree = "<group>"; };
 		62C002D01B8B1D9300EDE6D9 /* XXBLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C002D41B8B1D9300EDE6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C002D51B8B1D9300EDE6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,15 +75,6 @@
 		62C0030C1B8B1DDE00EDE6D9 /* UIView+MotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionEffect.h"; sourceTree = "<group>"; };
 		62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionEffect.m"; sourceTree = "<group>"; };
 		62C003261B8B213F00EDE6D9 /* XXBLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLib.h; sourceTree = "<group>"; };
-		62C003291B8B220D00EDE6D9 /* XXBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLog.h; sourceTree = "<group>"; };
-		62C0032A1B8B220D00EDE6D9 /* XXBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBLog.m; sourceTree = "<group>"; };
-		62C003561B8B28C600EDE6D9 /* XXBDeviceHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBDeviceHelp.h; sourceTree = "<group>"; };
-		62C003571B8B28C600EDE6D9 /* XXBDeviceHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBDeviceHelp.m; sourceTree = "<group>"; };
-		62C003581B8B28C600EDE6D9 /* XXBHelpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBHelpTools.h; sourceTree = "<group>"; };
-		62C003591B8B28C600EDE6D9 /* XXBHelpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBHelpTools.m; sourceTree = "<group>"; };
-		62C0035A1B8B28C600EDE6D9 /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
-		62C0035B1B8B28C600EDE6D9 /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
-		62C0035C1B8B28C600EDE6D9 /* XXBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621B36881B8B467C0044A87F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				621B36891B8B467C0044A87F /* XXBDeviceHelp.h */,
+				621B368A1B8B467C0044A87F /* XXBDeviceHelp.m */,
+				621B368B1B8B467C0044A87F /* XXBHelpTools.h */,
+				621B368C1B8B467C0044A87F /* XXBHelpTools.m */,
+				621B368D1B8B467C0044A87F /* XXBLog.h */,
+				621B368E1B8B467C0044A87F /* XXBLog.m */,
+				621B368F1B8B467C0044A87F /* XXBNetWorkExtion.h */,
+				621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */,
+				621B36911B8B467C0044A87F /* XXBSingleton.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		62C002C71B8B1D9300EDE6D9 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +174,7 @@
 		62C002F91B8B1DA800EDE6D9 /* XXBLib */ = {
 			isa = PBXGroup;
 			children = (
-				62C003551B8B28C600EDE6D9 /* Class */,
+				621B36881B8B467C0044A87F /* Class */,
 				62C002FA1B8B1DDE00EDE6D9 /* Category */,
 				62C003261B8B213F00EDE6D9 /* XXBLib.h */,
 			);
@@ -183,24 +199,8 @@
 				62C0030B1B8B1DDE00EDE6D9 /* UIView+Help.m */,
 				62C0030C1B8B1DDE00EDE6D9 /* UIView+MotionEffect.h */,
 				62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */,
-				62C003291B8B220D00EDE6D9 /* XXBLog.h */,
-				62C0032A1B8B220D00EDE6D9 /* XXBLog.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		62C003551B8B28C600EDE6D9 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				62C003561B8B28C600EDE6D9 /* XXBDeviceHelp.h */,
-				62C003571B8B28C600EDE6D9 /* XXBDeviceHelp.m */,
-				62C003581B8B28C600EDE6D9 /* XXBHelpTools.h */,
-				62C003591B8B28C600EDE6D9 /* XXBHelpTools.m */,
-				62C0035A1B8B28C600EDE6D9 /* XXBNetWorkExtion.h */,
-				62C0035B1B8B28C600EDE6D9 /* XXBNetWorkExtion.m */,
-				62C0035C1B8B28C600EDE6D9 /* XXBSingleton.h */,
-			);
-			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,15 +308,15 @@
 				62C003191B8B1DDE00EDE6D9 /* UIColor+Help.m in Sources */,
 				62C0031A1B8B1DDE00EDE6D9 /* UIImage+Help.m in Sources */,
 				62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */,
-				62C0035F1B8B28C600EDE6D9 /* XXBNetWorkExtion.m in Sources */,
 				62C002D61B8B1D9300EDE6D9 /* main.m in Sources */,
+				621B36921B8B467C0044A87F /* XXBDeviceHelp.m in Sources */,
+				621B36941B8B467C0044A87F /* XXBLog.m in Sources */,
 				62C003161B8B1DDE00EDE6D9 /* NSDate+Help.m in Sources */,
 				62C0031E1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m in Sources */,
-				62C0032B1B8B220D00EDE6D9 /* XXBLog.m in Sources */,
+				621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */,
+				621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */,
 				62C0031D1B8B1DDE00EDE6D9 /* UIView+Help.m in Sources */,
-				62C0035D1B8B28C600EDE6D9 /* XXBDeviceHelp.m in Sources */,
 				62C003171B8B1DDE00EDE6D9 /* NSString+Help.m in Sources */,
-				62C0035E1B8B28C600EDE6D9 /* XXBHelpTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +513,7 @@
 				62C002F51B8B1D9300EDE6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C002F61B8B1D9300EDE6D9 /* Build configuration list for PBXNativeTarget "XXBLibDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				62C002F81B8B1D9300EDE6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
