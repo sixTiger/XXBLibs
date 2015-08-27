@@ -9,7 +9,25 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Help)
+/**
+ *  根据颜色创建一个image 图片1 * 1
+ *
+ *  @param color image的颜色
+ *
+ *  @return 穿件好的image
+ */
++ (UIImage *)imageWithColor:(UIColor *)color;
 
+/**
+ *  根据颜色创建一个image
+ *
+ *  @param color image的颜色
+ *
+ *  @param size 图片的大小
+ *
+ *  @return 穿件好的image
+ */
++ (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size;
 /**
  *  拉伸图片
  *

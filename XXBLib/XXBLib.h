@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#ifdef XXBLib
+#ifndef XXBLib
 #define XXBLib
 
     #import "XXBSingleton.h"
@@ -23,5 +23,6 @@
     #import "NSString+Help.h"
     #import "UIView+Help.h"
     #import "UIView+MotionEffect.h"
+    #import "NSData+Help.h"
 
 #endif

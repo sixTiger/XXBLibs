@@ -13,6 +13,38 @@
 @implementation UIImage (Help)
 
 /**
+ *  根据颜色创建一个image 
+ *
+ *  @param color image的颜色
+ *
+ *  @return 穿件好的image
+ */
++ (UIImage *)imageWithColor:(UIColor *)color
+{
+    return [self imageWithColor:color andSize:CGSizeMake(1.0, 1.0)];
+}
+
+/**
+ *  根据颜色创建一个image
+ *
+ *  @param color image的颜色
+ *
+ *  @param size 图片的大小
+ *
+ *  @return 穿件好的image
+ */
++ (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f,size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+/**
  *  拉伸图片
  *
  *  @param name 图片名字
