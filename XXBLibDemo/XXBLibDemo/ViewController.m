@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "XXBLib.h"
+#import "XXBLibs.h"
 
 @interface ViewController ()
 
