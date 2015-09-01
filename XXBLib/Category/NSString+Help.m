@@ -84,7 +84,35 @@
     
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
-
+/**
+ *  获取字符串的长度
+ *
+ *  活动字符长度，例如“小兵”为4，“xiaobing”为8，如果只有空格，认为是0，例如“   ”为0
+ *
+ *  @return 字符串的长度
+ */
+- (NSUInteger)getCharacterCount
+{
+    NSUInteger i, n = [self length], l = 0, a = 0, b = 0;
+    unichar c;
+    
+    for(i = 0; i < n; i++)
+    {
+        c = [self characterAtIndex:i];
+        if(isblank(c)) {
+            b++;
+        }
+        else if(isascii(c)) {
+            a++;
+        }
+        else {
+            l++;
+        }
+    }
+    if(a==0 && l==0) return 0;
+    
+    return 2*l+a+b;
+}
 /**
  *  计算一行字的size
  *

@@ -54,6 +54,14 @@
  *  返回Base64解码后的字符串
  */
 @property (nonatomic, readonly) NSString *base64Decode;
+/**
+ *  获取字符串的长度
+ *
+ *  活动字符长度，例如“小兵”为4，“xiaobing”为8，如果只有空格，认为是0，例如“   ”为0
+ *
+ *  @return 字符串的长度
+ */
+- (NSUInteger)getCharacterCount;
 
 /**
  *  计算一行字的size
