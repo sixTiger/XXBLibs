@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *testView;
+
 @end
 
 @implementation ViewController
@@ -19,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
+    [self UIViewMotionEffectTest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,10 +39,26 @@
     NSLog(@"解密 --》 %@",    [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]
           );
 }
+- (void)UIViewMotionEffectTest
+{
+    CGFloat xMove = 100;
+    CGFloat yMove = 100;
+    self.testView.effectGroup = [UIMotionEffectGroup new];
+    [self.testView addXAxisWithValue:xMove YAxisWithValue:yMove];
+}
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
-    [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
+    if (CGRectContainsPoint(self.testView.frame, point))
+    {
+        self.testView.clipsToBounds = YES;
+        [self.testView addAnimationAtPoint:[touch locationInView:self.testView] WithType:aniMationOpen withColor:[UIColor myRandomColor] completion:nil];
+    }
+    else
+    {
+        
+        [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
+    }
 }
 @end
