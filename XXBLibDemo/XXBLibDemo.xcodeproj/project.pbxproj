@@ -11,6 +11,7 @@
 		621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368C1B8B467C0044A87F /* XXBHelpTools.m */; };
 		621B36941B8B467C0044A87F /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368E1B8B467C0044A87F /* XXBLog.m */; };
 		621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */; };
+		6251C90B1B9C46A6004758FA /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251C90A1B9C46A6004758FA /* XXBFileHelper.m */; };
 		62A110721B8F205800989503 /* NSData+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A110711B8F205800989503 /* NSData+Help.m */; };
 		62C002D61B8B1D9300EDE6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D51B8B1D9300EDE6D9 /* main.m */; };
 		62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D81B8B1D9300EDE6D9 /* AppDelegate.m */; };
@@ -48,6 +49,8 @@
 		621B368F1B8B467C0044A87F /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
 		621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
 		621B36911B8B467C0044A87F /* XXBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSingleton.h; sourceTree = "<group>"; };
+		6251C9091B9C46A6004758FA /* XXBFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFileHelper.h; sourceTree = "<group>"; };
+		6251C90A1B9C46A6004758FA /* XXBFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFileHelper.m; sourceTree = "<group>"; };
 		62A110701B8F205800989503 /* NSData+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Help.h"; sourceTree = "<group>"; };
 		62A110711B8F205800989503 /* NSData+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Help.m"; sourceTree = "<group>"; };
 		62C002D01B8B1D9300EDE6D9 /* XXBLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +104,8 @@
 		621B36881B8B467C0044A87F /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6251C9091B9C46A6004758FA /* XXBFileHelper.h */,
+				6251C90A1B9C46A6004758FA /* XXBFileHelper.m */,
 				621B36891B8B467C0044A87F /* XXBDeviceHelp.h */,
 				621B368A1B8B467C0044A87F /* XXBDeviceHelp.m */,
 				621B368B1B8B467C0044A87F /* XXBHelpTools.h */,
@@ -320,6 +325,7 @@
 				62C003161B8B1DDE00EDE6D9 /* NSDate+Help.m in Sources */,
 				62C0031E1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m in Sources */,
 				621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */,
+				6251C90B1B9C46A6004758FA /* XXBFileHelper.m in Sources */,
 				621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */,
 				62C0031D1B8B1DDE00EDE6D9 /* UIView+Help.m in Sources */,
 				62C003171B8B1DDE00EDE6D9 /* NSString+Help.m in Sources */,

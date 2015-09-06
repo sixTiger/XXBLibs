@@ -57,7 +57,6 @@
     }
     else
     {
-        
         [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
     }
 }
