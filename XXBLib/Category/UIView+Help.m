@@ -123,7 +123,10 @@
     [CATransaction begin];
     [CATransaction setCompletionBlock:^{
         [shapeLayer removeFromSuperlayer];
-        completion(true);
+        if (completion)
+        {
+            completion(true);
+        }
     }];
     [shapeLayer addAnimation:animation forKey:@"shapeBackgroundAnimation"];
     [CATransaction commit];

@@ -36,4 +36,10 @@
     NSLog(@"解密 --》 %@",    [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]
           );
 }
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.view];
+    [self.view addAnimationAtPoint:point WithType:aniMationOpen withColor:[UIColor myRandomColor] completion:nil];
+}
 @end
