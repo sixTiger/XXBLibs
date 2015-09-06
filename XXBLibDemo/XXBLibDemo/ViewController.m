@@ -40,6 +40,6 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
-    [self.view addAnimationAtPoint:point WithType:aniMationOpen withColor:[UIColor myRandomColor] completion:nil];
+    [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
 }
 @end

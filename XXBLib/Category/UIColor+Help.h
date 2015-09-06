@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define XXBColor(r,g,b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+
 @interface UIColor (Help)
 
 /**
@@ -15,7 +17,7 @@
  *
  *  @return 返回随机色
  */
-+ (instancetype)myRandomColor;
++ (UIColor *)myRandomColor;
 
 
 #pragma mark -  github 上找的
