@@ -14,7 +14,7 @@
 #define SYSTEM_UTIL(args)    [[SystemUtil sharedInstance] args]
 
 @interface SystemHelp : NSObject
-XXBSingletonH(SystemHelp)
+XXBSingletonH(SystemHelp);
 /*!
  @method appVersion
  @brief 获取app版本号
