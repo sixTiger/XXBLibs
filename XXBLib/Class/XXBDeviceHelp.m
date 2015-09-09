@@ -39,8 +39,13 @@
  */
 + (BOOL)isIpad
 {
-    NSString* deviceType = [UIDevice currentDevice].model;
-    return [deviceType rangeOfString:@"iPad"].length > 0;
+    
+    static BOOL isIphone;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        isIphone = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
+    });
+    return isIphone;
 }
 /**
  *  判断是否是ios7

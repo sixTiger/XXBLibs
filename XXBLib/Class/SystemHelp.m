@@ -13,7 +13,7 @@
 @implementation SystemHelp
 XXBSingletonM(SystemHelp);
 
-- (NSString *)appVersion
+- (NSString *)appBundleVersion
 {
     static NSString *appVersion;
     static dispatch_once_t onceToken;
@@ -23,7 +23,7 @@ XXBSingletonM(SystemHelp);
     return appVersion;
 }
 
-- (NSString *)appBuild
+- (NSString *)appBuildVersion
 {
     static NSString *appVersion;
     static dispatch_once_t onceToken;
@@ -33,12 +33,12 @@ XXBSingletonM(SystemHelp);
     return appVersion;
 }
 
-- (NSString *)appVersion_Build
+- (NSString *)appBundleVersion_BuildVersion
 {
     static NSString *appVersion_Build;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        appVersion_Build = [[NSString stringWithFormat:@"%@.%@", [self appVersion], [self appBuild]] copy];
+        appVersion_Build = [[NSString stringWithFormat:@"%@.%@", [self appBundleVersion], [self appBuildVersion]] copy];
     });
     return appVersion_Build;
 }
@@ -52,12 +52,6 @@ XXBSingletonM(SystemHelp);
     });
     return systemVersion;
 }
-
-- (NSString *)sysVersion
-{
-    return [self systemVersion];
-}
-
 
 - (NSString *)platform
 {
@@ -87,16 +81,6 @@ XXBSingletonM(SystemHelp);
         isRETINA = [[UIScreen mainScreen] scale] == 2.0f;
     });
     return isRETINA;
-}
-
-- (BOOL)isIphone
-{
-    static BOOL isIphone;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        isIphone = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone;
-    });
-    return isIphone;
 }
 
 - (BOOL)isIphone5

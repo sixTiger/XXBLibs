@@ -15,46 +15,43 @@
 
 @interface SystemHelp : NSObject
 XXBSingletonH(SystemHelp);
-/*!
- @method appVersion
- @brief 获取app版本号
- @return app版本号
+/**
+ *  获取app的版本号
+ *
+ *  @return 版本号
  */
-- (NSString *)appVersion;
+- (NSString *)appBundleVersion;
 
-/*!
- @method appBuild
- @brief 获取app构建号
- @return app构建号
+/**
+ *  获取app的构建版本号
+ *
+ *  @return 构建版本号
  */
-- (NSString *)appBuild;
-
-/*!
- @method appVersion
- @brief 获取app版本号+构建号
- @return app构建号+构建号
+- (NSString *)appBuildVersion;
+/**
+ *  app的版本号 + 构架版本号
+ *
+ *  @return app的版本号 + 构建版本号
  */
-- (NSString *)appVersion_Build;
-
-/*!
- @method systemVersion（可能存在编译器错误）和sysVersion
- @brief 获取系统版本号
- @return 系统版本号
+- (NSString *)appBundleVersion_BuildVersion;
+/**
+ *  获取系统的版本号
+ *
+ *  @return 系统的版本号
  */
-- (NSString *)sysVersion;
 - (NSString *)systemVersion;
 
-/*!
- @method screenBounds
- @brief 获得屏幕尺寸
- @return 屏幕尺寸
+/**
+ *  获取屏幕的尺寸
+ *
+ *  @return 屏幕的尺寸
  */
 - (CGRect)screenBounds;
 
-/*!
- @method isRETINA
- @brief 判断是否是isRETINA
- @return isRETINA
+/**
+ *  是否是Retina屏
+ *
+ *  @return 是否
  */
 - (BOOL)isRETINA;
 
