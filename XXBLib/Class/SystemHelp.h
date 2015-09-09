@@ -14,98 +14,80 @@
 #define SYSTEM_UTIL(args)    [[SystemUtil sharedInstance] args]
 
 @interface SystemHelp : NSObject
-XXBSingletonH(SystemHelp);
 /**
  *  获取app的版本号
  *
  *  @return 版本号
  */
-- (NSString *)appBundleVersion;
++ (NSString *)appBundleVersion;
 
 /**
  *  获取app的构建版本号
  *
  *  @return 构建版本号
  */
-- (NSString *)appBuildVersion;
++ (NSString *)appBuildVersion;
 /**
  *  app的版本号 + 构架版本号
  *
  *  @return app的版本号 + 构建版本号
  */
-- (NSString *)appBundleVersion_BuildVersion;
++ (NSString *)appBundleVersion_BuildVersion;
+/**
+ *  documentPath路径
+ *
+ *  @return documentPath
+ */
++ (NSString *)documentPath;
+
+/**
+ *  libraryPath路径
+ *
+ *  @return libraryPath
+ */
++ (NSString *)libraryPath;
+
+/**
+ *  temporaryPath 路径
+ *
+ *  @return temporaryPath
+ */
++ (NSString *)temporaryPath;
+/**
+ *  cachePath 路径
+ *
+ *  @return cachePath
+ */
++ (NSString *)cachePath;
 /**
  *  获取系统的版本号
  *
  *  @return 系统的版本号
  */
-- (NSString *)systemVersion;
-
++ (NSString *)systemVersion;
 /**
- *  获取屏幕的尺寸
- *
- *  @return 屏幕的尺寸
- */
-- (CGRect)screenBounds;
-
-/**
- *  是否是Retina屏
+ *  是否是iOS6
  *
  *  @return 是否
  */
-- (BOOL)isRETINA;
-
-/*!
- @method isIphone
- @brief 判断是否是iPhone
- @return isIphone
++ (BOOL)isIOS6;
+/**
+ *  是否是iOS7
+ *
+ *  @return 是否
  */
-- (BOOL)isIphone;
-
-/*!
- @method isIphone5
- @brief 判断是否是isIphone5或以上
- @return isIphone5
++ (BOOL)isIOS7;
+/**
+ *  是否是iOS8
+ *
+ *  @return 是否
  */
-- (BOOL)isIphone5;
-- (BOOL)isIphone6;
-- (BOOL)isIphone6Plus;
++ (BOOL)isIOS8;
 
-/*!
- @method isIOS7
- @brief 判断是否是IOS7或以上
- @return isIOS7
+/**
+ *  是否是iOS9
+ *
+ *  @return 是否
  */
-- (BOOL)isIOS6;
-- (BOOL)isIOS7;
-- (BOOL)isIOS8;
-
-/*!
- @method documentPath
- @brief 获取document路径
- @return document路径
- */
-- (NSString *)documentPath;
-
-/*!
- @method libraryPath
- @brief 获取library路径
- @return library路径
- */
-- (NSString *)libraryPath;
-
-/*!
- @method temporaryPath
- @brief 获取temporaryPath路径
- @return temporaryPath路径
- */
-- (NSString *)temporaryPath;
-
-/*!
- @method cachePath
- @brief 获取cachePath路径
- @return cachePath路径
- */
-- (NSString *)cachePath;
-
++ (BOOL)isIOS9;
 @end

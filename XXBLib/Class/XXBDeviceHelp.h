@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface XXBDeviceHelp : NSObject
 /**
@@ -28,22 +29,33 @@
  */
 + (BOOL)isIpad;
 /**
- *  判断是否是ios7
+ *  是否是Retina屏
  *
- *  @return YES 是
+ *  @return 是否
  */
-+ (BOOL)isIos7;
++ (BOOL)isRETINA;
 /**
- *  判断是否是ios7.0
+ *  获取屏幕的尺寸
  *
- *  @return YES 是
+ *  @return 屏幕的尺寸
  */
-
-+ (BOOL)isIos7_0;
++ (CGRect)screenBounds;
 /**
- *  判断是否是ios8
+ *  是否是iPhone5
  *
- *  @return YES 是
+ *  @return 是否
  */
-+ (BOOL)isIos8;
++ (BOOL)isIphone5;
+/**
+ *  是否是iPhone6
+ *
+ *  @return 是否
+ */
++ (BOOL)isIphone6;
+/**
+ *  是否是iPhone6Plus
+ *
+ *  @return 是否
+ */
++ (BOOL)isIphone6Plus;
 @end

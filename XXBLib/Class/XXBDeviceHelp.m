@@ -47,37 +47,76 @@
     });
     return isIphone;
 }
+
 /**
- *  判断是否是ios7
+ *  是否是Retina屏
  *
- *  @return YES 是
+ *  @return 是否
  */
-+ (BOOL)isIos7
++ (BOOL)isRETINA
 {
-    return [[UIDevice currentDevice].systemVersion floatValue] >= 7.0 && [[UIDevice currentDevice].systemVersion doubleValue] < 8.0;
+    static BOOL isRETINA;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        isRETINA = [[UIScreen mainScreen] scale] == 2.0f;
+    });
+    return isRETINA;
 }
 /**
- *  判断是否是ios7.0
+ *  获取屏幕的尺寸
  *
- *  @return YES 是
+ *  @return 屏幕的尺寸
  */
-+ (BOOL)isIos7_0
++ (CGRect)screenBounds
 {
-    return [[UIDevice currentDevice].systemVersion floatValue] >= 7.0 && [[UIDevice currentDevice].systemVersion doubleValue] < 7.1;
+    static CGRect screenBounds;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        screenBounds = [UIScreen mainScreen].bounds;
+    });
+    return screenBounds;
 }
 /**
- *  判断是否是ios8
+ *  是否是iPhone5
  *
- *  @return YES 是
+ *  @return 是否
  */
-/**
- *  判断是否是ios8
- *
- *  @return YES 是
- */
-+ (BOOL)isIos8
++ (BOOL)isIphone5
 {
-    return [[UIDevice currentDevice].systemVersion doubleValue] >= 8.0;
+    static BOOL isIphone5;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        isIphone5 = [self isIphone] && ([self screenBounds].size.height == 568.0f? YES:NO);
+    });
+    return isIphone5;
+}
+/**
+ *  是否是iPhone6
+ *
+ *  @return 是否
+ */
++ (BOOL)isIphone6
+{
+    static BOOL isIphone6;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        isIphone6 = [self isIphone] && ([self screenBounds].size.height == 667.0f? YES:NO);
+    });
+    return isIphone6;
+}
+/**
+ *  是否是iPhone6Plus
+ *
+ *  @return 是否
+ */
++ (BOOL)isIphone6Plus
+{
+    static BOOL isIphone6Plus;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        isIphone6Plus = [self isIphone] && ([self screenBounds].size.height == 736.0f? YES:NO);
+    });
+    return isIphone6Plus;
 }
 
 @end
