@@ -22,6 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
     [self UIViewMotionEffectTest];
+    [self netWorkTest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,5 +60,9 @@
     {
         [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
     }
+}
+- (void)netWorkTest
+{
+    NSLog(@"%@ ---> %@ %@" ,[XXBNetWorkExtion getMobileOperatorsName], @([XXBNetWorkExtion getNetworkTypeFromStatusBar]),@([XXBNetWorkExtion isConnectedToNetwork]));
 }
 @end

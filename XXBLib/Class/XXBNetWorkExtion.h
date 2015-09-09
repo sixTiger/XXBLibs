@@ -36,5 +36,5 @@ typedef enum {
  *
  *  @return 是否连接
  */
-+ (BOOL)connectedToNetwork;
++ (BOOL)isConnectedToNetwork;
 @end
