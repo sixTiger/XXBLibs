@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -24,10 +25,19 @@
                                     <constraint firstAttribute="height" constant="200" id="m9J-Cn-D8F"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Vdo-9T-Pp7">
+                                <rect key="frame" x="250" y="84" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="d3b-yF-mBP"/>
+                                    <constraint firstAttribute="height" constant="100" id="kEp-Ng-3C9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Vdo-9T-Pp7" secondAttribute="centerX" id="4hF-gw-adP"/>
                             <constraint firstAttribute="centerY" secondItem="I85-Ne-gzM" secondAttribute="centerY" id="Uzm-eu-OXi"/>
+                            <constraint firstItem="Vdo-9T-Pp7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="YG8-HD-edz"/>
                             <constraint firstAttribute="centerX" secondItem="I85-Ne-gzM" secondAttribute="centerX" id="cf0-0Q-z79"/>
                         </constraints>
                     </view>
@@ -39,4 +49,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon" width="200" height="200"/>
+    </resources>
 </document>

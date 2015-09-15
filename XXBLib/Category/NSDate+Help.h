@@ -9,6 +9,18 @@
 
 @interface NSDate (Help)
 /**
+ *  返回当前时间 格式 2015-08-25  19:04:36
+ *
+ *  @return 当前时间的字符串 格式 2015-08-25  19:04:36
+ */
++ (NSString *)localTime;
+/**
+ *  返回当前时间 格式 2015年08月25日
+ *
+ *  @return 当前时间的字符串 格式 2015年08月25日
+ */
++ (NSString *)localTimeYMD;
+/**
  *  是否为今天
  */
 - (BOOL)isToday;
