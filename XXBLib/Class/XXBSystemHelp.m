@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 sina. All rights reserved.
 //
 
-#import "SystemHelp.h"
+#import "XXBSystemHelp.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
-@implementation SystemHelp
+@implementation XXBSystemHelp
 /**
  *  获取app的版本号
  *

@@ -13,7 +13,7 @@
 
 #define SYSTEM_UTIL(args)    [[SystemUtil sharedInstance] args]
 
-@interface SystemHelp : NSObject
+@interface XXBSystemHelp : NSObject
 /**
  *  获取app的版本号
  *

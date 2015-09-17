@@ -16,9 +16,8 @@
     #import "XXBLog.h"
     #import "XXBNetWorkExtion.h"
     #import "XXBDiskHelp.h"
-    #import "SystemHelp.h"
+    #import "XXBSystemHelp.h"
     #import "XXBFileHelper.h"
-    #import "SystemHelp.h"
 
     #import "NSDate+Help.h"
     #import "UIBarButtonItem+Help.h"
