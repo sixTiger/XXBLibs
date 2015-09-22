@@ -91,4 +91,16 @@
  *  判断是否是邮箱
  */
 - (BOOL)isValidEmail;
+/**
+ *  对url进行编码
+ *
+ *  @return 编码好的字符串
+ */
+- (NSString *)URLEncode;
+/**
+ *  对url进行解码
+ *
+ *  @return 解码好的字符串
+ */
+- (NSString *)URLDecode;
 @end

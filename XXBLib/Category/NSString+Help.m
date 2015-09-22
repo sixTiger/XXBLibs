@@ -69,8 +69,8 @@
     return [strM copy];
 }
 /**
-  *  返回Base64遍吗后的字符串
-  */
+ *  返回Base64遍吗后的字符串
+ */
 - (NSString *)base64Encode {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     
@@ -156,5 +156,24 @@
 - (BOOL)isValidEmail
 {
     return [[NSPredicate predicateWithFormat:@"SELF MATCHES [A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"] evaluateWithObject:self];
+}
+- (NSString *)URLEncode
+{
+    if ([self isKindOfClass:[NSNull class]])
+    {
+        return @"";
+    }
+    NSString *result =(__bridge NSString*)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,(CFStringRef)self,NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8);
+    return result;
+}
+/**
+ *  对url进行解码
+ *
+ *  @return 解码好的字符串
+ */
+- (NSString *)URLDecode
+{
+    NSString *result =(__bridge NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,(CFStringRef)self,CFSTR(""),kCFStringEncodingUTF8);
+    return result;
 }
 @end

@@ -23,6 +23,10 @@
     [self NSDataHelpTest];
     [self UIViewMotionEffectTest];
     [self netWorkTest];
+    
+    
+    
+    [self urlTest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,5 +68,12 @@
 - (void)netWorkTest
 {
     NSLog(@"%@ ---> %@ %@" ,[XXBNetWorkExtion getMobileOperatorsName], @([XXBNetWorkExtion getNetworkTypeFromStatusBar]),@([XXBNetWorkExtion isConnectedToNetwork]));
+}
+- (void)urlTest
+{
+    NSLog(@"%@",[@"https://www.baidu.com/s?wd=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&rsv_spt=1&rsv_iqid=0x8097238100000443&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=16&rsv_sug1=12&rsv_sug2=0&inputT=4161&rsv_sug4=4786" URLDecode]);
+    NSString *string = @"https://www.baidu.com/s?wd=我测试中文";
+    NSLog(@"%@",[string URLEncode]);
+    NSLog(@"%@",[string URLDecode]);
 }
 @end
