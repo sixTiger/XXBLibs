@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "XXBLibs.h"
 
+#define XXBMin(a,b) a >= b ? b : a
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *testView;
@@ -19,12 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",@(XXBMin(1, 2)));
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
     [self UIViewMotionEffectTest];
     [self netWorkTest];
-    
-    
     
     [self urlTest];
 }
@@ -32,6 +33,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)XXBDeviceHelpTest
+{
+    [XXBDeviceHelp oldDeviceId];
 }
 - (void)NSDataHelpTest
 {

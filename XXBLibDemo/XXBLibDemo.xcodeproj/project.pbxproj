@@ -129,6 +129,13 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		6290730E1BD8DA1E00EEA1E9 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		62C002C71B8B1D9300EDE6D9 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +199,7 @@
 		62C002F91B8B1DA800EDE6D9 /* XXBLib */ = {
 			isa = PBXGroup;
 			children = (
+				6290730E1BD8DA1E00EEA1E9 /* Others */,
 				621B36881B8B467C0044A87F /* Class */,
 				62C002FA1B8B1DDE00EDE6D9 /* Category */,
 				62C003261B8B213F00EDE6D9 /* XXBLibs.h */,
