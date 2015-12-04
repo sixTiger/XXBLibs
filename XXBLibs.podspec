@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.requires_arc = true
-  s.name         = "XXBLib"
+  s.name         = "XXBLibs"
   s.version      = "1.0.0"
   s.summary      = "test"
   s.homepage     = "https://github.com/sixTiger/XXBLibs"

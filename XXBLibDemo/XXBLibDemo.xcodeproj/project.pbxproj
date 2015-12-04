@@ -86,7 +86,7 @@
 		62C0030B1B8B1DDE00EDE6D9 /* UIView+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Help.m"; sourceTree = "<group>"; };
 		62C0030C1B8B1DDE00EDE6D9 /* UIView+MotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionEffect.h"; sourceTree = "<group>"; };
 		62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionEffect.m"; sourceTree = "<group>"; };
-		62C003261B8B213F00EDE6D9 /* XXBLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLib.h; sourceTree = "<group>"; };
+		62C003261B8B213F00EDE6D9 /* XXBLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLibs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +202,7 @@
 				6290730E1BD8DA1E00EEA1E9 /* Others */,
 				621B36881B8B467C0044A87F /* Class */,
 				62C002FA1B8B1DDE00EDE6D9 /* Category */,
-				62C003261B8B213F00EDE6D9 /* XXBLib.h */,
+				62C003261B8B213F00EDE6D9 /* XXBLibs.h */,
 			);
 			name = XXBLib;
 			path = ../../XXBLib;

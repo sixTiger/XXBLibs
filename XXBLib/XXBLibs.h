@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#ifndef XXBLib
-#define XXBLib
+#ifndef XXBLibs
+#define XXBLibs
 
     #import "XXBSingleton.h"
     #import "XXBHelpTools.h"
