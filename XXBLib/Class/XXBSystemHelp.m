@@ -25,6 +25,7 @@
     });
     return appVersion;
 }
+
 /**
  *  获取app的构建版本号
  *
@@ -39,6 +40,7 @@
     });
     return appVersion;
 }
+
 /**
  *  app的版本号 + 构架版本号
  *
@@ -53,6 +55,7 @@
     });
     return appVersion_Build;
 }
+
 /**
  *  documentPath路径
  *
@@ -67,6 +70,7 @@
     });
     return documentPath;
 }
+
 /**
  *  libraryPath路径
  *
@@ -81,6 +85,7 @@
     });
     return libraryPath;
 }
+
 /**
  *  temporaryPath 路径
  *
@@ -95,6 +100,7 @@
     });
     return temporaryPath;
 }
+
 /**
  *  cachePath 路径
  *
@@ -109,6 +115,7 @@
     });
     return cachePath;
 }
+
 /**
  *  获取系统的版本号
  *
@@ -123,6 +130,7 @@
     });
     return systemVersion;
 }
+
 /**
  *  是否是iOS6
  *
@@ -137,6 +145,7 @@
     });
     return isIOS6;
 }
+
 /**
  *  是否是iOS7
  *
@@ -151,6 +160,7 @@
     });
     return isIOS7;
 }
+
 /**
  *  是否是iOS8
  *
@@ -165,6 +175,7 @@
     });
     return isIOS8;
 }
+
 /**
  *  是否是iOS9
  *

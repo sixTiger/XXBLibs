@@ -22,6 +22,7 @@
     NSString* deviceType = [UIDevice currentDevice].model;
     return [deviceType rangeOfString:@"iPhone"].length > 0;
 }
+
 /**
  *  判断是否是ipod
  *
@@ -63,6 +64,7 @@
     });
     return isRETINA;
 }
+
 /**
  *  获取屏幕的尺寸
  *
@@ -77,6 +79,7 @@
     });
     return screenBounds;
 }
+
 /**
  *  是否是iPhone5
  *
@@ -91,6 +94,7 @@
     });
     return isIphone5;
 }
+
 /**
  *  是否是iPhone6
  *
@@ -105,6 +109,7 @@
     });
     return isIphone6;
 }
+
 /**
  *  是否是iPhone6Plus
  *
@@ -119,8 +124,6 @@
     });
     return isIphone6Plus;
 }
-
-
 
 + (NSString *)getUniqueStrByUUID
 {
@@ -190,6 +193,7 @@
     return nil;
 //    return [self md5:[[self Did] stringByAppendingString:[[self getTime] stringByAppendingString:@"hongtaok"]]];
 }
+
 /*
  获取open udid 或 adid 然后md5生成 32字符串（暂叫：did）。
  

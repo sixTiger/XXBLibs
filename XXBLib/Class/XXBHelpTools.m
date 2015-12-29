@@ -20,6 +20,7 @@ XXBSingletonM(XXBHelpTools);
     CGImageRef imgRef = [assetRep fullResolutionImage];
     return [UIImage imageWithCGImage:imgRef scale:0.5 orientation:(UIImageOrientation)assetRep.orientation];
 }
+
 static size_t getAssetBytesCallback(void *info, void *buffer, off_t position, size_t count) {
     ALAssetRepresentation *rep = (__bridge id)info;
     
@@ -31,6 +32,7 @@ static size_t getAssetBytesCallback(void *info, void *buffer, off_t position, si
     }
     return countRead;
 }
+
 static void releaseAssetCallback(void *info) {
     // The info here is an ALAssetRepresentation which we CFRetain in thumbnailForAsset:maxPixelSize:.
     // This release balances that retain.
@@ -41,6 +43,7 @@ static void releaseAssetCallback(void *info) {
 // can be used directly without additional rotation handling.
 // This is done synchronously, so you should call this method on a background queue/thread.
 //  size kb
+
 - (UIImage *)thumbnailForAsset:(ALAsset *)asset maxPixelSize:(NSUInteger)size {
     NSParameterAssert(asset != nil);
     NSParameterAssert(size > 0);
@@ -75,5 +78,11 @@ static void releaseAssetCallback(void *info) {
     CFRelease(imageRef);
     
     return toReturn;
+}
+
+- (unsigned long long)sizeOfAlasset:(ALAsset *)alasset
+{
+    ALAssetRepresentation *rep = [alasset defaultRepresentation];
+    return rep.size;
 }
 @end

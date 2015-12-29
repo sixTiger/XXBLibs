@@ -32,6 +32,7 @@
         return 0;
     }
 }
+
 /**
  *  获取设备的总容量
  *
@@ -42,6 +43,7 @@
     NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     return [fattributes objectForKey:NSFileSystemSize];
 }
+
 /**
  *  获取设备的可用容量
  *
