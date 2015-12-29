@@ -19,18 +19,21 @@ typedef enum {
     NETWORK_TYPE_LET ,		//  LTE
     NETWORK_TYPE_WIFI,
 }NETWORK_TYPE;
+
 /**
  *  获取网络类型
  *
  *  @return 网络的类型
  */
 + (NETWORK_TYPE)getNetworkTypeFromStatusBar;
+
 /**
  *  获取运营商的信息
  *
  *  @return 移动运营商的名字
  */
 + (NSString*)getMobileOperatorsName;
+
 /**
  *  判断网络是否连接
  *

@@ -32,6 +32,7 @@
     nettype = [num intValue];
     return nettype;
 }
+
 /*关于获取运营商信息，需通过CoreTelephony Framework中的CTTelephonyNetworkInfo和CTCarrier类型。这些都在iOS 4.0后就有了。
  
  import必要的header：
@@ -77,6 +78,7 @@
     }
     return @"not in china";
 }
+
 /**
  *  判断网络是否连接
  *
