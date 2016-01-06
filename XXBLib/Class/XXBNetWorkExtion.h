@@ -13,6 +13,7 @@
 ////  网络类型
 typedef enum {
     NETWORK_TYPE_NONE,		//	没有联网
+    NETWORK_TYPE_TWW,
     NETWORK_TYPE_2G ,		//	2G
     NETWORK_TYPE_3G ,		//	3G
     NETWORK_TYPE_4G ,		//	4G

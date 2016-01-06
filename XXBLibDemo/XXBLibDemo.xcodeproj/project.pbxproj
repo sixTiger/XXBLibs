@@ -10,7 +10,6 @@
 		621B36921B8B467C0044A87F /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368A1B8B467C0044A87F /* XXBDeviceHelp.m */; };
 		621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368C1B8B467C0044A87F /* XXBHelpTools.m */; };
 		621B36941B8B467C0044A87F /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B368E1B8B467C0044A87F /* XXBLog.m */; };
-		621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */; };
 		6251C90B1B9C46A6004758FA /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251C90A1B9C46A6004758FA /* XXBFileHelper.m */; };
 		6251C90F1B9C49AD004758FA /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251C90E1B9C49AD004758FA /* XXBSystemHelp.m */; };
 		6251C9121B9C4BBC004758FA /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251C9111B9C4BBC004758FA /* XXBDiskHelp.m */; };
@@ -28,6 +27,9 @@
 		62C0031A1B8B1DDE00EDE6D9 /* UIImage+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C003051B8B1DDE00EDE6D9 /* UIImage+Help.m */; };
 		62C0031D1B8B1DDE00EDE6D9 /* UIView+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0030B1B8B1DDE00EDE6D9 /* UIView+Help.m */; };
 		62C0031E1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */; };
+		62EF8C861C3D21200089FA59 /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF8C851C3D21200089FA59 /* XXBNetworkServers.m */; };
+		62EF8C891C3D257B0089FA59 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF8C881C3D257B0089FA59 /* XXBNetWorkExtion.m */; };
+		62EF8C8C1C3D266A0089FA59 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF8C8B1C3D266A0089FA59 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +39,6 @@
 		621B368C1B8B467C0044A87F /* XXBHelpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBHelpTools.m; sourceTree = "<group>"; };
 		621B368D1B8B467C0044A87F /* XXBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLog.h; sourceTree = "<group>"; };
 		621B368E1B8B467C0044A87F /* XXBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBLog.m; sourceTree = "<group>"; };
-		621B368F1B8B467C0044A87F /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
-		621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
 		621B36911B8B467C0044A87F /* XXBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSingleton.h; sourceTree = "<group>"; };
 		6251C9091B9C46A6004758FA /* XXBFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFileHelper.h; sourceTree = "<group>"; };
 		6251C90A1B9C46A6004758FA /* XXBFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFileHelper.m; sourceTree = "<group>"; };
@@ -73,6 +73,12 @@
 		62C0030C1B8B1DDE00EDE6D9 /* UIView+MotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionEffect.h"; sourceTree = "<group>"; };
 		62C0030D1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionEffect.m"; sourceTree = "<group>"; };
 		62C003261B8B213F00EDE6D9 /* XXBLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLibs.h; sourceTree = "<group>"; };
+		62EF8C841C3D21200089FA59 /* XXBNetworkServers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetworkServers.h; sourceTree = "<group>"; };
+		62EF8C851C3D21200089FA59 /* XXBNetworkServers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetworkServers.m; sourceTree = "<group>"; };
+		62EF8C871C3D257B0089FA59 /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
+		62EF8C881C3D257B0089FA59 /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
+		62EF8C8A1C3D266A0089FA59 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		62EF8C8B1C3D266A0089FA59 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 		621B36881B8B467C0044A87F /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				62EF8C871C3D257B0089FA59 /* XXBNetWorkExtion.h */,
+				62EF8C881C3D257B0089FA59 /* XXBNetWorkExtion.m */,
 				6251C9101B9C4BBC004758FA /* XXBDiskHelp.h */,
 				6251C9111B9C4BBC004758FA /* XXBDiskHelp.m */,
 				6251C90D1B9C49AD004758FA /* XXBSystemHelp.h */,
@@ -101,9 +109,9 @@
 				621B368C1B8B467C0044A87F /* XXBHelpTools.m */,
 				621B368D1B8B467C0044A87F /* XXBLog.h */,
 				621B368E1B8B467C0044A87F /* XXBLog.m */,
-				621B368F1B8B467C0044A87F /* XXBNetWorkExtion.h */,
-				621B36901B8B467C0044A87F /* XXBNetWorkExtion.m */,
 				621B36911B8B467C0044A87F /* XXBSingleton.h */,
+				62EF8C841C3D21200089FA59 /* XXBNetworkServers.h */,
+				62EF8C851C3D21200089FA59 /* XXBNetworkServers.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 		6290730E1BD8DA1E00EEA1E9 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				62EF8C8A1C3D266A0089FA59 /* Reachability.h */,
+				62EF8C8B1C3D266A0089FA59 /* Reachability.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -269,12 +279,14 @@
 				62A110721B8F205800989503 /* NSData+Help.m in Sources */,
 				62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */,
 				62C002D61B8B1D9300EDE6D9 /* main.m in Sources */,
+				62EF8C891C3D257B0089FA59 /* XXBNetWorkExtion.m in Sources */,
 				621B36921B8B467C0044A87F /* XXBDeviceHelp.m in Sources */,
 				621B36941B8B467C0044A87F /* XXBLog.m in Sources */,
+				62EF8C861C3D21200089FA59 /* XXBNetworkServers.m in Sources */,
 				6251C9121B9C4BBC004758FA /* XXBDiskHelp.m in Sources */,
 				62C003161B8B1DDE00EDE6D9 /* NSDate+Help.m in Sources */,
+				62EF8C8C1C3D266A0089FA59 /* Reachability.m in Sources */,
 				62C0031E1B8B1DDE00EDE6D9 /* UIView+MotionEffect.m in Sources */,
-				621B36951B8B467C0044A87F /* XXBNetWorkExtion.m in Sources */,
 				6251C90B1B9C46A6004758FA /* XXBFileHelper.m in Sources */,
 				621B36931B8B467C0044A87F /* XXBHelpTools.m in Sources */,
 				62C0031D1B8B1DDE00EDE6D9 /* UIView+Help.m in Sources */,

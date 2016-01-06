@@ -28,6 +28,8 @@
     [self netWorkTest];
     
     [self urlTest];
+    
+    [[XXBNetworkServers sharedXXBNetworkServers] startServers];
 }
 
 - (void)didReceiveMemoryWarning {
