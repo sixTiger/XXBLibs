@@ -50,7 +50,7 @@ XXBSingletonM(XXBNetworkServers);
 {
     if (_reachability == nil)
     {
-        _reachability = [Reachability reachabilityWithHostName:@"www.sina.com.cn"];
+        _reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
         [_reachability startNotifier];
     }
     return _reachability;
