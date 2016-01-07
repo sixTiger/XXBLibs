@@ -12,7 +12,8 @@
 NSString * const SNBNetWorkStateChange = @"SNBNetWorkStateChange";
 
 @interface XXBNetworkServers ()
-@property(nonatomic , strong) Reachability *reachability;
+@property(nonatomic , strong) Reachability  *reachability;
+@property(nonatomic , assign) BOOL          serversRuning;
 @end
 
 @implementation XXBNetworkServers
@@ -24,7 +25,7 @@ XXBSingletonM(XXBNetworkServers);
     {
         _netWorkState = (XXBNetworkState)[self.reachability currentReachabilityStatus];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
-        
+        self.serversRuning = YES;
     }
     return self;
 }
@@ -34,15 +35,16 @@ XXBSingletonM(XXBNetworkServers);
 }
 - (void)startServers
 {
-    [self.reachability startNotifier];
+    self.serversRuning = [self.reachability startNotifier];
 }
 - (void)stopServers
 {
     [self.reachability stopNotifier];
+    self.serversRuning = NO;
 }
 - (BOOL)isServersRun
 {
-    return YES;
+    return self.serversRuning;
 }
 
 
