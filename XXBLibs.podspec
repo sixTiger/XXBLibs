@@ -22,19 +22,19 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'XXBLib/Others/Reachability/Reachability.h'
   end
 
-  s.subspec 'Class' do |ss|
+  s.subspec 'XXBClass' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.dependency 'XXBLibs/Others'
     #ss.dependency 'AFNetworking/Reachability'
     #ss.dependency 'AFNetworking/Security'
-    ss.source_files = 'XXBLib/Class/*.{h,m}'
-    ss.public_header_files = 'XXBLib/Class/*.h'
+    ss.source_files = 'XXBLib/XXBClass/*.{h,m}'
+    ss.public_header_files = 'XXBLib/XXBClass/*.h'
   end
 
-  s.subspec 'Category' do |ss|
+  s.subspec 'XXBCategory' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.dependency 'XXBLibs/Others'
-    ss.source_files = 'XXBLibs/Category/*.{h,m}'
-    ss.public_header_files = 'XXBLib/Category/*.h'
+    ss.source_files = 'XXBLibs/XXBCategory/*.{h,m}'
+    ss.public_header_files = 'XXBLib/XXBCategory/*.h'
   end
 end
