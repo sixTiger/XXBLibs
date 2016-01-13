@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.subspec 'Category' do |ss|
     ss.ios.deployment_target = '7.0'
 
-    ss.dependency 'XXBLib/Others'
+    ss.dependency 'XXBLibs/Others'
     #ss.dependency 'AFNetworking/Reachability'
     #ss.dependency 'AFNetworking/Security'
     ss.source_files = 'XXBLibs/Category/*.{h,m}'
