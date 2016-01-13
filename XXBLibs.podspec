@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.requires_arc = true
   s.name         = 'XXBLibs'
-  s.version      = '1.0.1'
+  s.version      = '0.0.1'
   s.summary      = "20150103"
   s.homepage     = "https://github.com/sixTiger/XXBLibs"
   s.license      = "MIT"
@@ -22,20 +22,20 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'XXBLib/Others/Reachability/Reachability.h'
   end
 
-  s.subspec 'XXBClass' do |ss|
+  s.subspec 'Class' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.dependency 'XXBLibs/Others'
     #ss.dependency 'AFNetworking/Reachability'
     #ss.dependency 'AFNetworking/Security'
-    ss.source_files = 'XXBLib/XXBClass/*.{h,m}'
-    ss.public_header_files = 'XXBLib/XXBClass/*.h'
+    ss.source_files = 'XXBLib/Class/*.{h,m}'
+    ss.public_header_files = 'XXBLib/Class/*.h'
   end
 
-  s.subspec 'XXBCategory' do |ss|
+  s.subspec 'Category' do |ss|
     ss.ios.deployment_target = '7.0'
-    ss.dependency 'XXBLibs/Others'
-    ss.source_files = 'XXBLib/XXBCategory/*.{h,m}'
-    ss.public_header_files = 'XXBLib/XXBCategory/*.h'
+    #ss.dependency 'XXBLibs/Others'
+    ss.source_files = 'XXBLib/Category/*.{h,m}'
+    ss.public_header_files = 'XXBLib/Category/*.h'
   end
 
 end
