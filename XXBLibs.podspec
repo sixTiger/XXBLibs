@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
   s.subspec 'XXBCategory' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.dependency 'XXBLibs/Others'
-    ss.source_files = 'XXBLibs/XXBCategory/*.{h,m}'
+    ss.source_files = 'XXBLib/XXBCategory/*.{h,m}'
     ss.public_header_files = 'XXBLib/XXBCategory/*.h'
   end
-  
+
 end
