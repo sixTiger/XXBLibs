@@ -14,6 +14,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *testView;
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 
 @end
 
@@ -60,6 +61,7 @@
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [self.iconView performSelector:@selector(setImage:) withObject:[UIImage imageNamed:@"icon"] afterDelay:0 inModes:@[NSDefaultRunLoopMode]];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
     if (CGRectContainsPoint(self.testView.frame, point))

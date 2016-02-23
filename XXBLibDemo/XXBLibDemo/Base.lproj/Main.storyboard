@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,8 +25,9 @@
                                     <constraint firstAttribute="height" constant="200" id="m9J-Cn-D8F"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Vdo-9T-Pp7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vdo-9T-Pp7">
                                 <rect key="frame" x="250" y="84" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.48521593497412685" blue="0.1146431991505239" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="d3b-yF-mBP"/>
                                     <constraint firstAttribute="height" constant="100" id="kEp-Ng-3C9"/>
@@ -42,6 +43,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="iconView" destination="Vdo-9T-Pp7" id="7fX-YQ-eLO"/>
                         <outlet property="testView" destination="I85-Ne-gzM" id="FbY-Pr-u7Z"/>
                     </connections>
                 </viewController>
@@ -49,7 +51,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon" width="200" height="200"/>
-    </resources>
 </document>

@@ -1,0 +1,1 @@
+../../../../../XXBLibs/XXBLib/Class/XXBSingleton.h

@@ -1,0 +1,1 @@
+../../../../../XXBLibs/XXBLib/Class/XXBHelpTools.h

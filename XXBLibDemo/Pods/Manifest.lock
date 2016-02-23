@@ -1,0 +1,21 @@
+PODS:
+  - XXBLibs (0.0.1):
+    - XXBLibs/Category (= 0.0.1)
+    - XXBLibs/Class (= 0.0.1)
+    - XXBLibs/Others (= 0.0.1)
+  - XXBLibs/Category (0.0.1)
+  - XXBLibs/Class (0.0.1):
+    - XXBLibs/Others
+  - XXBLibs/Others (0.0.1)
+
+DEPENDENCIES:
+  - XXBLibs (from `../XXBLibs`)
+
+EXTERNAL SOURCES:
+  XXBLibs:
+    :path: ../XXBLibs
+
+SPEC CHECKSUMS:
+  XXBLibs: 247d1f4599815c7696b015828643e123a832bcfb
+
+COCOAPODS: 0.39.0
