@@ -1,1 +1,1 @@
-../../../../../XXBLibs/XXBLib/Class/XXBDeviceHelp.h
+../../../../../XXBLib/Class/XXBDeviceHelp.h

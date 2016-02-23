@@ -4,6 +4,6 @@
 # use_frameworks!
 
 target 'XXBLibDemo' do
- pod 'XXBLibs', :path =>'../XXBLibs'
+ pod 'XXBLibs', :path =>'../'
 end
 

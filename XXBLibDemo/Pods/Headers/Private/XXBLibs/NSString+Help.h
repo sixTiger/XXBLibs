@@ -1,1 +1,1 @@
-../../../../../XXBLibs/XXBLib/Category/NSString+Help.h
+../../../../../XXBLib/Category/NSString+Help.h

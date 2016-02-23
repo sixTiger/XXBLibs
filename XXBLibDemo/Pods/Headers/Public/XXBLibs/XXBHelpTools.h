@@ -1,1 +1,1 @@
-../../../../../XXBLibs/XXBLib/Class/XXBHelpTools.h
+../../../../../XXBLib/Class/XXBHelpTools.h

@@ -1,1 +1,1 @@
-../../../../../XXBLibs/XXBLib/Class/XXBSingleton.h
+../../../../../XXBLib/Class/XXBSingleton.h

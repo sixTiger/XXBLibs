@@ -9,11 +9,11 @@ PODS:
   - XXBLibs/Others (0.0.1)
 
 DEPENDENCIES:
-  - XXBLibs (from `../XXBLibs`)
+  - XXBLibs (from `../`)
 
 EXTERNAL SOURCES:
   XXBLibs:
-    :path: ../XXBLibs
+    :path: ../
 
 SPEC CHECKSUMS:
   XXBLibs: 247d1f4599815c7696b015828643e123a832bcfb
