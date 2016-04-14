@@ -13,7 +13,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   XXBLibs:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   XXBLibs: 247d1f4599815c7696b015828643e123a832bcfb

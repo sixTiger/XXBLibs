@@ -28,4 +28,6 @@
     #import "UIView+Help.h"
     #import "UIView+MotionEffect.h"
     #import "NSData+Help.h"
+    #import "NSArray+XXB.h"
+    #import "NSDictionary+XXB.h"
 #endif
