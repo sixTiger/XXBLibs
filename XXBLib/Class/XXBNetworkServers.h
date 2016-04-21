@@ -19,7 +19,8 @@ typedef enum : NSUInteger {
 /**
  *  网络状态变化通知字段
  */
-extern NSString * const SNBNetWorkStateChange;
+extern NSString * const XXBNetWorkStateChange;
+extern NSString * const XXBNetWorkState;
 
 @interface XXBNetworkServers : NSObject
 XXBSingletonH(XXBNetworkServers);

@@ -9,7 +9,8 @@
 #import "XXBNetworkServers.h"
 #import "Reachability.h"
 
-NSString * const SNBNetWorkStateChange = @"SNBNetWorkStateChange";
+NSString * const XXBNetWorkStateChange = @"XXBNetWorkStateChange";
+NSString * const XXBNetWorkState = @"XXBNetWorkState";
 
 @interface XXBNetworkServers ()
 @property(nonatomic , strong) Reachability  *reachability;
@@ -52,6 +53,7 @@ XXBSingletonM(XXBNetworkServers);
 {
     if (_reachability == nil)
     {
+#warning if can't get network state quickly  you should chaneg the URLString to a faster URLString 
         _reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
         [_reachability startNotifier];
     }
@@ -67,35 +69,12 @@ XXBSingletonM(XXBNetworkServers);
     }
     NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
     XXBNetworkState networkState = (XXBNetworkState)[curReach currentReachabilityStatus];
-
-//    XXBNetworkState networkState = XXBNetworkNone;
-//    NetworkStatus nowNetworkState = [curReach currentReachabilityStatus];
-//    switch (nowNetworkState)
-//    {
-//        case NotReachable:
-//        {
-//            networkState = XXBNetworkNone;
-//            break;
-//        }
-//        case ReachableViaWWAN:
-//        {
-//            networkState = XXBNetworkWWAN;
-//            break;
-//        }
-//        case ReachableViaWiFi:
-//        {
-//            networkState = XXBNetworkWiFi;
-//            break;
-//        }
-//        default:
-//            NSAssert(NO, @"未知Reachable");
-//            break;
-//    }
-    
     if (_netWorkState != networkState)
     {
         _netWorkState = networkState;
-        [[NSNotificationCenter defaultCenter] postNotificationName:SNBNetWorkStateChange object:[NSNumber numberWithLong:_netWorkState]];
+        [[NSNotificationCenter defaultCenter] postNotificationName:XXBNetWorkStateChange object:[NSNumber numberWithLong:_netWorkState] userInfo:@{
+                                                                                                                                                   XXBNetWorkState :@(_netWorkState)
+                                                                                                                                                   }];
     }
 }
 

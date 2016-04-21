@@ -5,6 +5,7 @@
 //  Created by xiaoxiaobing on 15/1/28.
 //  Copyright (c) 2015年 xiaoxiaobing. All rights reserved.
 //  网络判断工具类
+//  不建议使用该方法，该方法可能会不准确
 
 #import <Foundation/Foundation.h>
 
