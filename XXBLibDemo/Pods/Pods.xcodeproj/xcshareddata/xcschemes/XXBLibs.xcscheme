@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0C4041AAD83053E9107B5EC9'
+               BlueprintIdentifier = '864D07A0CB3C81213DBA5B39'
                BlueprintName = 'XXBLibs'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libXXBLibs.a'>
+               BuildableName = 'XXBLibs.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
