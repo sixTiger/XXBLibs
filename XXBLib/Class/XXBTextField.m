@@ -55,7 +55,7 @@
             if (rangeIndex.length == 1) {
                 textField.text = [toBeString substringToIndex:self.maxTextCount];
             } else {
-                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, self.maxTextCount)];
+                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, self.maxTextCount - 1)];
                 textField.text = [toBeString substringWithRange:rangeRange];
             }
         }

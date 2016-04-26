@@ -30,7 +30,7 @@
     [self netWorkTest];
     [self urlTest];
     [[XXBNetworkServers sharedXXBNetworkServers] startServers];
-    self.inputTextField.maxTextCount = 3;
+    self.inputTextField.maxTextCount = 7;
 }
 
 - (void)XXBDeviceHelpTest {
