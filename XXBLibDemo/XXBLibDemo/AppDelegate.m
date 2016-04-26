@@ -16,8 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    id isa= [NSObject valueForKey:@"isa"];
-    NSLog(@"%@",isa);
+//    id isa= [NSObject valueForKey:@"isa"];
+//    NSLog(@"%@",isa);
     // Override point for customization after application launch.
     return YES;
 }

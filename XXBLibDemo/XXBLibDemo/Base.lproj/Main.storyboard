@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -33,6 +34,11 @@
                                     <constraint firstAttribute="height" constant="100" id="kEp-Ng-3C9"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-O3-7lz" customClass="XXBTextField">
+                                <rect key="frame" x="40" y="28" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -40,10 +46,14 @@
                             <constraint firstAttribute="centerY" secondItem="I85-Ne-gzM" secondAttribute="centerY" id="Uzm-eu-OXi"/>
                             <constraint firstItem="Vdo-9T-Pp7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="YG8-HD-edz"/>
                             <constraint firstAttribute="centerX" secondItem="I85-Ne-gzM" secondAttribute="centerX" id="cf0-0Q-z79"/>
+                            <constraint firstItem="7Mu-O3-7lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="gLD-if-3EC"/>
+                            <constraint firstItem="7Mu-O3-7lz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="o2i-RE-tH6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Mu-O3-7lz" secondAttribute="trailing" constant="20" id="r65-SH-j6C"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="iconView" destination="Vdo-9T-Pp7" id="7fX-YQ-eLO"/>
+                        <outlet property="inputTextField" destination="7Mu-O3-7lz" id="Bpe-kE-6h8"/>
                         <outlet property="testView" destination="I85-Ne-gzM" id="FbY-Pr-u7Z"/>
                     </connections>
                 </viewController>

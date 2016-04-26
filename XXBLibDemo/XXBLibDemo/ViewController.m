@@ -11,10 +11,11 @@
 
 #define XXBMin(a,b) a >= b ? b : a
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *testView;
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet XXBTextField *inputTextField;
 
 @end
 
@@ -27,22 +28,16 @@
     [self NSDataHelpTest];
     [self UIViewMotionEffectTest];
     [self netWorkTest];
-    
     [self urlTest];
-    
     [[XXBNetworkServers sharedXXBNetworkServers] startServers];
+    self.inputTextField.maxTextCount = 3;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (void)XXBDeviceHelpTest
-{
+- (void)XXBDeviceHelpTest {
     [XXBDeviceHelp oldDeviceId];
 }
-- (void)NSDataHelpTest
-{
+
+- (void)NSDataHelpTest {
     
     NSString *string = @"test";
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
@@ -52,37 +47,35 @@
     NSLog(@"解密 --》 %@",    [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]
           );
 }
-- (void)UIViewMotionEffectTest
-{
+- (void)UIViewMotionEffectTest {
     CGFloat xMove = 100;
     CGFloat yMove = 100;
     self.testView.effectGroup = [UIMotionEffectGroup new];
     [self.testView addXAxisWithValue:xMove YAxisWithValue:yMove];
 }
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
     [self.iconView performSelector:@selector(setImage:) withObject:[UIImage imageNamed:@"icon"] afterDelay:0 inModes:@[NSDefaultRunLoopMode]];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
-    if (CGRectContainsPoint(self.testView.frame, point))
-    {
+    if (CGRectContainsPoint(self.testView.frame, point)) {
         self.testView.clipsToBounds = YES;
         [self.testView addAnimationAtPoint:[touch locationInView:self.testView] WithType:aniMationOpen withColor:[UIColor myRandomColor] completion:nil];
-    }
-    else
-    {
+    } else {
         [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
     }
 }
-- (void)netWorkTest
-{
+
+- (void)netWorkTest {
     NSLog(@"%@ ---> %@ %@" ,[XXBNetWorkExtion getMobileOperatorsName], @([XXBNetWorkExtion getNetworkTypeFromStatusBar]),@([XXBNetWorkExtion isConnectedToNetwork]));
 }
-- (void)urlTest
-{
+
+- (void)urlTest {
     NSLog(@"%@",[@"https://www.baidu.com/s?wd=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&rsv_spt=1&rsv_iqid=0x8097238100000443&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=16&rsv_sug1=12&rsv_sug2=0&inputT=4161&rsv_sug4=4786" URLDecode]);
     NSString *string = @"https://www.baidu.com/s?wd=我测试中文";
     NSLog(@"%@",[string URLEncode]);
     NSLog(@"%@",[string URLDecode]);
 }
+
 @end
