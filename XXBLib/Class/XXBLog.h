@@ -12,9 +12,9 @@
  *  编译优化
  */
 #ifdef  DEBUG // 调试阶段
-#define XXBLog(...) NSLog(__VA_ARGS__)
+#define XXBLog(format, ...) NSLog((@"%s\t[Line %d]\n" format), __PRETTY_FUNCTION__, __LINE__ ,__VA_ARGS__)
 #else //发布阶段
-#define XXBLog(...)
+#define XXBLog(format ,...)
 #endif
 @interface XXBLog : NSObject
 

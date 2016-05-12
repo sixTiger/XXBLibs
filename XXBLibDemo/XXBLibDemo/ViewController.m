@@ -23,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",@(XXBMin(1, 2)));
+    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
+    NSLog((@"%s [Line %d] " @"%@"), __PRETTY_FUNCTION__, __LINE__,@"name");
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
     [self UIViewMotionEffectTest];

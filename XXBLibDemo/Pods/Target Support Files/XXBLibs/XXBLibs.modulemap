@@ -1,6 +1,0 @@
-framework module XXBLibs {
-  umbrella header "XXBLibs-umbrella.h"
-
-  export *
-  module * { export * }
-}

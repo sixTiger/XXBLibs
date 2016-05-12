@@ -7,16 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6240EFF51CE47F1200CEDCC1 /* NSArray+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFC91CE47F1200CEDCC1 /* NSArray+XXB.m */; };
+		6240EFF61CE47F1200CEDCC1 /* NSData+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFCB1CE47F1200CEDCC1 /* NSData+Help.m */; };
+		6240EFF71CE47F1200CEDCC1 /* NSDate+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFCD1CE47F1200CEDCC1 /* NSDate+Help.m */; };
+		6240EFF81CE47F1200CEDCC1 /* NSDictionary+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFCF1CE47F1200CEDCC1 /* NSDictionary+XXB.m */; };
+		6240EFF91CE47F1200CEDCC1 /* NSString+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFD11CE47F1200CEDCC1 /* NSString+Help.m */; };
+		6240EFFA1CE47F1200CEDCC1 /* UIBarButtonItem+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFD31CE47F1200CEDCC1 /* UIBarButtonItem+Help.m */; };
+		6240EFFB1CE47F1200CEDCC1 /* UIColor+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFD51CE47F1200CEDCC1 /* UIColor+Help.m */; };
+		6240EFFC1CE47F1200CEDCC1 /* UIImage+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFD71CE47F1200CEDCC1 /* UIImage+Help.m */; };
+		6240EFFD1CE47F1200CEDCC1 /* UIView+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFD91CE47F1200CEDCC1 /* UIView+Help.m */; };
+		6240EFFE1CE47F1200CEDCC1 /* UIView+MotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFDB1CE47F1200CEDCC1 /* UIView+MotionEffect.m */; };
+		6240EFFF1CE47F1200CEDCC1 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFDE1CE47F1200CEDCC1 /* XXBDeviceHelp.m */; };
+		6240F0001CE47F1200CEDCC1 /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFE01CE47F1200CEDCC1 /* XXBDiskHelp.m */; };
+		6240F0011CE47F1200CEDCC1 /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFE21CE47F1200CEDCC1 /* XXBFileHelper.m */; };
+		6240F0021CE47F1200CEDCC1 /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFE41CE47F1200CEDCC1 /* XXBHelpTools.m */; };
+		6240F0031CE47F1200CEDCC1 /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFE61CE47F1200CEDCC1 /* XXBLog.m */; };
+		6240F0041CE47F1200CEDCC1 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFE81CE47F1200CEDCC1 /* XXBNetWorkExtion.m */; };
+		6240F0051CE47F1200CEDCC1 /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFEA1CE47F1200CEDCC1 /* XXBNetworkServers.m */; };
+		6240F0061CE47F1200CEDCC1 /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFED1CE47F1200CEDCC1 /* XXBSystemHelp.m */; };
+		6240F0071CE47F1200CEDCC1 /* XXBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFEF1CE47F1200CEDCC1 /* XXBTextField.m */; };
+		6240F0081CE47F1200CEDCC1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFF31CE47F1200CEDCC1 /* Reachability.m */; };
 		62C002D61B8B1D9300EDE6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D51B8B1D9300EDE6D9 /* main.m */; };
 		62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002D81B8B1D9300EDE6D9 /* AppDelegate.m */; };
 		62C002DC1B8B1D9300EDE6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C002DB1B8B1D9300EDE6D9 /* ViewController.m */; };
 		62C002DF1B8B1D9300EDE6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C002DD1B8B1D9300EDE6D9 /* Main.storyboard */; };
 		62C002E11B8B1D9300EDE6D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C002E01B8B1D9300EDE6D9 /* Images.xcassets */; };
 		62C002E41B8B1D9300EDE6D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C002E21B8B1D9300EDE6D9 /* LaunchScreen.xib */; };
-		999366C9DB59C0312D16AE0F /* Pods_XXBLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD3706837C0516179824368 /* Pods_XXBLibDemo.framework */; };
+		94E8BB4787D1E3F2B705E1C2 /* Pods_XXBLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6240EFC81CE47F1200CEDCC1 /* NSArray+XXB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XXB.h"; sourceTree = "<group>"; };
+		6240EFC91CE47F1200CEDCC1 /* NSArray+XXB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XXB.m"; sourceTree = "<group>"; };
+		6240EFCA1CE47F1200CEDCC1 /* NSData+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Help.h"; sourceTree = "<group>"; };
+		6240EFCB1CE47F1200CEDCC1 /* NSData+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Help.m"; sourceTree = "<group>"; };
+		6240EFCC1CE47F1200CEDCC1 /* NSDate+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Help.h"; sourceTree = "<group>"; };
+		6240EFCD1CE47F1200CEDCC1 /* NSDate+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Help.m"; sourceTree = "<group>"; };
+		6240EFCE1CE47F1200CEDCC1 /* NSDictionary+XXB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XXB.h"; sourceTree = "<group>"; };
+		6240EFCF1CE47F1200CEDCC1 /* NSDictionary+XXB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XXB.m"; sourceTree = "<group>"; };
+		6240EFD01CE47F1200CEDCC1 /* NSString+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Help.h"; sourceTree = "<group>"; };
+		6240EFD11CE47F1200CEDCC1 /* NSString+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Help.m"; sourceTree = "<group>"; };
+		6240EFD21CE47F1200CEDCC1 /* UIBarButtonItem+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Help.h"; sourceTree = "<group>"; };
+		6240EFD31CE47F1200CEDCC1 /* UIBarButtonItem+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Help.m"; sourceTree = "<group>"; };
+		6240EFD41CE47F1200CEDCC1 /* UIColor+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Help.h"; sourceTree = "<group>"; };
+		6240EFD51CE47F1200CEDCC1 /* UIColor+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Help.m"; sourceTree = "<group>"; };
+		6240EFD61CE47F1200CEDCC1 /* UIImage+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Help.h"; sourceTree = "<group>"; };
+		6240EFD71CE47F1200CEDCC1 /* UIImage+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Help.m"; sourceTree = "<group>"; };
+		6240EFD81CE47F1200CEDCC1 /* UIView+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Help.h"; sourceTree = "<group>"; };
+		6240EFD91CE47F1200CEDCC1 /* UIView+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Help.m"; sourceTree = "<group>"; };
+		6240EFDA1CE47F1200CEDCC1 /* UIView+MotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionEffect.h"; sourceTree = "<group>"; };
+		6240EFDB1CE47F1200CEDCC1 /* UIView+MotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionEffect.m"; sourceTree = "<group>"; };
+		6240EFDD1CE47F1200CEDCC1 /* XXBDeviceHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBDeviceHelp.h; sourceTree = "<group>"; };
+		6240EFDE1CE47F1200CEDCC1 /* XXBDeviceHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBDeviceHelp.m; sourceTree = "<group>"; };
+		6240EFDF1CE47F1200CEDCC1 /* XXBDiskHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBDiskHelp.h; sourceTree = "<group>"; };
+		6240EFE01CE47F1200CEDCC1 /* XXBDiskHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBDiskHelp.m; sourceTree = "<group>"; };
+		6240EFE11CE47F1200CEDCC1 /* XXBFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFileHelper.h; sourceTree = "<group>"; };
+		6240EFE21CE47F1200CEDCC1 /* XXBFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFileHelper.m; sourceTree = "<group>"; };
+		6240EFE31CE47F1200CEDCC1 /* XXBHelpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBHelpTools.h; sourceTree = "<group>"; };
+		6240EFE41CE47F1200CEDCC1 /* XXBHelpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBHelpTools.m; sourceTree = "<group>"; };
+		6240EFE51CE47F1200CEDCC1 /* XXBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLog.h; sourceTree = "<group>"; };
+		6240EFE61CE47F1200CEDCC1 /* XXBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBLog.m; sourceTree = "<group>"; };
+		6240EFE71CE47F1200CEDCC1 /* XXBNetWorkExtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetWorkExtion.h; sourceTree = "<group>"; };
+		6240EFE81CE47F1200CEDCC1 /* XXBNetWorkExtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetWorkExtion.m; sourceTree = "<group>"; };
+		6240EFE91CE47F1200CEDCC1 /* XXBNetworkServers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBNetworkServers.h; sourceTree = "<group>"; };
+		6240EFEA1CE47F1200CEDCC1 /* XXBNetworkServers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBNetworkServers.m; sourceTree = "<group>"; };
+		6240EFEB1CE47F1200CEDCC1 /* XXBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSingleton.h; sourceTree = "<group>"; };
+		6240EFEC1CE47F1200CEDCC1 /* XXBSystemHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBSystemHelp.h; sourceTree = "<group>"; };
+		6240EFED1CE47F1200CEDCC1 /* XXBSystemHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBSystemHelp.m; sourceTree = "<group>"; };
+		6240EFEE1CE47F1200CEDCC1 /* XXBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBTextField.h; sourceTree = "<group>"; };
+		6240EFEF1CE47F1200CEDCC1 /* XXBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBTextField.m; sourceTree = "<group>"; };
+		6240EFF21CE47F1200CEDCC1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6240EFF31CE47F1200CEDCC1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6240EFF41CE47F1200CEDCC1 /* XXBLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBLibs.h; sourceTree = "<group>"; };
 		62C002D01B8B1D9300EDE6D9 /* XXBLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C002D41B8B1D9300EDE6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C002D51B8B1D9300EDE6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -27,9 +89,9 @@
 		62C002DE1B8B1D9300EDE6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62C002E01B8B1D9300EDE6D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		62C002E31B8B1D9300EDE6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AAFE94A992DF54F92D551BD7 /* Pods-XXBLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C5F35B65ECA5378D3D513C6D /* Pods-XXBLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		ECD3706837C0516179824368 /* Pods_XXBLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXBLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXBLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,20 +99,111 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999366C9DB59C0312D16AE0F /* Pods_XXBLibDemo.framework in Frameworks */,
+				94E8BB4787D1E3F2B705E1C2 /* Pods_XXBLibDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		534D932E214286CE78556C59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */,
+				817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6240EFC61CE47F1200CEDCC1 /* XXBLib */ = {
+			isa = PBXGroup;
+			children = (
+				6240EFC71CE47F1200CEDCC1 /* Category */,
+				6240EFDC1CE47F1200CEDCC1 /* Class */,
+				6240EFF01CE47F1200CEDCC1 /* Others */,
+				6240EFF41CE47F1200CEDCC1 /* XXBLibs.h */,
+			);
+			name = XXBLib;
+			path = ../../XXBLib;
+			sourceTree = "<group>";
+		};
+		6240EFC71CE47F1200CEDCC1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6240EFC81CE47F1200CEDCC1 /* NSArray+XXB.h */,
+				6240EFC91CE47F1200CEDCC1 /* NSArray+XXB.m */,
+				6240EFCA1CE47F1200CEDCC1 /* NSData+Help.h */,
+				6240EFCB1CE47F1200CEDCC1 /* NSData+Help.m */,
+				6240EFCC1CE47F1200CEDCC1 /* NSDate+Help.h */,
+				6240EFCD1CE47F1200CEDCC1 /* NSDate+Help.m */,
+				6240EFCE1CE47F1200CEDCC1 /* NSDictionary+XXB.h */,
+				6240EFCF1CE47F1200CEDCC1 /* NSDictionary+XXB.m */,
+				6240EFD01CE47F1200CEDCC1 /* NSString+Help.h */,
+				6240EFD11CE47F1200CEDCC1 /* NSString+Help.m */,
+				6240EFD21CE47F1200CEDCC1 /* UIBarButtonItem+Help.h */,
+				6240EFD31CE47F1200CEDCC1 /* UIBarButtonItem+Help.m */,
+				6240EFD41CE47F1200CEDCC1 /* UIColor+Help.h */,
+				6240EFD51CE47F1200CEDCC1 /* UIColor+Help.m */,
+				6240EFD61CE47F1200CEDCC1 /* UIImage+Help.h */,
+				6240EFD71CE47F1200CEDCC1 /* UIImage+Help.m */,
+				6240EFD81CE47F1200CEDCC1 /* UIView+Help.h */,
+				6240EFD91CE47F1200CEDCC1 /* UIView+Help.m */,
+				6240EFDA1CE47F1200CEDCC1 /* UIView+MotionEffect.h */,
+				6240EFDB1CE47F1200CEDCC1 /* UIView+MotionEffect.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6240EFDC1CE47F1200CEDCC1 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6240EFDD1CE47F1200CEDCC1 /* XXBDeviceHelp.h */,
+				6240EFDE1CE47F1200CEDCC1 /* XXBDeviceHelp.m */,
+				6240EFDF1CE47F1200CEDCC1 /* XXBDiskHelp.h */,
+				6240EFE01CE47F1200CEDCC1 /* XXBDiskHelp.m */,
+				6240EFE11CE47F1200CEDCC1 /* XXBFileHelper.h */,
+				6240EFE21CE47F1200CEDCC1 /* XXBFileHelper.m */,
+				6240EFE31CE47F1200CEDCC1 /* XXBHelpTools.h */,
+				6240EFE41CE47F1200CEDCC1 /* XXBHelpTools.m */,
+				6240EFE51CE47F1200CEDCC1 /* XXBLog.h */,
+				6240EFE61CE47F1200CEDCC1 /* XXBLog.m */,
+				6240EFE71CE47F1200CEDCC1 /* XXBNetWorkExtion.h */,
+				6240EFE81CE47F1200CEDCC1 /* XXBNetWorkExtion.m */,
+				6240EFE91CE47F1200CEDCC1 /* XXBNetworkServers.h */,
+				6240EFEA1CE47F1200CEDCC1 /* XXBNetworkServers.m */,
+				6240EFEB1CE47F1200CEDCC1 /* XXBSingleton.h */,
+				6240EFEC1CE47F1200CEDCC1 /* XXBSystemHelp.h */,
+				6240EFED1CE47F1200CEDCC1 /* XXBSystemHelp.m */,
+				6240EFEE1CE47F1200CEDCC1 /* XXBTextField.h */,
+				6240EFEF1CE47F1200CEDCC1 /* XXBTextField.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		6240EFF01CE47F1200CEDCC1 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6240EFF11CE47F1200CEDCC1 /* Reachability */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		6240EFF11CE47F1200CEDCC1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6240EFF21CE47F1200CEDCC1 /* Reachability.h */,
+				6240EFF31CE47F1200CEDCC1 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		62C002C71B8B1D9300EDE6D9 = {
 			isa = PBXGroup;
 			children = (
 				62C002D21B8B1D9300EDE6D9 /* XXBLibDemo */,
 				62C002D11B8B1D9300EDE6D9 /* Products */,
-				8448562E46464C2ECD7660BD /* Pods */,
-				F2C1CF6C5E6333441629D746 /* Frameworks */,
+				534D932E214286CE78556C59 /* Pods */,
+				B6FEF7B373660034EAB02E73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +218,7 @@
 		62C002D21B8B1D9300EDE6D9 /* XXBLibDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6240EFC61CE47F1200CEDCC1 /* XXBLib */,
 				62C002D71B8B1D9300EDE6D9 /* AppDelegate.h */,
 				62C002D81B8B1D9300EDE6D9 /* AppDelegate.m */,
 				62C002DA1B8B1D9300EDE6D9 /* ViewController.h */,
@@ -86,19 +240,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8448562E46464C2ECD7660BD /* Pods */ = {
+		B6FEF7B373660034EAB02E73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C5F35B65ECA5378D3D513C6D /* Pods-XXBLibDemo.debug.xcconfig */,
-				AAFE94A992DF54F92D551BD7 /* Pods-XXBLibDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F2C1CF6C5E6333441629D746 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ECD3706837C0516179824368 /* Pods_XXBLibDemo.framework */,
+				654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,12 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C002F31B8B1D9300EDE6D9 /* Build configuration list for PBXNativeTarget "XXBLibDemo" */;
 			buildPhases = (
-				054D09B4FBDB4A7ED6444F82 /* Check Pods Manifest.lock */,
+				AC4ACF82CF3134C80BDD261E /* 📦 Check Pods Manifest.lock */,
 				62C002CC1B8B1D9300EDE6D9 /* Sources */,
 				62C002CD1B8B1D9300EDE6D9 /* Frameworks */,
 				62C002CE1B8B1D9300EDE6D9 /* Resources */,
-				EDBF0386C3BA1A1E896C3B7F /* Embed Pods Frameworks */,
-				6BF1949FD6DFDDBDA0B2BDAE /* Copy Pods Resources */,
+				75783417EE933565C5A99C9D /* 📦 Embed Pods Frameworks */,
+				D2334907E46DB1FD1CF77F40 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,14 +317,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		054D09B4FBDB4A7ED6444F82 /* Check Pods Manifest.lock */ = {
+		75783417EE933565C5A99C9D /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC4ACF82CF3134C80BDD261E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,34 +347,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6BF1949FD6DFDDBDA0B2BDAE /* Copy Pods Resources */ = {
+		D2334907E46DB1FD1CF77F40 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDBF0386C3BA1A1E896C3B7F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -225,8 +370,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C002DC1B8B1D9300EDE6D9 /* ViewController.m in Sources */,
+				6240EFFC1CE47F1200CEDCC1 /* UIImage+Help.m in Sources */,
+				6240EFF51CE47F1200CEDCC1 /* NSArray+XXB.m in Sources */,
+				6240F0061CE47F1200CEDCC1 /* XXBSystemHelp.m in Sources */,
+				6240EFFA1CE47F1200CEDCC1 /* UIBarButtonItem+Help.m in Sources */,
 				62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */,
+				6240EFFF1CE47F1200CEDCC1 /* XXBDeviceHelp.m in Sources */,
+				6240EFFB1CE47F1200CEDCC1 /* UIColor+Help.m in Sources */,
 				62C002D61B8B1D9300EDE6D9 /* main.m in Sources */,
+				6240F0041CE47F1200CEDCC1 /* XXBNetWorkExtion.m in Sources */,
+				6240EFF81CE47F1200CEDCC1 /* NSDictionary+XXB.m in Sources */,
+				6240EFF61CE47F1200CEDCC1 /* NSData+Help.m in Sources */,
+				6240F0001CE47F1200CEDCC1 /* XXBDiskHelp.m in Sources */,
+				6240EFFE1CE47F1200CEDCC1 /* UIView+MotionEffect.m in Sources */,
+				6240F0071CE47F1200CEDCC1 /* XXBTextField.m in Sources */,
+				6240F0011CE47F1200CEDCC1 /* XXBFileHelper.m in Sources */,
+				6240F0031CE47F1200CEDCC1 /* XXBLog.m in Sources */,
+				6240F0081CE47F1200CEDCC1 /* Reachability.m in Sources */,
+				6240EFFD1CE47F1200CEDCC1 /* UIView+Help.m in Sources */,
+				6240F0051CE47F1200CEDCC1 /* XXBNetworkServers.m in Sources */,
+				6240F0021CE47F1200CEDCC1 /* XXBHelpTools.m in Sources */,
+				6240EFF91CE47F1200CEDCC1 /* NSString+Help.m in Sources */,
+				6240EFF71CE47F1200CEDCC1 /* NSDate+Help.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,11 +502,11 @@
 		};
 		62C002F41B8B1D9300EDE6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5F35B65ECA5378D3D513C6D /* Pods-XXBLibDemo.debug.xcconfig */;
+			baseConfigurationReference = 745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoxiaobing.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,11 +515,11 @@
 		};
 		62C002F51B8B1D9300EDE6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAFE94A992DF54F92D551BD7 /* Pods-XXBLibDemo.release.xcconfig */;
+			baseConfigurationReference = 817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoxiaobing.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

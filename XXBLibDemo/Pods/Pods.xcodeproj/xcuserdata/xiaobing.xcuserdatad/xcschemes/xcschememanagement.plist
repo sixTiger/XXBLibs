@@ -9,20 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>XXBLibs.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10778F5D3EE47EC638FAD1D674012257</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EBD890B37EC3F50F04B52D3C949C8DA1</key>
+		<key>5756583BCB6041F149B83E0C4DB49DEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
