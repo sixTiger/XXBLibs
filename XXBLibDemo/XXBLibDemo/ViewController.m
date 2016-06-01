@@ -23,7 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
+    NSLog(@"hello" @"word");
+    XXBLog(@"hellp");
+//    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
     NSLog((@"%s [Line %d] " @"%@"), __PRETTY_FUNCTION__, __LINE__,@"name");
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
