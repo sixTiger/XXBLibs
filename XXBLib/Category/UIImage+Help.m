@@ -77,10 +77,17 @@
  */
 +(UIImage *)cutImage:(UIImage*)image andSize:(CGSize)newImageSize
 {
-    
-    
-    UIGraphicsBeginImageContextWithOptions(newImageSize, NO, 0.0);
-    [image drawInRect:CGRectMake(0, 0, newImageSize.width, newImageSize.height)];
+    if (image == nil) {
+        return nil;
+    }
+    UIGraphicsBeginImageContextWithOptions(newImageSize, NO, [UIScreen mainScreen].scale);
+    if (image.size.width/image.size.height < newImageSize.width/newImageSize.height) {
+        CGFloat newHeight = newImageSize.width / image.size.width * image.size.height;
+        [image drawInRect:CGRectMake(0, (newImageSize.height - newHeight) * 0.5, newImageSize.width,newHeight)];
+    } else {
+        CGFloat newWidth = newImageSize.height / image.size.height * image.size.width;
+        [image drawInRect:CGRectMake((newImageSize.width - newWidth)* 0.5, 0, newWidth,newImageSize.height)];
+    }
     //从上下文中取出图片
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
