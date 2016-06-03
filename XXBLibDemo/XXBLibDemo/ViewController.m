@@ -34,6 +34,8 @@
     [self urlTest];
     [[XXBNetworkServers sharedXXBNetworkServers] startServers];
     self.inputTextField.maxTextCount = 7;
+    
+    [self testFPSLabel];
 }
 
 - (void)XXBDeviceHelpTest {
@@ -79,6 +81,11 @@
     NSString *string = @"https://www.baidu.com/s?wd=我测试中文";
     NSLog(@"%@",[string URLEncode]);
     NSLog(@"%@",[string URLDecode]);
+}
+
+- (void)testFPSLabel {
+    XXBFPSLabel *fpsLabel = [[XXBFPSLabel alloc] initWithFrame:CGRectMake(0, 80, 100, 44)];
+    [self.view addSubview:fpsLabel];
 }
 
 @end

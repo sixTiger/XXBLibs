@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621E59101D0158F6000472ED /* XXBFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 621E590F1D0158F6000472ED /* XXBFPSLabel.m */; };
 		6240EFF51CE47F1200CEDCC1 /* NSArray+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFC91CE47F1200CEDCC1 /* NSArray+XXB.m */; };
 		6240EFF61CE47F1200CEDCC1 /* NSData+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFCB1CE47F1200CEDCC1 /* NSData+Help.m */; };
 		6240EFF71CE47F1200CEDCC1 /* NSDate+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240EFCD1CE47F1200CEDCC1 /* NSDate+Help.m */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		621E590E1D0158F6000472ED /* XXBFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFPSLabel.h; sourceTree = "<group>"; };
+		621E590F1D0158F6000472ED /* XXBFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFPSLabel.m; sourceTree = "<group>"; };
 		6240EFC81CE47F1200CEDCC1 /* NSArray+XXB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XXB.h"; sourceTree = "<group>"; };
 		6240EFC91CE47F1200CEDCC1 /* NSArray+XXB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XXB.m"; sourceTree = "<group>"; };
 		6240EFCA1CE47F1200CEDCC1 /* NSData+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Help.h"; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 		6240EFDC1CE47F1200CEDCC1 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				621E590E1D0158F6000472ED /* XXBFPSLabel.h */,
+				621E590F1D0158F6000472ED /* XXBFPSLabel.m */,
 				6240EFDD1CE47F1200CEDCC1 /* XXBDeviceHelp.h */,
 				6240EFDE1CE47F1200CEDCC1 /* XXBDeviceHelp.m */,
 				6240EFDF1CE47F1200CEDCC1 /* XXBDiskHelp.h */,
@@ -372,6 +377,7 @@
 				62C002DC1B8B1D9300EDE6D9 /* ViewController.m in Sources */,
 				6240EFFC1CE47F1200CEDCC1 /* UIImage+Help.m in Sources */,
 				6240EFF51CE47F1200CEDCC1 /* NSArray+XXB.m in Sources */,
+				621E59101D0158F6000472ED /* XXBFPSLabel.m in Sources */,
 				6240F0061CE47F1200CEDCC1 /* XXBSystemHelp.m in Sources */,
 				6240EFFA1CE47F1200CEDCC1 /* UIBarButtonItem+Help.m in Sources */,
 				62C002D91B8B1D9300EDE6D9 /* AppDelegate.m in Sources */,

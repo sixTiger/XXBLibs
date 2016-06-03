@@ -32,4 +32,5 @@
     #import "NSDictionary+XXB.h"
 
     #import "XXBTextField.h"
+    #import "XXBFPSLabel.h"
 #endif
