@@ -37,10 +37,11 @@
 }
 
 - (void)_addNotitication {
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textFiledEditChanged:)name:@"UITextFieldTextDidChangeNotification" object:self];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textFiledEditChanged:)name:UITextFieldTextDidChangeNotification object:self];
 }
 
 - (void)_removeNotifaction {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self];
 }
 
 -(void)textFiledEditChanged:(NSNotification *)obj {
