@@ -12,5 +12,8 @@
 
 @property(nonatomic , assign) NSUInteger   maxTextCount;
 
+/**
+ *  设置默认参数等先关操作
+ */
 - (void)prepare NS_REQUIRES_SUPER;
 @end
