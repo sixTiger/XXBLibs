@@ -10,94 +10,82 @@
 
 @implementation UIView (Help)
 
-- (void)setWidth:(CGFloat)width
-{
+- (void)setXxb_width:(CGFloat)xxb_width {
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = xxb_width;
     self.frame = frame;
 }
-- (CGFloat)width
-{
+
+- (CGFloat)xxb_width {
     return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)height
-{
+- (void)setXxb_height:(CGFloat)xxb_height {
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = xxb_height;
     self.frame = frame;
 }
 
-- (CGFloat)height
-{
+- (CGFloat)xxb_height {
     return self.frame.size.height;
 }
 
-- (void)setX:(CGFloat)x
-{
+- (void)setXxb_x:(CGFloat)xxb_x {
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = xxb_x;
     self.frame = frame;
 }
-- (CGFloat)x
-{
+- (CGFloat)xxb_x {
     return self.frame.origin.x;
 }
 
-- (void)setY:(CGFloat)y
-{
+- (void)setXxb_y:(CGFloat)xxb_y {
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = xxb_y;
     self.frame = frame;
 }
-- (CGFloat)y
-{
+
+- (CGFloat)xxb_y {
     return self.frame.origin.y;
 }
-- (void)setCenterX:(CGFloat)centerX
-{
+
+- (void)setXxb_centerX:(CGFloat)xxb_centerX {
     CGPoint center = self.center;
-    center.x = centerX;
+    center.x = xxb_centerX;
     self.center = center;
 }
 
-- (CGFloat)centerX
-{
+- (CGFloat)xxb_centerX {
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY
-{
+- (void)setXxb_centerY:(CGFloat)xxb_centerY {
     CGPoint center = self.center;
-    center.y = centerY;
+    center.y = xxb_centerY;
     self.center = center;
 }
 
-- (CGFloat)centerY
-{
+- (CGFloat)xxb_centerY {
     return self.center.y;
 }
-- (void)setSize:(CGSize)size
-{
+
+- (void)setXxb_size:(CGSize)xxb_size {
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = xxb_size;
     self.frame = frame;
 }
 
-- (CGSize)size
-{
+- (CGSize)xxb_size {
     return self.frame.size;
 }
 
-- (void)setOrigin:(CGPoint)origin
-{
+- (void)setXxb_origin:(CGPoint)xxb_origin {
     CGRect frame = self.frame;
-    frame.origin = origin;
+    frame.origin = xxb_origin;
     self.frame = frame;
 }
 
-- (CGPoint)origin
-{
+- (CGPoint)xxb_origin {
     return self.frame.origin;
 }
 #pragma mark - 扩散动画

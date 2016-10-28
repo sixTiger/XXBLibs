@@ -18,14 +18,14 @@ typedef enum  {
 // @property如果写在分类里面就不会生成成员属性,只会生成get,set方法
 
 // 快速设置控件的frame
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat centerX;
-@property (nonatomic, assign) CGFloat centerY;
-@property (nonatomic, assign) CGSize size;
-@property (nonatomic, assign) CGPoint origin;
+@property (nonatomic, assign) CGFloat xxb_width;
+@property (nonatomic, assign) CGFloat xxb_height;
+@property (nonatomic, assign) CGFloat xxb_x;
+@property (nonatomic, assign) CGFloat xxb_y;
+@property (nonatomic, assign) CGFloat xxb_centerX;
+@property (nonatomic, assign) CGFloat xxb_centerY;
+@property (nonatomic, assign) CGSize xxb_size;
+@property (nonatomic, assign) CGPoint xxb_origin;
 
 #pragma mark - 动画相关
 /**
