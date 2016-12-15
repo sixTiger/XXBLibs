@@ -38,6 +38,7 @@
 		62D5F89F1D6C94900019BC17 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62D5F89B1D6C94900019BC17 /* MBProgressHUD.bundle */; };
 		62D5F8A01D6C94900019BC17 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5F89D1D6C94900019BC17 /* MBProgressHUD.m */; };
 		94E8BB4787D1E3F2B705E1C2 /* Pods_XXBLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */; };
+		E115A5141E0289AB00E1045C /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A5131E0289AB00E1045C /* XXBKeyChain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXBLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E115A5121E0289AB00E1045C /* XXBKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBKeyChain.h; sourceTree = "<group>"; };
+		E115A5131E0289AB00E1045C /* XXBKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBKeyChain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				62095D131D1BE2B0008E210F /* XXBSystemHelp.m */,
 				62095D141D1BE2B0008E210F /* XXBTextField.h */,
 				62095D151D1BE2B0008E210F /* XXBTextField.m */,
+				E115A5121E0289AB00E1045C /* XXBKeyChain.h */,
+				E115A5131E0289AB00E1045C /* XXBKeyChain.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				62D5F89E1D6C94900019BC17 /* MBProgressHUD+XXB.m in Sources */,
 				62C002D61B8B1D9300EDE6D9 /* main.m in Sources */,
 				62095D2B1D1BE2B0008E210F /* XXBNetWorkExtion.m in Sources */,
+				E115A5141E0289AB00E1045C /* XXBKeyChain.m in Sources */,
 				62095D1E1D1BE2B0008E210F /* NSDictionary+XXB.m in Sources */,
 				62095D291D1BE2B0008E210F /* XXBHelpTools.m in Sources */,
 				62095D281D1BE2B0008E210F /* XXBFPSLabel.m in Sources */,

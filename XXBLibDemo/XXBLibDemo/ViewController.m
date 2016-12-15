@@ -17,12 +17,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @property (weak, nonatomic) IBOutlet XXBTextField *inputTextField;
 
+- (IBAction)saveMessage:(id)sender;
+- (IBAction)loadMessage:(id)sender;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = YES;
     NSLog(@"hello" @"word");
     XXBLog(@"hellp");
 //    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
@@ -36,6 +39,15 @@
     self.inputTextField.maxTextCount = 7;
     
     [self testFPSLabel];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+- (void)openWebView {
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/"];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 - (void)XXBDeviceHelpTest {
@@ -88,4 +100,16 @@
     [self.view addSubview:fpsLabel];
 }
 
+- (IBAction)saveMessage:(id)sender {
+    NSMutableDictionary *usernamepasswordKVPairs = [NSMutableDictionary dictionary];
+    [usernamepasswordKVPairs setObject:@[@"mPassWord",@"mPassWord"] forKey:@"PassWord"];
+    [usernamepasswordKVPairs setObject:@[@"mUserName",@"mUserName"] forKey:@"UserName"];
+    [[XXBKeyChain sharedXXBKeyChain] save:@"XXBKeyChain" data:usernamepasswordKVPairs];
+}
+
+- (IBAction)loadMessage:(id)sender {
+    
+    NSMutableDictionary *usernamepasswordKVPairs = [[XXBKeyChain sharedXXBKeyChain] load:@"XXBKeyChain"];
+    NSLog(@"%@",usernamepasswordKVPairs);
+}
 @end
