@@ -39,6 +39,10 @@
     self.inputTextField.maxTextCount = 7;
     
     [self testFPSLabel];
+    
+    if(isNull(nil)) {
+        NSLog(@"测试 NULL & nil");
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
