@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.version      = '0.0.2'
   s.summary      = "20150103"
   s.homepage     = "https://github.com/sixTiger/XXBLibs"
+  s.license      = "MIT"
   s.authors      = { '杨小兵' => 'lhxiaobing@qq.com' }
   s.platform     = :ios
   s.ios.deployment_target = '7.0'
