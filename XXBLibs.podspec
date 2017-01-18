@@ -1,11 +1,10 @@
 Pod::Spec.new do |s|
   s.requires_arc = true
   s.name         = 'XXBLibs'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = "20150103"
   s.homepage     = "https://github.com/sixTiger/XXBLibs"
-  s.license      = "MIT"
-  s.authors      = { '杨小兵' => 'six_tiger@163.com' }
+  s.authors      = { '杨小兵' => 'lhxiaobing@qq.com' }
   s.platform     = :ios
   s.ios.deployment_target = '7.0'
   s.source       = { :git => "https://github.com/sixTiger/XXBLibs.git", :tag => s.version }
