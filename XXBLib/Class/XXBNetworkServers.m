@@ -53,7 +53,7 @@ XXBSingletonM(XXBNetworkServers);
 {
     if (_reachability == nil)
     {
-#warning if can't get network state quickly  you should chaneg the URLString to a faster URLString 
+//#warning if can't get network state quickly  you should chaneg the URLString to a faster URLString 
         _reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
         [_reachability startNotifier];
     }
