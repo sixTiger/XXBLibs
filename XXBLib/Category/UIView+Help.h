@@ -39,7 +39,7 @@ typedef enum  {
  *
  *  @param point 动画开始的点
  *  @param type  动画的类型
- *  @param color 动画的颜色
+ *  @param animationColor 动画的颜色
  */
 - (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor;
 /**
@@ -47,7 +47,7 @@ typedef enum  {
  *
  *  @param point 动画开始的点
  *  @param type  动画的类型
- *  @param color 动画的颜色
+ *  @param animationColor 动画的颜色
  *  @param completion 动画结束后的代码快
  */
 - (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL finished))completion;
@@ -57,7 +57,7 @@ typedef enum  {
  *  @param point      动画开始的点
  *  @param duration   动画时间
  *  @param type       动画的类型
- *  @param color 动画的颜色
+ *  @param animationColor 动画的颜色
  *  @param completion 动画结束后的代码快
  */
 - (void)addAnimationAtPoint:(CGPoint)point WithDuration:(NSTimeInterval)duration WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL finished))completion;
