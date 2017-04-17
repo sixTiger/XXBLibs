@@ -39,6 +39,7 @@
 		62D5F8A01D6C94900019BC17 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5F89D1D6C94900019BC17 /* MBProgressHUD.m */; };
 		94E8BB4787D1E3F2B705E1C2 /* Pods_XXBLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */; };
 		E115A5141E0289AB00E1045C /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E115A5131E0289AB00E1045C /* XXBKeyChain.m */; };
+		E198AA5E1EA4A6EE00E58820 /* XXBBlockHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = E198AA5D1EA4A6EE00E58820 /* XXBBlockHelp.m */; };
 		E1B818821E23658A00211C52 /* XXBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B818811E23658A00211C52 /* XXBFunction.m */; };
 		E1B818981E2369EC00211C52 /* XXBLibDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B818971E2369EC00211C52 /* XXBLibDemoTests.m */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,8 @@
 		817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E115A5121E0289AB00E1045C /* XXBKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBKeyChain.h; sourceTree = "<group>"; };
 		E115A5131E0289AB00E1045C /* XXBKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBKeyChain.m; sourceTree = "<group>"; };
+		E198AA5C1EA4A6EE00E58820 /* XXBBlockHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBBlockHelp.h; sourceTree = "<group>"; };
+		E198AA5D1EA4A6EE00E58820 /* XXBBlockHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBBlockHelp.m; sourceTree = "<group>"; };
 		E1B818801E23658A00211C52 /* XXBFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFunction.h; sourceTree = "<group>"; };
 		E1B818811E23658A00211C52 /* XXBFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFunction.m; sourceTree = "<group>"; };
 		E1B818951E2369EC00211C52 /* XXBLibDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXBLibDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +223,8 @@
 				E115A5131E0289AB00E1045C /* XXBKeyChain.m */,
 				E1B818801E23658A00211C52 /* XXBFunction.h */,
 				E1B818811E23658A00211C52 /* XXBFunction.m */,
+				E198AA5C1EA4A6EE00E58820 /* XXBBlockHelp.h */,
+				E198AA5D1EA4A6EE00E58820 /* XXBBlockHelp.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 				62095D281D1BE2B0008E210F /* XXBFPSLabel.m in Sources */,
 				62095D1C1D1BE2B0008E210F /* NSData+Help.m in Sources */,
 				E1B818821E23658A00211C52 /* XXBFunction.m in Sources */,
+				E198AA5E1EA4A6EE00E58820 /* XXBBlockHelp.m in Sources */,
 				62095D261D1BE2B0008E210F /* XXBDiskHelp.m in Sources */,
 				62095D2A1D1BE2B0008E210F /* XXBLog.m in Sources */,
 				62095D241D1BE2B0008E210F /* UIView+MotionEffect.m in Sources */,
@@ -633,7 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoxiaobing.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -646,7 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoxiaobing.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

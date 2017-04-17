@@ -28,7 +28,7 @@
     self.navigationController.navigationBar.hidden = YES;
     NSLog(@"hello" @"word");
     XXBLog(@"hellp");
-//    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
+    //    XXBLog(@"%@+++++++++++++++",@(XXBMin(1, 2)));
     NSLog((@"%s [Line %d] " @"%@"), __PRETTY_FUNCTION__, __LINE__,@"name");
     // Do any additional setup after loading the view, typically from a nib.
     [self NSDataHelpTest];
@@ -43,6 +43,19 @@
     if(isNull(nil)) {
         NSLog(@"测试 NULL & nil");
     }
+    
+    int(^ sum)(int a, int b) = ^(int a,int b) {
+        NSLog(@"XXB | %@ %d",[NSThread currentThread],a + b);
+        return  a + b;
+    };
+    __block int  a = 0;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        a = XXB_BLOCK(sum,1,3);
+        XXB_SAFE_BLOCK(sum,1,4);
+    });
+    XXB_BLOCK(sum,1,5);
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {

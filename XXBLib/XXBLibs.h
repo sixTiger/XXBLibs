@@ -21,6 +21,7 @@
     #import "XXBFileHelper.h"
     #import "XXBKeyChain.h"
     #import "XXBFunction.h"
+    #import "XXBBlockHelp.h"
 
     #import "NSDate+Help.h"
     #import "UIBarButtonItem+Help.h"
