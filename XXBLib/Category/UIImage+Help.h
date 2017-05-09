@@ -164,7 +164,6 @@
 //! Applies a blur, tint color, and saturation adjustment to @a inputImage,
 //! optionally within the area specified by @a maskImage.
 //!
-//! @param  inputImage
 //!         The source image.  A modified copy of this image will be returned.
 //! @param  blurRadius
 //!         The radius of the blur in points.
