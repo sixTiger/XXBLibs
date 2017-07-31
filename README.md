@@ -5,3 +5,13 @@
 ```c
 pod 'XXBLibs', :git => "https://github.com/sixTiger/XXBLibs"
 ```
+
+##打包静态库
+```c
+//安装Pod插件
+gem install cocoapods-packager
+//打包成 .a
+pod package XXBLibs.podspec  --library --force
+//打包成FrameWork
+pod package XXBLibs.podspec  --force
+```
