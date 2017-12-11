@@ -8,8 +8,7 @@
 
 #import "XXBFunction.h"
 
-extern BOOL isNull(id value)
-{
+extern BOOL isNull(id value) {
     if (!value) return YES;
     if ([value isKindOfClass:[NSNull class]]) return YES;
     return NO;

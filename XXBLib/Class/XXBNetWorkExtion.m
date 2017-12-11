@@ -14,15 +14,17 @@
 #import "XXBNetWorkExtion.h"
 @implementation XXBNetWorkExtion
 
-+ (NETWORK_TYPE)getNetworkTypeFromStatusBar
-{
-    UIApplication *app = [UIApplication sharedApplication];
-    NSArray *subviews = [[[app valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
++ (NETWORK_TYPE)getNetworkTypeFromStatusBar {
+    UIApplication *application = [UIApplication sharedApplication];
+    NSArray *subviews = nil;
+    if ([[application valueForKeyPath:@"_statusBar"] isKindOfClass:NSClassFromString(@"UIStatusBar_Modern")]) {
+        subviews = [[[[application valueForKeyPath:@"_statusBar"] valueForKeyPath:@"_statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+    } else {
+        subviews = [[[application valueForKeyPath:@"_statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+    }
     NSNumber *dataNetworkItemView = nil;
-    for (id subview in subviews)
-    {
-        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]])
-        {
+    for (id subview in subviews) {
+        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
             dataNetworkItemView = subview;
             break;
         }
@@ -45,13 +47,10 @@
  
  */
 //用来辨别设备所使用网络的运营商
-+ (NSString*)getMobileOperatorsName
-
-{
++ (NSString*)getMobileOperatorsName {
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = [info subscriberCellularProvider];
-    if (carrier == nil)
-    {
+    if (carrier == nil) {
         return @"0";
     }
     NSString *code = [carrier mobileNetworkCode];
@@ -84,8 +83,7 @@
  *
  *  @return 是否连接
  */
-+ (BOOL)isConnectedToNetwork
-{
++ (BOOL)isConnectedToNetwork {
     // Create zero addy
     struct sockaddr_in zeroAddress;
     bzero(&zeroAddress, sizeof(zeroAddress));
@@ -99,8 +97,7 @@
     BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
     CFRelease(defaultRouteReachability);
     
-    if (!didRetrieveFlags)
-    {
+    if (!didRetrieveFlags) {
         printf("Error. Could not recover network reachability flags\n");
         return NO;
     }

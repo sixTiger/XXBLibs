@@ -89,8 +89,7 @@
     return self.frame.origin;
 }
 #pragma mark - 扩散动画
-- (void)addAnimationAtPoint:(CGPoint)point;
-{
+- (void)addAnimationAtPoint:(CGPoint)point {
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     CGFloat diameter = [self mdShapeDiameterForPoint:point];
     shapeLayer.frame = CGRectMake(floor(point.x - diameter * 0.5), floor(point.y - diameter * 0.5), diameter, diameter);
@@ -115,12 +114,12 @@
     [shapeLayer addAnimation:animation forKey:@"shapeBackgroundAnimation"];
     [CATransaction commit];
 }
-- (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL))completion
-{
+
+- (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL))completion {
     [self addAnimationAtPoint:point WithDuration:1.0 WithType:type withColor:animationColor  completion:completion];
 }
-- (void)addAnimationAtPoint:(CGPoint)point WithDuration:(NSTimeInterval)duration WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL finished))completion
-{
+
+- (void)addAnimationAtPoint:(CGPoint)point WithDuration:(NSTimeInterval)duration WithType:(animationType) type withColor:(UIColor *)animationColor completion:(void (^)(BOOL finished))completion {
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     CGFloat diameter = [self mdShapeDiameterForPoint:point];
     shapeLayer.frame = CGRectMake(floor(point.x - diameter * 0.5), floor(point.y - diameter * 0.5), diameter, diameter);
@@ -157,17 +156,15 @@
     [CATransaction begin];
     [CATransaction setCompletionBlock:^{
         [shapeLayer removeFromSuperlayer];
-        if (completion)
-        {
+        if (completion) {
             completion(true);
         }
     }];
     [shapeLayer addAnimation:animation forKey:@"shapeBackgroundAnimation"];
     [CATransaction commit];
-    
 }
-- (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor;
-{
+
+- (void)addAnimationAtPoint:(CGPoint)point WithType:(animationType) type withColor:(UIColor *)animationColor {
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     CGFloat diameter = [self mdShapeDiameterForPoint:point];
     shapeLayer.frame = CGRectMake(floor(point.x - diameter * 0.5), floor(point.y - diameter * 0.5), diameter, diameter);
@@ -208,9 +205,9 @@
     [shapeLayer addAnimation:animation forKey:@"shapeBackgroundAnimation"];
     [CATransaction commit];
 }
+
 //计算离屏幕的边框最大的距离
-- (CGFloat)mdShapeDiameterForPoint:(CGPoint)point
-{
+- (CGFloat)mdShapeDiameterForPoint:(CGPoint)point {
     CGPoint cornerPoints[] = {
         {0.0, 0.0},
         {0.0, self.bounds.size.height},
@@ -218,12 +215,10 @@
         {self.bounds.size.width, 0.0}
     };
     CGFloat radius = 0.0;
-    for (int i = 0; i < 4; i++)
-    {
+    for (int i = 0; i < 4; i++) {
         CGPoint p = cornerPoints[i];
         CGFloat d = sqrt( pow(p.x - point.x, 2.0) + pow(p.y - point.y, 2.0) );
-        if (d > radius)
-        {
+        if (d > radius) {
             radius = d;
         }
     }

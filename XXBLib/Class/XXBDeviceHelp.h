@@ -9,6 +9,57 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    XXBDeviceTypeUnKnown,
+    //iPhone
+    XXBDeviceTypeiPhone,
+    XXBDeviceTypeiPhone3G,
+    XXBDeviceTypeiPhone3GS,
+    XXBDeviceTypeiPhone4,
+    XXBDeviceTypeiPhone4S,
+    XXBDeviceTypeiPhone5,
+    XXBDeviceTypeiPhone5C,
+    XXBDeviceTypeiPhone5S,
+    XXBDeviceTypeiPhone6,
+    XXBDeviceTypeiPhone6P,
+    XXBDeviceTypeiPhone6S,
+    XXBDeviceTypeiPhone6SP,
+    XXBDeviceTypeiPhoneSE,
+    XXBDeviceTypeiPhone7,
+    XXBDeviceTypeiPhone7P,
+    XXBDeviceTypeiPhone8,
+    XXBDeviceTypeiPhone8P,
+    XXBDeviceTypeiPhoneX,
+    //iPod
+    XXBDeviceTypeiPodTouch,
+    XXBDeviceTypeiPodTouch2,
+    XXBDeviceTypeiPodTouch3,
+    XXBDeviceTypeiPodTouch4,
+    XXBDeviceTypeiPodTouch5,
+    XXBDeviceTypeiPodTouch6,
+    //iPad
+    XXBDeviceTypeiPad,
+    XXBDeviceTypeiPad3G,
+    XXBDeviceTypeiPad2,
+    XXBDeviceTypeiPadMini,
+    XXBDeviceTypeiPad3,
+    XXBDeviceTypeiPad4,
+    XXBDeviceTypeiPadAir,
+    XXBDeviceTypeiPadMini2,
+    XXBDeviceTypeiPadMini3,
+    XXBDeviceTypeiPadMini4,
+    XXBDeviceTypeiPadAir2,
+    XXBDeviceTypeiPadPro9_7,
+    XXBDeviceTypeiPadPro12_9,
+    XXBDeviceTypeiPad5,
+    XXBDeviceTypeiPadPro12_9_2,
+    XXBDeviceTypeiPadPro10_5,
+    
+    // Simulator
+    XXBDeviceTypeSimulator_i386,
+    XXBDeviceTypeSimulator_X86_64,
+} XXBDeviceType;
+
 @interface XXBDeviceHelp : NSObject
 /**
  *  判断是否是iphone
@@ -89,4 +140,6 @@
  *  @return 老方式的唯一标示
  */
 + (NSString *)oldDeviceId;
+
++ (XXBDeviceType)getDeviceType;
 @end

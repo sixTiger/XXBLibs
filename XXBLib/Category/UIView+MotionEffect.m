@@ -10,8 +10,7 @@
 #import <objc/runtime.h>
 static char motionEffectFlag;
 @implementation UIView (MotionEffect)
--(void)setEffectGroup:(UIMotionEffectGroup *)effectGroup
-{
+-(void)setEffectGroup:(UIMotionEffectGroup *)effectGroup {
     // 清除掉关联
     objc_setAssociatedObject(self, &motionEffectFlag,
                              nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -21,16 +20,13 @@ static char motionEffectFlag;
                              effectGroup, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(UIMotionEffectGroup *)effectGroup
-{
+-(UIMotionEffectGroup *)effectGroup {
     // 返回关联
     return objc_getAssociatedObject(self, &motionEffectFlag);
 }
 
-- (void)addXAxisWithValue:(CGFloat)xValue YAxisWithValue:(CGFloat)yValue
-{
-    if ((xValue >= 0) && (yValue >= 0))
-    {
+- (void)addXAxisWithValue:(CGFloat)xValue YAxisWithValue:(CGFloat)yValue {
+    if ((xValue >= 0) && (yValue >= 0)) {
         UIInterpolatingMotionEffect *xAxis = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
         xAxis.minimumRelativeValue = @(-xValue);
         xAxis.maximumRelativeValue = @(xValue);
@@ -49,8 +45,7 @@ static char motionEffectFlag;
     }
 }
 
-- (void)removeSelfMotionEffect
-{
+- (void)removeSelfMotionEffect {
     [self removeMotionEffect:self.effectGroup];
 }
 @end

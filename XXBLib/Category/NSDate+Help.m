@@ -10,21 +10,22 @@
  *
  *  @return 当前时间的字符串 格式 2015-08-25  19:04:36
  */
-+ (NSString *)localTime
-{
++ (NSString *)localTime {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     formatter.dateFormat = @"YYYY-MM-dd  HH:mm:ss";
     NSString *string = [formatter stringFromDate:[NSDate date]];
     return string;
 }
+
 /**
  *  返回当前时间 格式 2015年08月25日
  *
  *  @return 当前时间的字符串 格式 2015年08月25日
  */
-+ (NSString *)localTimeYMD
-{
++ (NSString *)localTimeYMD {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     formatter.dateFormat = @"YYYY年MM月dd日";
     NSString *string = [formatter stringFromDate:[NSDate date]];
     return string;
@@ -33,8 +34,7 @@
 /**
  *  是否为今天
  */
-- (BOOL)isToday
-{
+- (BOOL)isToday {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     int unit = NSCalendarUnitDay | NSCalendarUnitMonth |  NSCalendarUnitYear;
     
@@ -52,8 +52,7 @@
 /**
  *  是否为昨天
  */
-- (BOOL)isYesterday
-{
+- (BOOL)isYesterday {
     // 2014-05-01
     NSDate *nowDate = [[NSDate date] dateWithYMD];
     
@@ -66,19 +65,18 @@
     return cmps.day == 1;
 }
 
-- (NSDate *)dateWithYMD
-{
-    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-    fmt.dateFormat = @"yyyy-MM-dd";
-    NSString *selfStr = [fmt stringFromDate:self];
-    return [fmt dateFromString:selfStr];
+- (NSDate *)dateWithYMD {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+    formatter.dateFormat = @"yyyy-MM-dd";
+    NSString *selfStr = [formatter stringFromDate:self];
+    return [formatter dateFromString:selfStr];
 }
 
 /**
  *  是否为今年
  */
-- (BOOL)isThisYear
-{
+- (BOOL)isThisYear {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     int unit = NSCalendarUnitYear;
     
@@ -91,8 +89,7 @@
     return nowCmps.year == selfCmps.year;
 }
 
-- (NSDateComponents *)deltaWithNow
-{
+- (NSDateComponents *)deltaWithNow {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     int unit = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     return [calendar components:unit fromDate:self toDate:[NSDate date] options:0];

@@ -19,8 +19,7 @@
  *
  *  @return 穿件好的image
  */
-+ (UIImage *)imageWithColor:(UIColor *)color
-{
++ (UIImage *)imageWithColor:(UIColor *)color {
     return [self imageWithColor:color andSize:CGSizeMake(1.0, 1.0)];
 }
 
@@ -33,8 +32,7 @@
  *
  *  @return 穿件好的image
  */
-+ (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size
-{
++ (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size {
     CGRect rect=CGRectMake(0.0f, 0.0f,size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -44,6 +42,7 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
 /**
  *  拉伸图片
  *
@@ -51,8 +50,7 @@
  *
  *  @return 拉伸好的图片
  */
-+ (UIImage *)resizedImageWithImageName:(NSString *)name
-{
++ (UIImage *)resizedImageWithImageName:(NSString *)name {
     return [self resizedImageWithImage:[UIImage imageNamed:name]];
 }
 
@@ -63,10 +61,10 @@
  *
  *  @return 拉伸好的图片
  */
-+ (UIImage * )resizedImageWithImage:(UIImage *)image
-{
++ (UIImage * )resizedImageWithImage:(UIImage *)image {
     return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
 }
+
 /**
  *  返回一个缩放好的图片
  *
@@ -75,8 +73,7 @@
  *
  *  @return 切割好的图片
  */
-+(UIImage *)cutImage:(UIImage*)image andSize:(CGSize)newImageSize
-{
++(UIImage *)cutImage:(UIImage*)image andSize:(CGSize)newImageSize {
     if (image == nil) {
         return nil;
     }
@@ -93,6 +90,7 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
 /**
  *  返回一个下边有半个红圈的原型头像
  *
@@ -101,8 +99,7 @@
  *
  *  @return 切割好的头像
  */
-+(UIImage *)captureCircleImage:(UIImage *)image
-{
++(UIImage *)captureCircleImage:(UIImage *)image {
     
     CGFloat imageW = image.size.width;
     CGFloat imageH = image.size.height;
@@ -146,8 +143,7 @@
  *
  *  @return 切割好的头像
  */
-+ (UIImage *)captureCircleImageWithURL:(NSString *)iconUrl andBorderWith:(CGFloat)border andBorderColor:(UIColor *)color
-{
++ (UIImage *)captureCircleImageWithURL:(NSString *)iconUrl andBorderWith:(CGFloat)border andBorderColor:(UIColor *)color {
     return [self captureCircleImageWithImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:iconUrl]]] andBorderWith:border andBorderColor:color];
 }
 /**
@@ -159,8 +155,7 @@
  *
  *  @return 切割好的头像
  */
-+ (UIImage *)captureCircleImageWithImage:(UIImage *)iconImage andBorderWith:(CGFloat)border andBorderColor:(UIColor *)color
-{
++ (UIImage *)captureCircleImageWithImage:(UIImage *)iconImage andBorderWith:(CGFloat)border andBorderColor:(UIColor *)color {
     CGFloat imageW = iconImage.size.width + border * 2;
     CGFloat imageH = iconImage.size.height + border * 2;
     imageW = MIN(imageH, imageW);
@@ -188,6 +183,7 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
 /**
  *  生成毛玻璃效果的图片
  *
@@ -196,8 +192,7 @@
  *
  *  @return 返回模糊化之后的图片
  */
-+ (UIImage *)blurredImageWithImage:(UIImage *)image andBlurAmount:(CGFloat)blurAmount
-{
++ (UIImage *)blurredImageWithImage:(UIImage *)image andBlurAmount:(CGFloat)blurAmount {
     return [image blurredImage:blurAmount];
 }
 /**
@@ -207,21 +202,36 @@
  *
  *  @return 生成的图片
  */
-+ (UIImage *)viewShotWithView:(UIView *)view
-{
++ (UIImage *)viewShotWithView:(UIView *)view {
     UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
 }
+
+
+/**
+ *  截取想要的view生成一张图片
+ *
+ *  @param view 要截的view
+ *
+ *  @return 生成的图片
+ */
++ (UIImage *)viewShotWithView_webView:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size,NO,[UIScreen mainScreen].scale);
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 /**
  *  截屏
  *
  *  @return 返回截取的屏幕的图像
  */
-+ (UIImage *)screenShot
-{
++ (UIImage *)screenShot {
     CGSize imageSize = [[UIScreen mainScreen] bounds].size;
     //开启图形上下文
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
@@ -255,8 +265,7 @@
  *
  *  @return 添加完水印的图片
  */
-+ (UIImage *)waterImageWithBgImageName:(NSString *)bgName andWaterImageName:(NSString *)waterImageName
-{
++ (UIImage *)waterImageWithBgImageName:(NSString *)bgName andWaterImageName:(NSString *)waterImageName {
     UIImage *bgImage = [UIImage imageNamed:bgName];
     CGSize imageViewSize = bgImage.size;
     UIGraphicsBeginImageContextWithOptions(imageViewSize, NO, 0.0);
@@ -273,6 +282,7 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
 /**
  *  图片进行压缩
  *
@@ -281,8 +291,7 @@
  *
  *  @return 压缩之后的图片
  */
-+(UIImage *)reduceImage:(UIImage *)image percent:(float)percent
-{
++(UIImage *)reduceImage:(UIImage *)image percent:(float)percent {
     NSData *imageData = UIImageJPEGRepresentation(image, percent);
     UIImage *newImage = [UIImage imageWithData:imageData];
     return newImage;
@@ -295,8 +304,7 @@
  *
  *  @return 压缩好的图片
  */
-+ (UIImage*)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize
-{
++ (UIImage*)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize {
     UIGraphicsBeginImageContext(newSize);
     [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -309,8 +317,7 @@
  *
  *  @param blurAmount 模糊化指数
  */
-- (UIImage*)blurredImage:(CGFloat)blurAmount
-{
+- (UIImage*)blurredImage:(CGFloat)blurAmount {
     if (blurAmount < 0.0 || blurAmount > 2.0) {
         blurAmount = 0.5;
     }
@@ -367,6 +374,7 @@
     
     return returnImage;
 }
+
 /**
  *  图形模糊算法
  *
@@ -375,8 +383,7 @@
  *
  *  @return 模糊好的图片
  */
-- (UIImage *)blearImageWithBlurLevel:(CGFloat)blurLevel
-{
+- (UIImage *)blearImageWithBlurLevel:(CGFloat)blurLevel {
     CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *inputImage = [[CIImage alloc] initWithImage:self];
     CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
@@ -399,33 +406,23 @@
     return newImage;
 }
 
-
-
-
 #pragma mark - 苹果官方给的图片模糊的类
-- (UIImage *)applyLightEffect
-{
+- (UIImage *)applyLightEffect {
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
     return [self applyBlurWithRadius:30 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
 }
 
-
-- (UIImage *)applyExtraLightEffect
-{
+- (UIImage *)applyExtraLightEffect {
     UIColor *tintColor = [UIColor colorWithWhite:0.97 alpha:0.82];
     return [self applyBlurWithRadius:20 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
 }
 
-
-- (UIImage *)applyDarkEffect
-{
+- (UIImage *)applyDarkEffect {
     UIColor *tintColor = [UIColor colorWithWhite:0.11 alpha:0.73];
     return [self applyBlurWithRadius:20 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
 }
 
-
-- (UIImage *)applyTintEffectWithColor:(UIColor *)tintColor
-{
+- (UIImage *)applyTintEffectWithColor:(UIColor *)tintColor {
     const CGFloat EffectColorAlpha = 0.6;
     UIColor *effectColor = tintColor;
     NSInteger componentCount = CGColorGetNumberOfComponents(tintColor.CGColor);
@@ -434,8 +431,7 @@
         if ([tintColor getWhite:&b alpha:NULL]) {
             effectColor = [UIColor colorWithWhite:b alpha:EffectColorAlpha];
         }
-    }
-    else {
+    } else {
         CGFloat r, g, b;
         if ([tintColor getRed:&r green:&g blue:&b alpha:NULL]) {
             effectColor = [UIColor colorWithRed:r green:g blue:b alpha:EffectColorAlpha];
@@ -444,9 +440,7 @@
     return [self applyBlurWithRadius:10 tintColor:effectColor saturationDeltaFactor:-1.0 maskImage:nil];
 }
 
-
-- (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage
-{
+- (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage {
     // Check pre-conditions.
     if (self.size.width < 1 || self.size.height < 1) {
         NSLog (@"*** error: invalid size: (%.2f x %.2f). Both dimensions must be >= 1: %@", self.size.width, self.size.height, self);

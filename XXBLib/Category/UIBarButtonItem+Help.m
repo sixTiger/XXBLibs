@@ -13,11 +13,11 @@
 /**
  *  快速创建一个包装Button的UIBarButtonitam
  */
-+ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage
-{
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage {
 
     return  [self itemWithImage:image highImage:highImage target:nil action:nil];
 }
+
 /**
  *  快速创建一个包装了一个按钮的item 同时添加一个事件
  *
@@ -28,8 +28,7 @@
  *
  *  @return 返回包装好的item
  */
-+ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(id)target action:(SEL)action
-{
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(id)target action:(SEL)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:image forState:UIControlStateNormal];
     [button setBackgroundImage:highImage forState:UIControlStateHighlighted];
@@ -37,5 +36,4 @@
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return  [[UIBarButtonItem alloc] initWithCustomView:button];
 }
-
 @end

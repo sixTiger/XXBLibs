@@ -13,8 +13,7 @@
 /**
  *  返回md5加密后的字符串
  */
-- (NSString *)md5String
-{
+- (NSString *)md5String {
     const char *str = self.UTF8String;
     int length = (int)strlen(str);
     unsigned char bytes[CC_MD5_DIGEST_LENGTH];
@@ -22,11 +21,11 @@
     
     return [self stringFromBytes:bytes length:CC_MD5_DIGEST_LENGTH];
 }
+
 /**
  *  返回sha1遍吗后的字符串
  */
-- (NSString *)sha1String
-{
+- (NSString *)sha1String {
     const char *str = self.UTF8String;
     int length = (int)strlen(str);
     unsigned char bytes[CC_SHA1_DIGEST_LENGTH];
@@ -34,11 +33,11 @@
     
     return [self stringFromBytes:bytes length:CC_SHA1_DIGEST_LENGTH];
 }
+
 /**
  *  返回sha256遍吗后的字符串
  */
-- (NSString *)sha256String
-{
+- (NSString *)sha256String {
     const char *str = self.UTF8String;
     int length = (int)strlen(str);
     unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
@@ -46,11 +45,11 @@
     
     return [self stringFromBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
 }
+
 /**
  *  返回sha512遍吗后的字符串
  */
-- (NSString *)sha512String
-{
+- (NSString *)sha512String {
     const char *str = self.UTF8String;
     int length = (int)strlen(str);
     unsigned char bytes[CC_SHA512_DIGEST_LENGTH];
@@ -59,8 +58,7 @@
     return [self stringFromBytes:bytes length:CC_SHA512_DIGEST_LENGTH];
 }
 
-- (NSString *)stringFromBytes:(unsigned char *)bytes length:(int)length
-{
+- (NSString *)stringFromBytes:(unsigned char *)bytes length:(int)length {
     NSMutableString *strM = [NSMutableString string];
     
     for (int i = 0; i < length; i++) {
@@ -68,6 +66,7 @@
     }
     return [strM copy];
 }
+
 /**
  *  返回Base64遍吗后的字符串
  */
@@ -76,6 +75,7 @@
     
     return [data base64EncodedStringWithOptions:0];
 }
+
 /**
  *  返回Base64解码后的字符串
  */
@@ -84,6 +84,7 @@
     
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
+
 /**
  *  获取字符串的长度
  *
@@ -91,13 +92,11 @@
  *
  *  @return 字符串的长度
  */
-- (NSUInteger)getCharacterCount
-{
+- (NSUInteger)getCharacterCount {
     NSUInteger i, n = [self length], l = 0, a = 0, b = 0;
     unichar c;
     
-    for(i = 0; i < n; i++)
-    {
+    for(i = 0; i < n; i++) {
         c = [self characterAtIndex:i];
         if(isblank(c)) {
             b++;
@@ -113,6 +112,7 @@
     
     return 2*l+a+b;
 }
+
 /**
  *  计算一行字的size
  *
@@ -120,8 +120,7 @@
  *
  *  @return 计算好的 size
  */
-- (CGSize)sizeWithStingFount:(UIFont *)fount
-{
+- (CGSize)sizeWithStingFount:(UIFont *)fount {
     return [self sizeWithStingFount:fount withMaxSize:CGSizeMake(MAXFLOAT, 0)];
 }
 
@@ -135,44 +134,41 @@
  *
  *  @exception 计算好的 size
  */
-- (CGSize)sizeWithStingFount:(UIFont *)fount withMaxSize:(CGSize)maxSize;
-{
+- (CGSize)sizeWithStingFount:(UIFont *)fount withMaxSize:(CGSize)maxSize {
     NSDictionary *attrs = @{NSFontAttributeName : fount};
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
 /**
  *  判断是否是电话号码
  */
-- (BOOL)isValidPhoneNum
-{
+- (BOOL)isValidPhoneNum {
     // 11位数字, 1开头
     NSString *phoneRegex =  @"^1(3[0-9]|4[57]|5[0-35-9]|8[025-9])\\d{8}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
     return [phoneTest evaluateWithObject:self];
 }
+
 /**
  *  判断是否是邮箱
  */
-- (BOOL)isValidEmail
-{
+- (BOOL)isValidEmail {
     return [[NSPredicate predicateWithFormat:@"SELF MATCHES [A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"] evaluateWithObject:self];
 }
-- (NSString *)URLEncode
-{
-    if ([self isKindOfClass:[NSNull class]])
-    {
+
+- (NSString *)URLEncode {
+    if ([self isKindOfClass:[NSNull class]]) {
         return @"";
     }
     NSString *result =(__bridge NSString*)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,(CFStringRef)self,NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8);
     return result;
 }
+
 /**
  *  对url进行解码
  *
  *  @return 解码好的字符串
  */
-- (NSString *)URLDecode
-{
+- (NSString *)URLDecode {
     NSString *result =(__bridge NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,(CFStringRef)self,CFSTR(""),kCFStringEncodingUTF8);
     return result;
 }
