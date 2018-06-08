@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XXBLibs.h"
+#import <WebKit/WebKit.h>
 
 #define XXBMin(a,b) a >= b ? b : a
 
@@ -24,6 +25,12 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+        });
+    });
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     NSLog(@"hello" @"word");
@@ -99,6 +106,8 @@
     } else {
         [self.view addAnimationAtPoint:point WithType:aniMationClose withColor:[UIColor myRandomColor] completion:nil];
     }
+    
+    getAllFunction_XXB([WKBackForwardList class]);
 }
 
 - (void)netWorkTest {

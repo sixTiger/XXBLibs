@@ -7,3 +7,7 @@ target 'XXBLibDemo' do
     pod 'XXBLibs',:path => "../"
 end
 
+target 'XXBLibDemoTests' do
+    pod 'XXBLibs',:path => "../"
+end
+

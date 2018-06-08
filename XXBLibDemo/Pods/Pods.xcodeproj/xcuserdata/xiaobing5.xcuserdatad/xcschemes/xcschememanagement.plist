@@ -11,12 +11,26 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>XXBLibs.xcscheme</key>
+		<key>Pods-XXBLibDemoTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>XXBLibs-iOS10.2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>XXBLibs-iOS8.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E66798D317E72F752DF4458BEA46661"
-               BuildableName = "Pods_XXBLibDemo.framework"
-               BlueprintName = "Pods-XXBLibDemo"
+               BlueprintIdentifier = "9354428339369A7B863CDF32AB97BDD5"
+               BuildableName = "XXBLibs.framework"
+               BlueprintName = "XXBLibs-iOS8.0"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E66798D317E72F752DF4458BEA46661"
-            BuildableName = "Pods_XXBLibDemo.framework"
-            BlueprintName = "Pods-XXBLibDemo"
+            BlueprintIdentifier = "9354428339369A7B863CDF32AB97BDD5"
+            BuildableName = "XXBLibs.framework"
+            BlueprintName = "XXBLibs-iOS8.0"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

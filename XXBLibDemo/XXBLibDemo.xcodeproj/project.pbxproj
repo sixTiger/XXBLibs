@@ -17,6 +17,7 @@
 		62D5F89F1D6C94900019BC17 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62D5F89B1D6C94900019BC17 /* MBProgressHUD.bundle */; };
 		62D5F8A01D6C94900019BC17 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5F89D1D6C94900019BC17 /* MBProgressHUD.m */; };
 		94E8BB4787D1E3F2B705E1C2 /* Pods_XXBLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */; };
+		DD89FE60673AE3FF79FACAB8 /* Pods_XXBLibDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10167E019AB1AED6A31D673D /* Pods_XXBLibDemoTests.framework */; };
 		E1B818981E2369EC00211C52 /* XXBLibDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B818971E2369EC00211C52 /* XXBLibDemoTests.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10167E019AB1AED6A31D673D /* Pods_XXBLibDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXBLibDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44641D609D365D475DE274ED /* Pods-XXBLibDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		62C002D01B8B1D9300EDE6D9 /* XXBLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C002D41B8B1D9300EDE6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C002D51B8B1D9300EDE6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXBLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BB4403A46859DCE4145A3517 /* Pods-XXBLibDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBLibDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1B818951E2369EC00211C52 /* XXBLibDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXBLibDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B818971E2369EC00211C52 /* XXBLibDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBLibDemoTests.m; sourceTree = "<group>"; };
 		E1B818991E2369EC00211C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD89FE60673AE3FF79FACAB8 /* Pods_XXBLibDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */,
 				817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */,
+				BB4403A46859DCE4145A3517 /* Pods-XXBLibDemoTests.debug.xcconfig */,
+				44641D609D365D475DE274ED /* Pods-XXBLibDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				654627DAC08776F2C928381F /* Pods_XXBLibDemo.framework */,
+				10167E019AB1AED6A31D673D /* Pods_XXBLibDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B8189C1E2369EC00211C52 /* Build configuration list for PBXNativeTarget "XXBLibDemoTests" */;
 			buildPhases = (
+				687DEEFBCAA1B363829DF02E /* [CP] Check Pods Manifest.lock */,
 				E1B818911E2369EC00211C52 /* Sources */,
 				E1B818921E2369EC00211C52 /* Frameworks */,
 				E1B818931E2369EC00211C52 /* Resources */,
+				7DA3BDC007D01CD71EC0AD5C /* [CP] Embed Pods Frameworks */,
+				298E4667450CED0AC61CBCF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +270,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		298E4667450CED0AC61CBCF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687DEEFBCAA1B363829DF02E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XXBLibDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		75783417EE933565C5A99C9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,7 +310,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XXBLibs/XXBLibs.framework",
+				"${BUILT_PRODUCTS_DIR}/XXBLibs-iOS8.0/XXBLibs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -275,6 +319,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA3BDC007D01CD71EC0AD5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XXBLibs-iOS10.2/XXBLibs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XXBLibs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC4ACF82CF3134C80BDD261E /* [CP] Check Pods Manifest.lock */ = {
@@ -490,6 +552,7 @@
 		};
 		E1B8189D1E2369EC00211C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4403A46859DCE4145A3517 /* Pods-XXBLibDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -509,6 +572,7 @@
 		};
 		E1B8189E1E2369EC00211C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44641D609D365D475DE274ED /* Pods-XXBLibDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

@@ -22,6 +22,7 @@
 #import "UIView+Help.h"
 #import "UIView+MotionEffect.h"
 #import "XXBBlockHelp.h"
+#import "XXBClassUtil.h"
 #import "XXBDeviceHelp.h"
 #import "XXBDiskHelp.h"
 #import "XXBFileHelper.h"
