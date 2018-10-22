@@ -14,9 +14,12 @@
 
 @interface ViewController ()<UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *testView;
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
-@property (weak, nonatomic) IBOutlet XXBTextField *inputTextField;
+@property (weak, nonatomic) IBOutlet UIView                 *testView;
+@property (weak, nonatomic) IBOutlet UIImageView            *iconView;
+@property (weak, nonatomic) IBOutlet XXBTextField           *inputTextField;
+
+@property(nonatomic, strong) NSMutableDictionary            *crashDictionary;
+
 
 - (IBAction)saveMessage:(id)sender;
 - (IBAction)loadMessage:(id)sender;
@@ -108,6 +111,7 @@
     }
     
     getAllFunction_XXB([WKBackForwardList class]);
+    [self testCrash];
 }
 
 - (void)netWorkTest {
@@ -137,5 +141,24 @@
     
     NSMutableDictionary *usernamepasswordKVPairs = [[XXBKeyChain sharedXXBKeyChain] load:@"XXBKeyChain"];
     NSLog(@"%@",usernamepasswordKVPairs);
+}
+
+- (void)testCrash {
+    for (int i = 0; i < 1000; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            @synchronized(self){
+                [self.crashDictionary setObject:@"VALUE" forKey:@"KEY"];
+                self.crashDictionary = nil;
+            }
+        });
+    }
+}
+
+- (NSMutableDictionary *)crashDictionary {
+    if (_crashDictionary == nil) {
+        NSMutableDictionary *crashDictionary = [NSMutableDictionary dictionary];
+        _crashDictionary = crashDictionary;
+    }
+    return _crashDictionary;
 }
 @end

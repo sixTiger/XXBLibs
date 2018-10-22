@@ -1,12 +1,9 @@
 PODS:
-  - XXBLibs (0.0.4):
-    - XXBLibs/Category (= 0.0.4)
-    - XXBLibs/Class (= 0.0.4)
-    - XXBLibs/Others (= 0.0.4)
-  - XXBLibs/Category (0.0.4)
-  - XXBLibs/Class (0.0.4):
+  - XXBLibs (0.0.6):
+    - XXBLibs/Class (= 0.0.6)
+  - XXBLibs/Class (0.0.6):
     - XXBLibs/Others
-  - XXBLibs/Others (0.0.4)
+  - XXBLibs/Others (0.0.6)
 
 DEPENDENCIES:
   - XXBLibs (from `../`)
@@ -16,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  XXBLibs: 783037fb2fd641c579d780ee16f77bc8fe655e6b
+  XXBLibs: c2fe4ad3b9c005c792b4d9f350f00c0033e4b975
 
 PODFILE CHECKSUM: 2ff10e26b4483c7dd209db62f49acff561b74b57
 

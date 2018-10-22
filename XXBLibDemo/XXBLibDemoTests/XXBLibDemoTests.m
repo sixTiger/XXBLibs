@@ -38,8 +38,9 @@
 }
 
 - (void)test_IsNULL {
-    BOOL value = NO;
+    BOOL value = YES;
     value = isNull(nil);
+    value = NO;
     XCTAssert(value,@"isNull error");
     value = isNull([NSNull null]);
     XCTAssert(value,@"isNull error");
