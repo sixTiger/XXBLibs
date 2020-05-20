@@ -37,6 +37,7 @@
 #import "XXBSingleton.h"
 #import "XXBSystemHelp.h"
 #import "XXBTextField.h"
+#import "XXBLibsOthers.h"
 #import "Reachability.h"
 
 FOUNDATION_EXPORT double XXBLibsVersionNumber;

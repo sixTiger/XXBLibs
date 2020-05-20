@@ -7,103 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03F30C898557847B53809E748E8176C6 /* UIBarButtonItem+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 76081F6C1592E814D18D1B8E59E16E64 /* UIBarButtonItem+Help.m */; };
-		0875D7533BC35CD5C2A2F2AAF93447C9 /* XXBHelpTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5CEDAB8E136CD24E9DB0414B6F40AE /* XXBHelpTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		100326FCD7129FDDDB91271772F3A2DC /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A9ECF379FF33BF792CFECBDFFE3 /* XXBNetworkServers.m */; };
-		1057887A18CEA3EA13743A6EED0C8A62 /* NSString+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB6C984B56E9CC834C23C024F5AE3DC /* NSString+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10725266A78D564DD17BA303E2F7B2C9 /* UIView+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D40487F7D5E1B0989388B398F203D29 /* UIView+Help.m */; };
-		1525530140B341DCE1F93B0276E19898 /* XXBKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C486C30FBC0D21351D75BC1EF010DBCC /* XXBKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		154431F40D34DF8760ADDAE6E7379C21 /* XXBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B90E975F48916A7B28986727432F66 /* XXBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15A1D410D59D78A9B6F4BE11E1EEEE7F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1C534123AA50DA25114C0969DB2B /* Reachability.m */; };
-		1D3BAA91A327D3513E641EBF20C12E9A /* XXBNetworkServers.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBB3DB806554E79C9A67214FD1B50A0 /* XXBNetworkServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D61026BE3C00003CBBCF7375FD59691 /* UIColor+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = AF405649E2C9030F7E7379F6606081DD /* UIColor+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F26D32F2D9593E77B728C5D7D383DB8 /* XXBLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 219BBC071A8539E56E23FA5BD344955C /* XXBLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22FAD354E669B3D711815F697504972E /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA641FAA9EC75CE6280C0323C42FBB75 /* XXBKeyChain.m */; };
-		231F70B17FA7A6089FFF025BCADDE745 /* XXBFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E48AE10C5BBF9E9926F00044A94BF5 /* XXBFPSLabel.m */; };
+		01C8CCCA3DF0DC6E7F9BC977B7FFB1C8 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E52D922F2172CDCD5B0E34CAAA9A28 /* XXBDeviceHelp.m */; };
+		0442C16A5B8CBA63B3BCEF29B62C14F9 /* UIBarButtonItem+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 206E3E334221E2AB90579F37B7ECD421 /* UIBarButtonItem+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A6FEFD584DC7F99BFE07BF958FDD789 /* XXBClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4719511DA4B372E3205EB90A3B4718 /* XXBClassUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B97DCD789A6B0A549D720EA99E3F4B7 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BECA53556C33E08AC2F027A0016476A /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17066A37AD346EA77D4D1F34C4D6A83C /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 15729996EF6F92E74F1673E8E4ADE14F /* XXBHelpTools.m */; };
+		1D5CB6646975F610589C51F5009DB3EA /* XXBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89B4B8B94D271FDCC20A1C05BEAAE5 /* XXBFunction.m */; };
+		1E6D3C0C654375D563EFD85FBD55A3F2 /* XXBDiskHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 334BA823F6DAD5019DAE0D8575277319 /* XXBDiskHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209123C13FA613218545BE58181F0F3C /* NSDate+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9084D6654A9D2904BF56EDE9F40BF9 /* NSDate+Help.m */; };
+		20C831E29570F360CAE900316B510C1C /* UIView+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D40487F7D5E1B0989388B398F203D29 /* UIView+Help.m */; };
 		23828FD2A823584389B55ED6B6EC99EA /* Pods-XXBLibDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E063FEE5DBDCFEABDEBBA43E49915D8 /* Pods-XXBLibDemoTests-dummy.m */; };
-		2A9AF1D23A8E079F9F6CA1344B5B602A /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 15729996EF6F92E74F1673E8E4ADE14F /* XXBHelpTools.m */; };
-		2B3A58D4057DF36BF3224DEFDCDD73FF /* XXBClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4719511DA4B372E3205EB90A3B4718 /* XXBClassUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B54E690CC03690801460BC692A3F5A8 /* UIBarButtonItem+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 206E3E334221E2AB90579F37B7ECD421 /* UIBarButtonItem+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E96011526A2CEEECC697BB17E96CDBA /* XXBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89B4B8B94D271FDCC20A1C05BEAAE5 /* XXBFunction.m */; };
-		3824AB8552600429DD0469F74A33D0C9 /* NSDate+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9084D6654A9D2904BF56EDE9F40BF9 /* NSDate+Help.m */; };
-		3DA72195A43484B056C29F7E28DC2472 /* XXBClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED141D8E84CA157500C90730C741CD28 /* XXBClassUtil.m */; };
-		3E12E45B1A1BB26A9B69643DD0A1A904 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3E53381D5227F68A952B7455FF72C703 /* XXBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B94A6F9FBCC829D9C6112AF48974164 /* XXBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		404B7024C9B46B137D358054F259C9D3 /* XXBFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E77C8FEC9FAEC0F641A5AE802168D0 /* XXBFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4721DE80F3748CA470AF9FC911065291 /* XXBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B90E975F48916A7B28986727432F66 /* XXBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49651E4ED28828BB8ABFEA9A97C42904 /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056A203AF798206C8726E02E53EEED0 /* XXBSystemHelp.m */; };
-		4A54086DE1E0CF6914EACC5B3AFA3336 /* XXBFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A088B043E9AE739A51F750D32141AA1 /* XXBFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C1B5F5EFF16ED396DA2AD59775F1DF3 /* XXBSystemHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA93557DEC3709D45715B8D5249E529 /* XXBSystemHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C6F2674957BB4E49C8B18E76720FC8A /* XXBLibs.common-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4107E21BC9BB1CFBDB29D4959B87431 /* XXBLibs.common-dummy.m */; };
-		5071C3351777DDFFB694C59463D4EC6B /* XXBDeviceHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA09EA51A25AFAEB186E6F3ABC23BE /* XXBDeviceHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52DB25997B52C92AD6428E14E70BD926 /* XXBDiskHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 334BA823F6DAD5019DAE0D8575277319 /* XXBDiskHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25E4ED259B2A8948151E5AE1CAFB396A /* XXBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B90E975F48916A7B28986727432F66 /* XXBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2696A26D2D6639933BBCCF083E408945 /* UIView+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 364DAE54FFC139935A217BEB02873FAA /* UIView+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26EB74FA8229BD900E468306490FA793 /* XXBLibs.common-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4107E21BC9BB1CFBDB29D4959B87431 /* XXBLibs.common-dummy.m */; };
+		28AB8499BA7A8B516CC7347BB2169E3B /* XXBDeviceHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA09EA51A25AFAEB186E6F3ABC23BE /* XXBDeviceHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3221BADFA9744A05EE1578A341B6CFD4 /* XXBFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E48AE10C5BBF9E9926F00044A94BF5 /* XXBFPSLabel.m */; };
+		32B24C47480AE3E0C15B0EC533A8ED90 /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BAEDC9F1E0C2111FF7475ADFF4C82 /* XXBLog.m */; };
+		3A0DAD9BE3DAD70AB2B11683A022F6FD /* NSArray+XXB.h in Headers */ = {isa = PBXBuildFile; fileRef = DF7A679B77146237668522E4A05A6957 /* NSArray+XXB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFF06AEFF8F25C067F53CA140F2D5AD /* XXBKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C486C30FBC0D21351D75BC1EF010DBCC /* XXBKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DE7584B3C448C2B4A6CA55534451A38 /* XXBNetworkServers.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBB3DB806554E79C9A67214FD1B50A0 /* XXBNetworkServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4093C72F14DC531FAE094D076E5A94C3 /* NSDictionary+XXB.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B564764ED2827137F5CEC4EBB97B4B /* NSDictionary+XXB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4548C251A798C38E63CFD01D1077429F /* XXBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E98982473AA4648EC2A9F94A181E0078 /* XXBTextField.m */; };
+		45F10F86187D440B1AD01E464E7E3D97 /* UIImage+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0F3E38D0A25D338E66524773C9E84 /* UIImage+Help.m */; };
+		514E793B17568F8C95BBBFE4653423A7 /* XXBDeviceHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA09EA51A25AFAEB186E6F3ABC23BE /* XXBDeviceHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5259C25D52E5AA46C541DCEE9BDA78DF /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056A203AF798206C8726E02E53EEED0 /* XXBSystemHelp.m */; };
+		53A59227D072E24C8178F2C4B9FA453D /* XXBFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E77C8FEC9FAEC0F641A5AE802168D0 /* XXBFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53F47B87BAD86EEA5D7C8CA47F0565B5 /* Pods-XXBLibDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A98C976C3889488D37EE5943DA81150 /* Pods-XXBLibDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F67AE46C09066436F0A6F7EF4496BB /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 335651DD06B205C9B104262C21677C05 /* XXBDiskHelp.m */; };
-		5576C89580976880B54E491A0D349C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5744F11AC7369792A22DD3E9861904D1 /* NSData+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0A2DD708682D978AD31D8975E5161 /* NSData+Help.m */; };
-		57CDEB24DFD08485893B6D599CB2E0E2 /* XXBDeviceHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA09EA51A25AFAEB186E6F3ABC23BE /* XXBDeviceHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5929B1BD07B2E689FA710E42C5BDE241 /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A9ECF379FF33BF792CFECBDFFE3 /* XXBNetworkServers.m */; };
-		5BE8D14A796B202F0DC91FF4F3256816 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 900FB164B4864AC1B8A711E7319A00E8 /* XXBNetWorkExtion.m */; };
-		5C266BEDF0732BB9827EE7BE801FA99D /* XXBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89B4B8B94D271FDCC20A1C05BEAAE5 /* XXBFunction.m */; };
-		5C714E506DFE98B074211D29BB21CC55 /* UIView+MotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ADB5B8444ADBCF50A41533B08D33D2 /* UIView+MotionEffect.m */; };
-		5D154ADB1A23F285A96EA6C765BFA8EC /* XXBKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C486C30FBC0D21351D75BC1EF010DBCC /* XXBKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6543DDB35AD753BEF587FC77D1F1CC26 /* XXBFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A088B043E9AE739A51F750D32141AA1 /* XXBFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B2B5F0F7E28D8C195ECE9CB961D031E /* XXBNetworkServers.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBB3DB806554E79C9A67214FD1B50A0 /* XXBNetworkServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B5D1FBFAD33A670C12820E66B2F6D46 /* XXBBlockHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60791704F31FF9DF2040411F93C1B5 /* XXBBlockHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CAE3984D8655DE2A2D277EB3EF7E2C6 /* NSData+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C0C2CAF7A34FA617045B313A495D3B /* NSData+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EDDC91B8E62DF2E792946C2E2297D06 /* XXBHelpTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5CEDAB8E136CD24E9DB0414B6F40AE /* XXBHelpTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F16F1CE607DD00866FD9FBDB1AB90DE /* UIImage+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0F3E38D0A25D338E66524773C9E84 /* UIImage+Help.m */; };
-		6F614D3F110C534995B32E4A8D193918 /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 335651DD06B205C9B104262C21677C05 /* XXBDiskHelp.m */; };
-		707424831F8464DC9D0DE245BE9D9362 /* XXBTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FE35892FB96E9AF015C0ED7FFD0D52DB /* XXBTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72376B62AF46960B2364259F568E5410 /* XXBBlockHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FAB8ECB15D1270E7D58EB6B845671 /* XXBBlockHelp.m */; };
-		723FC37C9738A829DE1DDA846B3C8372 /* NSArray+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DECF0023AB5215A162BC21A0F370B /* NSArray+XXB.m */; };
-		750DB931F5D6466AE800B2AFF471CDA0 /* XXBTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FE35892FB96E9AF015C0ED7FFD0D52DB /* XXBTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		767FBD2A00EB8F103675A2BA57816546 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B3DD3EAE9396C87247E65AB22B187C /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		768EF003AE61FC11EAD20BB01C89AEA9 /* XXBLibs.common-Category-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 802F1AB8FDC9B05255851889634CFE45 /* XXBLibs.common-Category-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58CFDF46BFE6514A5C4D50B7DB8B7CB1 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E52D922F2172CDCD5B0E34CAAA9A28 /* XXBDeviceHelp.m */; };
+		5AF48D6F6ED8B5787666B0305E660024 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BECA53556C33E08AC2F027A0016476A /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B26C5BB7319F97FB496DC122C252493 /* XXBLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 219BBC071A8539E56E23FA5BD344955C /* XXBLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1BD9B4691CEE319F73EF3EE3C5D520 /* XXBBlockHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FAB8ECB15D1270E7D58EB6B845671 /* XXBBlockHelp.m */; };
+		5F37384ED62FA9B76AF37E3427C21753 /* XXBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B94A6F9FBCC829D9C6112AF48974164 /* XXBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E3DE38BE27E96CF17DEA6BACA54AF9 /* XXBFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C7ACACB64E612C75E9D252705B13A8 /* XXBFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D019950FEA6A98432E576F6EDD31FD /* XXBLibsCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4124784B8256BE21E9BC3A7B11BCEF /* XXBLibsCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A58099F6644A94772ECE8948AF27A44 /* UIColor+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CAD225E7947B0BBB408D6E803732 /* UIColor+Help.m */; };
+		6B6B599F20571F164950555B15B35A0B /* XXBFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C7ACACB64E612C75E9D252705B13A8 /* XXBFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD70FD6FEABBC88F2B82A5DA36B56E2 /* XXBTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FE35892FB96E9AF015C0ED7FFD0D52DB /* XXBTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1C66FB0771AD58969F2A215CFE928B /* NSData+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C0C2CAF7A34FA617045B313A495D3B /* NSData+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F382537D9A4537CCBFCE6A3942A8FF5 /* XXBLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 219BBC071A8539E56E23FA5BD344955C /* XXBLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FBA20E79B336DA10C720BB92BC56DCA /* Pods-XXBLibDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1D103345B77E153508B170CA45D54 /* Pods-XXBLibDemo-dummy.m */; };
-		84FF86DDE6E36144D0D01B24EF5651B0 /* XXBFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C7ACACB64E612C75E9D252705B13A8 /* XXBFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86B8B11942FB40A4CEEC1A822C6FB149 /* XXBLibsCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4124784B8256BE21E9BC3A7B11BCEF /* XXBLibsCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8730C95C0ED045E8E015172E7594F4D7 /* XXBNetWorkExtion.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B7467B66D33BA6A597636DF4E4B5AA /* XXBNetWorkExtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87F61DC7A620D764A3E98AF71D1B8165 /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B66A04ED06CFFEE31D6C908BD11AFD /* XXBFileHelper.m */; };
-		88BA347BD5E6332222606C8D4D67C317 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E52D922F2172CDCD5B0E34CAAA9A28 /* XXBDeviceHelp.m */; };
-		8FDD29D3B388FD3DDC1ED49D24BEB1EB /* NSDate+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F3DFCDC15DE4CCDC2E39090C5F7E24 /* NSDate+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		933F0612235D5D8245A5C8AA66B999BD /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B66A04ED06CFFEE31D6C908BD11AFD /* XXBFileHelper.m */; };
-		97C787C3FFB470D5C9A2A17C908FAE27 /* XXBFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C7ACACB64E612C75E9D252705B13A8 /* XXBFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BFBA0BEF768D81337128780878F0A10 /* XXBHelpTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5CEDAB8E136CD24E9DB0414B6F40AE /* XXBHelpTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928601165F2C34E1EA5C4B696178EAF6 /* XXBLibs.common-Category-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5682A90CD0330AFE815078F98805 /* XXBLibs.common-Category-dummy.m */; };
+		9839453BF12BAFFC765EC15A0CF0839C /* XXBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B94A6F9FBCC829D9C6112AF48974164 /* XXBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994D6E4E9D38D7B024A1728719031FBA /* XXBBlockHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60791704F31FF9DF2040411F93C1B5 /* XXBBlockHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B1BF35FC08F4007B11AF32175BC568D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9BF3D96C4775A63494EECDFA749E9214 /* XXBNetWorkExtion.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B7467B66D33BA6A597636DF4E4B5AA /* XXBNetWorkExtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FDCF5A18275FC3E8495FA0A0BFD27A4 /* XXBClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED141D8E84CA157500C90730C741CD28 /* XXBClassUtil.m */; };
-		A4B70B1C7E5CB1CC33466E05CEC82167 /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 15729996EF6F92E74F1673E8E4ADE14F /* XXBHelpTools.m */; };
-		A94E73369B1B3D0234AD8AAF84AA97E4 /* UIView+MotionEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 347DF678320113A11F332777741D5A11 /* UIView+MotionEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A972B682E7FD39A192B84887163717B0 /* XXBBlockHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FAB8ECB15D1270E7D58EB6B845671 /* XXBBlockHelp.m */; };
-		ABCCF6D2B3532D17A0EAC90F9335AF0F /* XXBLibs.common-Category-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5682A90CD0330AFE815078F98805 /* XXBLibs.common-Category-dummy.m */; };
+		9B7386419E73528C96C4D5CB2181D4E9 /* XXBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B90E975F48916A7B28986727432F66 /* XXBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C81451A658E8D67AF5264BFC46D7C89 /* XXBLibsOthers.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A2772FD5CAC3621CFED5558BF6CACF /* XXBLibsOthers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01AC57835EB752132862F94CA9162A0 /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056A203AF798206C8726E02E53EEED0 /* XXBSystemHelp.m */; };
+		A68C048D9B39136B3D8A82258C646F1D /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BAEDC9F1E0C2111FF7475ADFF4C82 /* XXBLog.m */; };
+		A6E23A774572580A8C1BD3479D571031 /* XXBNetWorkExtion.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B7467B66D33BA6A597636DF4E4B5AA /* XXBNetWorkExtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A82FD4CD955F6A649B7176BFD68F0496 /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA641FAA9EC75CE6280C0323C42FBB75 /* XXBKeyChain.m */; };
+		A87DDCD83152B820422C66DEA6C2B598 /* NSArray+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DECF0023AB5215A162BC21A0F370B /* NSArray+XXB.m */; };
 		ACE882AE253D0D558654418C5AAABDDC /* Pods-XXBLibDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 393F9401930C8D570B0C0DE8A946AA3B /* Pods-XXBLibDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD389B4F843DA4AE5508D7D3E61476EA /* XXBLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 219BBC071A8539E56E23FA5BD344955C /* XXBLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEA856CCDED6DAD7110B84330812C0A9 /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BAEDC9F1E0C2111FF7475ADFF4C82 /* XXBLog.m */; };
-		B1CC24FAA23C86D1A6DE1F5AE6D58381 /* XXBBlockHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60791704F31FF9DF2040411F93C1B5 /* XXBBlockHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B31611CAC592B06DEBB8ED70F17445BB /* XXBFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E77C8FEC9FAEC0F641A5AE802168D0 /* XXBFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4EA7DB3FC42749F4B420A487AAF1995 /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA641FAA9EC75CE6280C0323C42FBB75 /* XXBKeyChain.m */; };
-		B763C40D5F569ABBAB5FA88A39262422 /* XXBLibs.common-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4048FD0716843630348BF5406CA720 /* XXBLibs.common-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF52B750BCF1DED2788CFCBFA54BF3B6 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 900FB164B4864AC1B8A711E7319A00E8 /* XXBNetWorkExtion.m */; };
-		C0CB6602EA35A1DABB308F6D5E1C0894 /* XXBSystemHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA93557DEC3709D45715B8D5249E529 /* XXBSystemHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3B8289B2CA9FC14E5953F83EB4D897C /* XXBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BAEDC9F1E0C2111FF7475ADFF4C82 /* XXBLog.m */; };
+		B0A2CA6214B863AA8FB1CC031C4A0921 /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B66A04ED06CFFEE31D6C908BD11AFD /* XXBFileHelper.m */; };
+		B11708A2645CC23DBEAA9740FC4D13A9 /* NSData+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0A2DD708682D978AD31D8975E5161 /* NSData+Help.m */; };
+		B1F590382BF24DAFE75966BE242A904E /* XXBFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89B4B8B94D271FDCC20A1C05BEAAE5 /* XXBFunction.m */; };
+		B5DBDA021C1B1EC519E987B1B2427DF4 /* XXBLibs.common-Category-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 802F1AB8FDC9B05255851889634CFE45 /* XXBLibs.common-Category-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B97161A2CEA1590E2E06FDD29A96A7E2 /* NSString+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB6C984B56E9CC834C23C024F5AE3DC /* NSString+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B97309B2F51FA0295A20DB85E856ABC2 /* XXBDiskHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 334BA823F6DAD5019DAE0D8575277319 /* XXBDiskHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB11682636F9F2EC7D32FDFD2993F13D /* XXBBlockHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FAB8ECB15D1270E7D58EB6B845671 /* XXBBlockHelp.m */; };
+		BBE4D17043854CD0A458DCA69752A71D /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B66A04ED06CFFEE31D6C908BD11AFD /* XXBFileHelper.m */; };
+		BC24A9E8BDCCC807DE4F6323EBEDE7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BFF6C260B28716785D38AFDD0287FB24 /* XXBNetWorkExtion.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B7467B66D33BA6A597636DF4E4B5AA /* XXBNetWorkExtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C06CC3B366A382D03C4DDE8925BB0C5D /* NSString+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3BBAB28DD7DEDF2F02AFED8E1619E /* NSString+Help.m */; };
+		C0FB8EA9C57483F87F7BCD3E3F3484A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C164ECA7B4DA4458846F875A14970B51 /* XXBKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA641FAA9EC75CE6280C0323C42FBB75 /* XXBKeyChain.m */; };
+		C209F232DFA9AF97F624309A7C8B58E4 /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 335651DD06B205C9B104262C21677C05 /* XXBDiskHelp.m */; };
+		C3A2819F0F3C11E550F4AC401979FCD8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1522540F024F7E5A416FBF50CF3BDCB /* Reachability.m */; };
+		C4983089E704CDA80FE5DAD99484E9BD /* XXBDiskHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 335651DD06B205C9B104262C21677C05 /* XXBDiskHelp.m */; };
 		C50D5E52BC6B7F8E5911576154B8BBC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C792F19D40C3FC9CA2B9ABB23E3A3614 /* XXBDiskHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 334BA823F6DAD5019DAE0D8575277319 /* XXBDiskHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD9480C8B86F3DD1E6D063A36AFEE5BB /* XXBSystemHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056A203AF798206C8726E02E53EEED0 /* XXBSystemHelp.m */; };
-		D0502E79687D9A71D2F9950B461EABF3 /* NSArray+XXB.h in Headers */ = {isa = PBXBuildFile; fileRef = DF7A679B77146237668522E4A05A6957 /* NSArray+XXB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0A2655E9759C7A80924E3085712B2DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BED1C534123AA50DA25114C0969DB2B /* Reachability.m */; };
-		D88528769207849DE60E44FCC0FE53D0 /* XXBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E98982473AA4648EC2A9F94A181E0078 /* XXBTextField.m */; };
-		D929B5B2E7DCBD678F1E38B41E4D8E2E /* UIColor+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A26CAD225E7947B0BBB408D6E803732 /* UIColor+Help.m */; };
-		E324578E77A15D8B3A8EC34DF9FF856C /* XXBFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E48AE10C5BBF9E9926F00044A94BF5 /* XXBFPSLabel.m */; };
-		E4FE8EF146DDF26A7E905C125E372C5B /* UIImage+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D9C8998D4FF9694B7BF4E51F5B4001 /* UIImage+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAE7BD272587DBB023226E7013D81F72 /* NSDictionary+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = EC83C50035F473FD4313E6A5E73C656C /* NSDictionary+XXB.m */; };
-		EE6368D7D39698D87204A56E08DC0739 /* NSString+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3BBAB28DD7DEDF2F02AFED8E1619E /* NSString+Help.m */; };
-		F4A70432A08339F9F62C712CC5CBE647 /* XXBDeviceHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E52D922F2172CDCD5B0E34CAAA9A28 /* XXBDeviceHelp.m */; };
-		F8872519C9E36BC69BF379709CCCD60F /* UIView+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 364DAE54FFC139935A217BEB02873FAA /* UIView+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF43AA0F2BAE8CE00E6C9CA0361FDD7 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B3DD3EAE9396C87247E65AB22B187C /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB11E06213AF4B2D06829DFB1CC33E36 /* XXBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E98982473AA4648EC2A9F94A181E0078 /* XXBTextField.m */; };
-		FE52038BC3DC8CE8D63DAD5C83FF129D /* NSDictionary+XXB.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B564764ED2827137F5CEC4EBB97B4B /* NSDictionary+XXB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEB043C790E726E95EFFD46AD3663912 /* XXBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B94A6F9FBCC829D9C6112AF48974164 /* XXBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF0A9EEDBD687836E81D152F065AA34B /* XXBClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4719511DA4B372E3205EB90A3B4718 /* XXBClassUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C684C380597A69E8AED5B99A4798F4F5 /* XXBHelpTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5CEDAB8E136CD24E9DB0414B6F40AE /* XXBHelpTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98F7D01C576D938B3E5E36EBEF94DE6 /* UIView+MotionEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 347DF678320113A11F332777741D5A11 /* UIView+MotionEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2523BE7E2B7DD3DFEE26DEDDEEDFBB /* UIImage+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D9C8998D4FF9694B7BF4E51F5B4001 /* UIImage+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCFFC72BC8A7CFB9E4401C28A3CC6431 /* NSDictionary+XXB.m in Sources */ = {isa = PBXBuildFile; fileRef = EC83C50035F473FD4313E6A5E73C656C /* NSDictionary+XXB.m */; };
+		CF6BF4E1D7D89552548CD60C257586F0 /* XXBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E98982473AA4648EC2A9F94A181E0078 /* XXBTextField.m */; };
+		CF90A3DEEA288DC43C2C2E79BCAE2403 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 900FB164B4864AC1B8A711E7319A00E8 /* XXBNetWorkExtion.m */; };
+		D0962D9D64D33445A9596255A29C13AC /* NSDate+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F3DFCDC15DE4CCDC2E39090C5F7E24 /* NSDate+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A61B786D6596CB822DB8B9207EC107 /* XXBLibs.common-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4048FD0716843630348BF5406CA720 /* XXBLibs.common-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5D7D073E674079929A957CC7B2AF40F /* XXBSystemHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA93557DEC3709D45715B8D5249E529 /* XXBSystemHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D687F9033A39F7C221F1B70DFCFFA85B /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A9ECF379FF33BF792CFECBDFFE3 /* XXBNetworkServers.m */; };
+		D6F18FCD46C53813FF2FA2862B3693D0 /* XXBFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A088B043E9AE739A51F750D32141AA1 /* XXBFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F522AFE88CB6BC25D92316B452C54E /* XXBLibsOthers.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A2772FD5CAC3621CFED5558BF6CACF /* XXBLibsOthers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F5935FDE4E0A109922E274996A8DBA /* XXBTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FE35892FB96E9AF015C0ED7FFD0D52DB /* XXBTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADE25C80177BF17C40D5C9C0E671ED0 /* XXBFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E77C8FEC9FAEC0F641A5AE802168D0 /* XXBFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE030246B4CC688122F049ACC98A2874 /* XXBBlockHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60791704F31FF9DF2040411F93C1B5 /* XXBBlockHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA6194AAEFF64922203FA383DB557F7 /* UIColor+Help.h in Headers */ = {isa = PBXBuildFile; fileRef = AF405649E2C9030F7E7379F6606081DD /* UIColor+Help.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1E254B0655F44D063220925FAB8076D /* XXBHelpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 15729996EF6F92E74F1673E8E4ADE14F /* XXBHelpTools.m */; };
+		E774EF3A6D202E549E67C8A0ED0EA609 /* XXBKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C486C30FBC0D21351D75BC1EF010DBCC /* XXBKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B18655314D5D0A082C41D30CE2FCD4 /* XXBClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED141D8E84CA157500C90730C741CD28 /* XXBClassUtil.m */; };
+		E7FF1330AB693C53C6F37699EC160B15 /* XXBSystemHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA93557DEC3709D45715B8D5249E529 /* XXBSystemHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAA1A5DA902CA1574AABB20605A258F7 /* XXBNetworkServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A9ECF379FF33BF792CFECBDFFE3 /* XXBNetworkServers.m */; };
+		F1C89CE7D957FD3459B7BF03D5FE5FB3 /* UIView+MotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ADB5B8444ADBCF50A41533B08D33D2 /* UIView+MotionEffect.m */; };
+		F281E450DE3B7338A1B93FD954B674A7 /* UIBarButtonItem+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 76081F6C1592E814D18D1B8E59E16E64 /* UIBarButtonItem+Help.m */; };
+		F2D480804D6A5AE7AA33727FA8965CD6 /* XXBNetWorkExtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 900FB164B4864AC1B8A711E7319A00E8 /* XXBNetWorkExtion.m */; };
+		F34A6E15066A504BEAB9F70851D09DEB /* XXBFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E48AE10C5BBF9E9926F00044A94BF5 /* XXBFPSLabel.m */; };
+		F3D1E2B973C65924EAF4D42AADC0CB06 /* XXBClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ED141D8E84CA157500C90730C741CD28 /* XXBClassUtil.m */; };
+		F6FE40EFB8F5179322D5CE0079983413 /* XXBNetworkServers.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBB3DB806554E79C9A67214FD1B50A0 /* XXBNetworkServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9BCAA18AEF677F3BE76895CB622BBE8 /* XXBFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A088B043E9AE739A51F750D32141AA1 /* XXBFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA6935B4FFEBE1218CAE2DF01D8C9BE2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1522540F024F7E5A416FBF50CF3BDCB /* Reachability.m */; };
+		FCFE198CE121CC49CAB8A02E6AC5D257 /* XXBClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4719511DA4B372E3205EB90A3B4718 /* XXBClassUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +129,6 @@
 		0056A203AF798206C8726E02E53EEED0 /* XXBSystemHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXBSystemHelp.m; path = XXBLib/Class/XXBSystemHelp.m; sourceTree = "<group>"; };
 		02D573E526A9E341C279CCCDC5A557B7 /* XXBLibs.common.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XXBLibs.common.modulemap; sourceTree = "<group>"; };
 		04FFD7D98A74D166F41D7A4524146EEB /* Pods-XXBLibDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXBLibDemo-frameworks.sh"; sourceTree = "<group>"; };
-		0BED1C534123AA50DA25114C0969DB2B /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = XXBLib/Others/Reachability/Reachability.m; sourceTree = "<group>"; };
 		0C0DECF0023AB5215A162BC21A0F370B /* NSArray+XXB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+XXB.m"; path = "XXBLib/Category/NSArray+XXB.m"; sourceTree = "<group>"; };
 		0E063FEE5DBDCFEABDEBBA43E49915D8 /* Pods-XXBLibDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XXBLibDemoTests-dummy.m"; sourceTree = "<group>"; };
 		0FB6C984B56E9CC834C23C024F5AE3DC /* NSString+Help.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Help.h"; path = "XXBLib/Category/NSString+Help.h"; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		46B90E975F48916A7B28986727432F66 /* XXBSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBSingleton.h; path = XXBLib/Class/XXBSingleton.h; sourceTree = "<group>"; };
 		4A60791704F31FF9DF2040411F93C1B5 /* XXBBlockHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBBlockHelp.h; path = XXBLib/Class/XXBBlockHelp.h; sourceTree = "<group>"; };
 		4A98C976C3889488D37EE5943DA81150 /* Pods-XXBLibDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXBLibDemo-umbrella.h"; sourceTree = "<group>"; };
+		4BECA53556C33E08AC2F027A0016476A /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = XXBLib/Others/Reachability/Reachability.h; sourceTree = "<group>"; };
 		4D5CEDAB8E136CD24E9DB0414B6F40AE /* XXBHelpTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBHelpTools.h; path = XXBLib/Class/XXBHelpTools.h; sourceTree = "<group>"; };
 		4EEA09EA51A25AFAEB186E6F3ABC23BE /* XXBDeviceHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBDeviceHelp.h; path = XXBLib/Class/XXBDeviceHelp.h; sourceTree = "<group>"; };
 		56B564764ED2827137F5CEC4EBB97B4B /* NSDictionary+XXB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+XXB.h"; path = "XXBLib/Category/NSDictionary+XXB.h"; sourceTree = "<group>"; };
@@ -189,7 +191,9 @@
 		94246F2D59B721164D38A760DBD8AE2D /* Pods-XXBLibDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXBLibDemoTests-Info.plist"; sourceTree = "<group>"; };
 		9D4124784B8256BE21E9BC3A7B11BCEF /* XXBLibsCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBLibsCategory.h; path = XXBLib/Category/XXBLibsCategory.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0A2772FD5CAC3621CFED5558BF6CACF /* XXBLibsOthers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBLibsOthers.h; path = XXBLib/Others/XXBLibsOthers.h; sourceTree = "<group>"; };
 		A0E52D922F2172CDCD5B0E34CAAA9A28 /* XXBDeviceHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXBDeviceHelp.m; path = XXBLib/Class/XXBDeviceHelp.m; sourceTree = "<group>"; };
+		A1522540F024F7E5A416FBF50CF3BDCB /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = XXBLib/Others/Reachability/Reachability.m; sourceTree = "<group>"; };
 		A226572FB2B3BE6BFC93CBA57369D88F /* XXBLibs.common.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXBLibs.common.xcconfig; sourceTree = "<group>"; };
 		A55BE6226920357D48ECEF91FE651857 /* Pods-XXBLibDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XXBLibDemoTests.modulemap"; sourceTree = "<group>"; };
 		AA641FAA9EC75CE6280C0323C42FBB75 /* XXBKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXBKeyChain.m; path = XXBLib/Class/XXBKeyChain.m; sourceTree = "<group>"; };
@@ -206,7 +210,6 @@
 		DDF4BDD3891822327681F2BC13FC9044 /* Pods_XXBLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXBLibDemo.framework; path = "Pods-XXBLibDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7A679B77146237668522E4A05A6957 /* NSArray+XXB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+XXB.h"; path = "XXBLib/Category/NSArray+XXB.h"; sourceTree = "<group>"; };
 		DFBB3DB806554E79C9A67214FD1B50A0 /* XXBNetworkServers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBNetworkServers.h; path = XXBLib/Class/XXBNetworkServers.h; sourceTree = "<group>"; };
-		E5B3DD3EAE9396C87247E65AB22B187C /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = XXBLib/Others/Reachability/Reachability.h; sourceTree = "<group>"; };
 		E98982473AA4648EC2A9F94A181E0078 /* XXBTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXBTextField.m; path = XXBLib/Class/XXBTextField.m; sourceTree = "<group>"; };
 		EAA93557DEC3709D45715B8D5249E529 /* XXBSystemHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXBSystemHelp.h; path = XXBLib/Class/XXBSystemHelp.h; sourceTree = "<group>"; };
 		EC83C50035F473FD4313E6A5E73C656C /* NSDictionary+XXB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+XXB.m"; path = "XXBLib/Category/NSDictionary+XXB.m"; sourceTree = "<group>"; };
@@ -235,19 +238,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23DEB6309BDA5622EF35B2620AF41460 /* Frameworks */ = {
+		4DD8A3F54FB6018F0687F66A9C481E95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5576C89580976880B54E491A0D349C03 /* Foundation.framework in Frameworks */,
+				BC24A9E8BDCCC807DE4F6323EBEDE7B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC562BAB792DDD964E85A453E20DBBBB /* Frameworks */ = {
+		96D9F115B52E1619E900FFFC5E73CB1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E12E45B1A1BB26A9B69643DD0A1A904 /* Foundation.framework in Frameworks */,
+				C0FB8EA9C57483F87F7BCD3E3F3484A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +319,7 @@
 				219BBC071A8539E56E23FA5BD344955C /* XXBLibs.h */,
 				2130A1548C384CCFD24624ED8ACCB4A9 /* Category */,
 				942A61286DC57D35B362BD29B5EB5DB8 /* Class */,
-				F649E463C4BF1F828B169814A6C91032 /* Others */,
+				7B2B0513C8109E38D1E77BB1E7468E46 /* Others */,
 				4E34AD6004232273F8688EF9BD5F4CB2 /* Pod */,
 				75E1DB6B03ABDEA34B3C6AD54C139B28 /* Support Files */,
 			);
@@ -378,6 +381,24 @@
 			);
 			name = "Support Files";
 			path = "XXBLibDemo/Pods/Target Support Files/XXBLibs.common";
+			sourceTree = "<group>";
+		};
+		7B2B0513C8109E38D1E77BB1E7468E46 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A0A2772FD5CAC3621CFED5558BF6CACF /* XXBLibsOthers.h */,
+				8D266A4474CF6C21AAC5B98AAE3F715F /* Reachability */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		8D266A4474CF6C21AAC5B98AAE3F715F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4BECA53556C33E08AC2F027A0016476A /* Reachability.h */,
+				A1522540F024F7E5A416FBF50CF3BDCB /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		942A61286DC57D35B362BD29B5EB5DB8 /* Class */ = {
@@ -451,40 +472,43 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F649E463C4BF1F828B169814A6C91032 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				E5B3DD3EAE9396C87247E65AB22B187C /* Reachability.h */,
-				0BED1C534123AA50DA25114C0969DB2B /* Reachability.m */,
-			);
-			name = Others;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E036E7953D52F82EFE65BBBF1190D4B /* Headers */ = {
+		145D15890F78583DB293CB353684065A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767FBD2A00EB8F103675A2BA57816546 /* Reachability.h in Headers */,
-				6B5D1FBFAD33A670C12820E66B2F6D46 /* XXBBlockHelp.h in Headers */,
-				2B3A58D4057DF36BF3224DEFDCDD73FF /* XXBClassUtil.h in Headers */,
-				5071C3351777DDFFB694C59463D4EC6B /* XXBDeviceHelp.h in Headers */,
-				52DB25997B52C92AD6428E14E70BD926 /* XXBDiskHelp.h in Headers */,
-				4A54086DE1E0CF6914EACC5B3AFA3336 /* XXBFileHelper.h in Headers */,
-				B31611CAC592B06DEBB8ED70F17445BB /* XXBFPSLabel.h in Headers */,
-				84FF86DDE6E36144D0D01B24EF5651B0 /* XXBFunction.h in Headers */,
-				0875D7533BC35CD5C2A2F2AAF93447C9 /* XXBHelpTools.h in Headers */,
-				1525530140B341DCE1F93B0276E19898 /* XXBKeyChain.h in Headers */,
-				B763C40D5F569ABBAB5FA88A39262422 /* XXBLibs.common-umbrella.h in Headers */,
-				1F26D32F2D9593E77B728C5D7D383DB8 /* XXBLibs.h in Headers */,
-				FEB043C790E726E95EFFD46AD3663912 /* XXBLog.h in Headers */,
-				9BF3D96C4775A63494EECDFA749E9214 /* XXBNetWorkExtion.h in Headers */,
-				6B2B5F0F7E28D8C195ECE9CB961D031E /* XXBNetworkServers.h in Headers */,
-				154431F40D34DF8760ADDAE6E7379C21 /* XXBSingleton.h in Headers */,
-				4C1B5F5EFF16ED396DA2AD59775F1DF3 /* XXBSystemHelp.h in Headers */,
-				707424831F8464DC9D0DE245BE9D9362 /* XXBTextField.h in Headers */,
+				3A0DAD9BE3DAD70AB2B11683A022F6FD /* NSArray+XXB.h in Headers */,
+				6E1C66FB0771AD58969F2A215CFE928B /* NSData+Help.h in Headers */,
+				D0962D9D64D33445A9596255A29C13AC /* NSDate+Help.h in Headers */,
+				4093C72F14DC531FAE094D076E5A94C3 /* NSDictionary+XXB.h in Headers */,
+				B97161A2CEA1590E2E06FDD29A96A7E2 /* NSString+Help.h in Headers */,
+				0B97DCD789A6B0A549D720EA99E3F4B7 /* Reachability.h in Headers */,
+				0442C16A5B8CBA63B3BCEF29B62C14F9 /* UIBarButtonItem+Help.h in Headers */,
+				DEA6194AAEFF64922203FA383DB557F7 /* UIColor+Help.h in Headers */,
+				CB2523BE7E2B7DD3DFEE26DEDDEEDFBB /* UIImage+Help.h in Headers */,
+				2696A26D2D6639933BBCCF083E408945 /* UIView+Help.h in Headers */,
+				C98F7D01C576D938B3E5E36EBEF94DE6 /* UIView+MotionEffect.h in Headers */,
+				994D6E4E9D38D7B024A1728719031FBA /* XXBBlockHelp.h in Headers */,
+				0A6FEFD584DC7F99BFE07BF958FDD789 /* XXBClassUtil.h in Headers */,
+				28AB8499BA7A8B516CC7347BB2169E3B /* XXBDeviceHelp.h in Headers */,
+				1E6D3C0C654375D563EFD85FBD55A3F2 /* XXBDiskHelp.h in Headers */,
+				F9BCAA18AEF677F3BE76895CB622BBE8 /* XXBFileHelper.h in Headers */,
+				53A59227D072E24C8178F2C4B9FA453D /* XXBFPSLabel.h in Headers */,
+				60E3DE38BE27E96CF17DEA6BACA54AF9 /* XXBFunction.h in Headers */,
+				8BFBA0BEF768D81337128780878F0A10 /* XXBHelpTools.h in Headers */,
+				3AFF06AEFF8F25C067F53CA140F2D5AD /* XXBKeyChain.h in Headers */,
+				B5DBDA021C1B1EC519E987B1B2427DF4 /* XXBLibs.common-Category-umbrella.h in Headers */,
+				5B26C5BB7319F97FB496DC122C252493 /* XXBLibs.h in Headers */,
+				65D019950FEA6A98432E576F6EDD31FD /* XXBLibsCategory.h in Headers */,
+				D6F522AFE88CB6BC25D92316B452C54E /* XXBLibsOthers.h in Headers */,
+				5F37384ED62FA9B76AF37E3427C21753 /* XXBLog.h in Headers */,
+				BFF6C260B28716785D38AFDD0287FB24 /* XXBNetWorkExtion.h in Headers */,
+				F6FE40EFB8F5179322D5CE0079983413 /* XXBNetworkServers.h in Headers */,
+				9B7386419E73528C96C4D5CB2181D4E9 /* XXBSingleton.h in Headers */,
+				D5D7D073E674079929A957CC7B2AF40F /* XXBSystemHelp.h in Headers */,
+				D9F5935FDE4E0A109922E274996A8DBA /* XXBTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,39 +520,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87C716CEADA46E0B9D2E9A760116E0AD /* Headers */ = {
+		8EE3674DB903BDA559818F6EC45D4CAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0502E79687D9A71D2F9950B461EABF3 /* NSArray+XXB.h in Headers */,
-				6CAE3984D8655DE2A2D277EB3EF7E2C6 /* NSData+Help.h in Headers */,
-				8FDD29D3B388FD3DDC1ED49D24BEB1EB /* NSDate+Help.h in Headers */,
-				FE52038BC3DC8CE8D63DAD5C83FF129D /* NSDictionary+XXB.h in Headers */,
-				1057887A18CEA3EA13743A6EED0C8A62 /* NSString+Help.h in Headers */,
-				FAF43AA0F2BAE8CE00E6C9CA0361FDD7 /* Reachability.h in Headers */,
-				2B54E690CC03690801460BC692A3F5A8 /* UIBarButtonItem+Help.h in Headers */,
-				1D61026BE3C00003CBBCF7375FD59691 /* UIColor+Help.h in Headers */,
-				E4FE8EF146DDF26A7E905C125E372C5B /* UIImage+Help.h in Headers */,
-				F8872519C9E36BC69BF379709CCCD60F /* UIView+Help.h in Headers */,
-				A94E73369B1B3D0234AD8AAF84AA97E4 /* UIView+MotionEffect.h in Headers */,
-				B1CC24FAA23C86D1A6DE1F5AE6D58381 /* XXBBlockHelp.h in Headers */,
-				FF0A9EEDBD687836E81D152F065AA34B /* XXBClassUtil.h in Headers */,
-				57CDEB24DFD08485893B6D599CB2E0E2 /* XXBDeviceHelp.h in Headers */,
-				C792F19D40C3FC9CA2B9ABB23E3A3614 /* XXBDiskHelp.h in Headers */,
-				6543DDB35AD753BEF587FC77D1F1CC26 /* XXBFileHelper.h in Headers */,
-				404B7024C9B46B137D358054F259C9D3 /* XXBFPSLabel.h in Headers */,
-				97C787C3FFB470D5C9A2A17C908FAE27 /* XXBFunction.h in Headers */,
-				6EDDC91B8E62DF2E792946C2E2297D06 /* XXBHelpTools.h in Headers */,
-				5D154ADB1A23F285A96EA6C765BFA8EC /* XXBKeyChain.h in Headers */,
-				768EF003AE61FC11EAD20BB01C89AEA9 /* XXBLibs.common-Category-umbrella.h in Headers */,
-				AD389B4F843DA4AE5508D7D3E61476EA /* XXBLibs.h in Headers */,
-				86B8B11942FB40A4CEEC1A822C6FB149 /* XXBLibsCategory.h in Headers */,
-				3E53381D5227F68A952B7455FF72C703 /* XXBLog.h in Headers */,
-				8730C95C0ED045E8E015172E7594F4D7 /* XXBNetWorkExtion.h in Headers */,
-				1D3BAA91A327D3513E641EBF20C12E9A /* XXBNetworkServers.h in Headers */,
-				4721DE80F3748CA470AF9FC911065291 /* XXBSingleton.h in Headers */,
-				C0CB6602EA35A1DABB308F6D5E1C0894 /* XXBSystemHelp.h in Headers */,
-				750DB931F5D6466AE800B2AFF471CDA0 /* XXBTextField.h in Headers */,
+				5AF48D6F6ED8B5787666B0305E660024 /* Reachability.h in Headers */,
+				DE030246B4CC688122F049ACC98A2874 /* XXBBlockHelp.h in Headers */,
+				FCFE198CE121CC49CAB8A02E6AC5D257 /* XXBClassUtil.h in Headers */,
+				514E793B17568F8C95BBBFE4653423A7 /* XXBDeviceHelp.h in Headers */,
+				B97309B2F51FA0295A20DB85E856ABC2 /* XXBDiskHelp.h in Headers */,
+				D6F18FCD46C53813FF2FA2862B3693D0 /* XXBFileHelper.h in Headers */,
+				DADE25C80177BF17C40D5C9C0E671ED0 /* XXBFPSLabel.h in Headers */,
+				6B6B599F20571F164950555B15B35A0B /* XXBFunction.h in Headers */,
+				C684C380597A69E8AED5B99A4798F4F5 /* XXBHelpTools.h in Headers */,
+				E774EF3A6D202E549E67C8A0ED0EA609 /* XXBKeyChain.h in Headers */,
+				D0A61B786D6596CB822DB8B9207EC107 /* XXBLibs.common-umbrella.h in Headers */,
+				7F382537D9A4537CCBFCE6A3942A8FF5 /* XXBLibs.h in Headers */,
+				9C81451A658E8D67AF5264BFC46D7C89 /* XXBLibsOthers.h in Headers */,
+				9839453BF12BAFFC765EC15A0CF0839C /* XXBLog.h in Headers */,
+				A6E23A774572580A8C1BD3479D571031 /* XXBNetWorkExtion.h in Headers */,
+				3DE7584B3C448C2B4A6CA55534451A38 /* XXBNetworkServers.h in Headers */,
+				25E4ED259B2A8948151E5AE1CAFB396A /* XXBSingleton.h in Headers */,
+				E7FF1330AB693C53C6F37699EC160B15 /* XXBSystemHelp.h in Headers */,
+				6DD70FD6FEABBC88F2B82A5DA36B56E2 /* XXBTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,12 +578,12 @@
 		};
 		333D6073B91FA5770C7CFAE797468F3C /* XXBLibs.common-Category */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26D84D7240C0053E4725BBC851703844 /* Build configuration list for PBXNativeTarget "XXBLibs.common-Category" */;
+			buildConfigurationList = 7DD3BFE691E571D397C16883F6F18799 /* Build configuration list for PBXNativeTarget "XXBLibs.common-Category" */;
 			buildPhases = (
-				87C716CEADA46E0B9D2E9A760116E0AD /* Headers */,
-				6960C7DE969AECE0B28353DA55EDA840 /* Sources */,
-				23DEB6309BDA5622EF35B2620AF41460 /* Frameworks */,
-				9ABA7E25CDE28929FD7088DC6AEE722C /* Resources */,
+				145D15890F78583DB293CB353684065A /* Headers */,
+				F0FD29D258B6F32B455973F9272DB070 /* Sources */,
+				96D9F115B52E1619E900FFFC5E73CB1E /* Frameworks */,
+				30ACE0CA31E853986A6660B46D719860 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -601,12 +615,12 @@
 		};
 		8D09716F895EA4978D3A32C4DD7D18A1 /* XXBLibs.common */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 266CECEB8D880289565AD62D607E08DB /* Build configuration list for PBXNativeTarget "XXBLibs.common" */;
+			buildConfigurationList = D820264495B21009542BDDD508030487 /* Build configuration list for PBXNativeTarget "XXBLibs.common" */;
 			buildPhases = (
-				0E036E7953D52F82EFE65BBBF1190D4B /* Headers */,
-				F2E871721AE8E4C02CA93C1D4DA26BAF /* Sources */,
-				AC562BAB792DDD964E85A453E20DBBBB /* Frameworks */,
-				92B7ECFE41793CE773BF607ED12A018C /* Resources */,
+				8EE3674DB903BDA559818F6EC45D4CAC /* Headers */,
+				613B4B6024751B4A1356EBBD15353647 /* Sources */,
+				4DD8A3F54FB6018F0687F66A9C481E95 /* Frameworks */,
+				E9E0A64FBC5626B80953A9627F62255A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -662,14 +676,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B7ECFE41793CE773BF607ED12A018C /* Resources */ = {
+		30ACE0CA31E853986A6660B46D719860 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9ABA7E25CDE28929FD7088DC6AEE722C /* Resources */ = {
+		E9E0A64FBC5626B80953A9627F62255A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -687,36 +701,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6960C7DE969AECE0B28353DA55EDA840 /* Sources */ = {
+		613B4B6024751B4A1356EBBD15353647 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723FC37C9738A829DE1DDA846B3C8372 /* NSArray+XXB.m in Sources */,
-				5744F11AC7369792A22DD3E9861904D1 /* NSData+Help.m in Sources */,
-				3824AB8552600429DD0469F74A33D0C9 /* NSDate+Help.m in Sources */,
-				EAE7BD272587DBB023226E7013D81F72 /* NSDictionary+XXB.m in Sources */,
-				EE6368D7D39698D87204A56E08DC0739 /* NSString+Help.m in Sources */,
-				15A1D410D59D78A9B6F4BE11E1EEEE7F /* Reachability.m in Sources */,
-				03F30C898557847B53809E748E8176C6 /* UIBarButtonItem+Help.m in Sources */,
-				D929B5B2E7DCBD678F1E38B41E4D8E2E /* UIColor+Help.m in Sources */,
-				6F16F1CE607DD00866FD9FBDB1AB90DE /* UIImage+Help.m in Sources */,
-				10725266A78D564DD17BA303E2F7B2C9 /* UIView+Help.m in Sources */,
-				5C714E506DFE98B074211D29BB21CC55 /* UIView+MotionEffect.m in Sources */,
-				72376B62AF46960B2364259F568E5410 /* XXBBlockHelp.m in Sources */,
-				9FDCF5A18275FC3E8495FA0A0BFD27A4 /* XXBClassUtil.m in Sources */,
-				88BA347BD5E6332222606C8D4D67C317 /* XXBDeviceHelp.m in Sources */,
-				6F614D3F110C534995B32E4A8D193918 /* XXBDiskHelp.m in Sources */,
-				87F61DC7A620D764A3E98AF71D1B8165 /* XXBFileHelper.m in Sources */,
-				E324578E77A15D8B3A8EC34DF9FF856C /* XXBFPSLabel.m in Sources */,
-				2E96011526A2CEEECC697BB17E96CDBA /* XXBFunction.m in Sources */,
-				A4B70B1C7E5CB1CC33466E05CEC82167 /* XXBHelpTools.m in Sources */,
-				B4EA7DB3FC42749F4B420A487AAF1995 /* XXBKeyChain.m in Sources */,
-				ABCCF6D2B3532D17A0EAC90F9335AF0F /* XXBLibs.common-Category-dummy.m in Sources */,
-				AEA856CCDED6DAD7110B84330812C0A9 /* XXBLog.m in Sources */,
-				5BE8D14A796B202F0DC91FF4F3256816 /* XXBNetWorkExtion.m in Sources */,
-				5929B1BD07B2E689FA710E42C5BDE241 /* XXBNetworkServers.m in Sources */,
-				49651E4ED28828BB8ABFEA9A97C42904 /* XXBSystemHelp.m in Sources */,
-				D88528769207849DE60E44FCC0FE53D0 /* XXBTextField.m in Sources */,
+				FA6935B4FFEBE1218CAE2DF01D8C9BE2 /* Reachability.m in Sources */,
+				BB11682636F9F2EC7D32FDFD2993F13D /* XXBBlockHelp.m in Sources */,
+				F3D1E2B973C65924EAF4D42AADC0CB06 /* XXBClassUtil.m in Sources */,
+				01C8CCCA3DF0DC6E7F9BC977B7FFB1C8 /* XXBDeviceHelp.m in Sources */,
+				C209F232DFA9AF97F624309A7C8B58E4 /* XXBDiskHelp.m in Sources */,
+				B0A2CA6214B863AA8FB1CC031C4A0921 /* XXBFileHelper.m in Sources */,
+				F34A6E15066A504BEAB9F70851D09DEB /* XXBFPSLabel.m in Sources */,
+				B1F590382BF24DAFE75966BE242A904E /* XXBFunction.m in Sources */,
+				E1E254B0655F44D063220925FAB8076D /* XXBHelpTools.m in Sources */,
+				C164ECA7B4DA4458846F875A14970B51 /* XXBKeyChain.m in Sources */,
+				26EB74FA8229BD900E468306490FA793 /* XXBLibs.common-dummy.m in Sources */,
+				32B24C47480AE3E0C15B0EC533A8ED90 /* XXBLog.m in Sources */,
+				CF90A3DEEA288DC43C2C2E79BCAE2403 /* XXBNetWorkExtion.m in Sources */,
+				D687F9033A39F7C221F1B70DFCFFA85B /* XXBNetworkServers.m in Sources */,
+				5259C25D52E5AA46C541DCEE9BDA78DF /* XXBSystemHelp.m in Sources */,
+				CF6BF4E1D7D89552548CD60C257586F0 /* XXBTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,26 +732,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E871721AE8E4C02CA93C1D4DA26BAF /* Sources */ = {
+		F0FD29D258B6F32B455973F9272DB070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A2655E9759C7A80924E3085712B2DC /* Reachability.m in Sources */,
-				A972B682E7FD39A192B84887163717B0 /* XXBBlockHelp.m in Sources */,
-				3DA72195A43484B056C29F7E28DC2472 /* XXBClassUtil.m in Sources */,
-				F4A70432A08339F9F62C712CC5CBE647 /* XXBDeviceHelp.m in Sources */,
-				54F67AE46C09066436F0A6F7EF4496BB /* XXBDiskHelp.m in Sources */,
-				933F0612235D5D8245A5C8AA66B999BD /* XXBFileHelper.m in Sources */,
-				231F70B17FA7A6089FFF025BCADDE745 /* XXBFPSLabel.m in Sources */,
-				5C266BEDF0732BB9827EE7BE801FA99D /* XXBFunction.m in Sources */,
-				2A9AF1D23A8E079F9F6CA1344B5B602A /* XXBHelpTools.m in Sources */,
-				22FAD354E669B3D711815F697504972E /* XXBKeyChain.m in Sources */,
-				4C6F2674957BB4E49C8B18E76720FC8A /* XXBLibs.common-dummy.m in Sources */,
-				C3B8289B2CA9FC14E5953F83EB4D897C /* XXBLog.m in Sources */,
-				BF52B750BCF1DED2788CFCBFA54BF3B6 /* XXBNetWorkExtion.m in Sources */,
-				100326FCD7129FDDDB91271772F3A2DC /* XXBNetworkServers.m in Sources */,
-				CD9480C8B86F3DD1E6D063A36AFEE5BB /* XXBSystemHelp.m in Sources */,
-				FB11E06213AF4B2D06829DFB1CC33E36 /* XXBTextField.m in Sources */,
+				A87DDCD83152B820422C66DEA6C2B598 /* NSArray+XXB.m in Sources */,
+				B11708A2645CC23DBEAA9740FC4D13A9 /* NSData+Help.m in Sources */,
+				209123C13FA613218545BE58181F0F3C /* NSDate+Help.m in Sources */,
+				CCFFC72BC8A7CFB9E4401C28A3CC6431 /* NSDictionary+XXB.m in Sources */,
+				C06CC3B366A382D03C4DDE8925BB0C5D /* NSString+Help.m in Sources */,
+				C3A2819F0F3C11E550F4AC401979FCD8 /* Reachability.m in Sources */,
+				F281E450DE3B7338A1B93FD954B674A7 /* UIBarButtonItem+Help.m in Sources */,
+				6A58099F6644A94772ECE8948AF27A44 /* UIColor+Help.m in Sources */,
+				45F10F86187D440B1AD01E464E7E3D97 /* UIImage+Help.m in Sources */,
+				20C831E29570F360CAE900316B510C1C /* UIView+Help.m in Sources */,
+				F1C89CE7D957FD3459B7BF03D5FE5FB3 /* UIView+MotionEffect.m in Sources */,
+				5C1BD9B4691CEE319F73EF3EE3C5D520 /* XXBBlockHelp.m in Sources */,
+				E7B18655314D5D0A082C41D30CE2FCD4 /* XXBClassUtil.m in Sources */,
+				58CFDF46BFE6514A5C4D50B7DB8B7CB1 /* XXBDeviceHelp.m in Sources */,
+				C4983089E704CDA80FE5DAD99484E9BD /* XXBDiskHelp.m in Sources */,
+				BBE4D17043854CD0A458DCA69752A71D /* XXBFileHelper.m in Sources */,
+				3221BADFA9744A05EE1578A341B6CFD4 /* XXBFPSLabel.m in Sources */,
+				1D5CB6646975F610589C51F5009DB3EA /* XXBFunction.m in Sources */,
+				17066A37AD346EA77D4D1F34C4D6A83C /* XXBHelpTools.m in Sources */,
+				A82FD4CD955F6A649B7176BFD68F0496 /* XXBKeyChain.m in Sources */,
+				928601165F2C34E1EA5C4B696178EAF6 /* XXBLibs.common-Category-dummy.m in Sources */,
+				A68C048D9B39136B3D8A82258C646F1D /* XXBLog.m in Sources */,
+				F2D480804D6A5AE7AA33727FA8965CD6 /* XXBNetWorkExtion.m in Sources */,
+				EAA1A5DA902CA1574AABB20605A258F7 /* XXBNetworkServers.m in Sources */,
+				A01AC57835EB752132862F94CA9162A0 /* XXBSystemHelp.m in Sources */,
+				4548C251A798C38E63CFD01D1077429F /* XXBTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,7 +783,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CF904FBE70492AEBC499AC86FF7F4F4 /* Release */ = {
+		071EC86D830957A069910E9C1CDAAC3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A226572FB2B3BE6BFC93CBA57369D88F /* XXBLibs.common.xcconfig */;
 			buildSettings = {
@@ -800,9 +814,9 @@
 			};
 			name = Release;
 		};
-		18AE30C3C16BA8491D975F2D7C7528F6 /* Debug */ = {
+		1C1FB4B0D89ABCA2919968C97D0E0751 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A226572FB2B3BE6BFC93CBA57369D88F /* XXBLibs.common.xcconfig */;
+			baseConfigurationReference = B87784BE5A8887F8B94E1C837EE16138 /* XXBLibs.common-Category.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -813,22 +827,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common/XXBLibs.common-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XXBLibs.common/XXBLibs.common-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XXBLibs.common/XXBLibs.common.modulemap";
+				MODULEMAP_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category.modulemap";
 				PRODUCT_MODULE_NAME = XXBLibs;
 				PRODUCT_NAME = XXBLibs;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		1EDBD2EDA3399A98A7BD884E7B759C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -957,9 +972,9 @@
 			};
 			name = Release;
 		};
-		658D88EAEAA06563759D659D7F52A69B /* Debug */ = {
+		6EADE09F85BAECFB1631D668FAA3CEAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B87784BE5A8887F8B94E1C837EE16138 /* XXBLibs.common-Category.xcconfig */;
+			baseConfigurationReference = A226572FB2B3BE6BFC93CBA57369D88F /* XXBLibs.common.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -970,12 +985,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common/XXBLibs.common-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XXBLibs.common/XXBLibs.common-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category.modulemap";
+				MODULEMAP_FILE = "Target Support Files/XXBLibs.common/XXBLibs.common.modulemap";
 				PRODUCT_MODULE_NAME = XXBLibs;
 				PRODUCT_NAME = XXBLibs;
 				SDKROOT = iphoneos;
@@ -986,37 +1001,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		7C29E42BD087AD72D7855C59958B2C62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B87784BE5A8887F8B94E1C837EE16138 /* XXBLibs.common-Category.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category.modulemap";
-				PRODUCT_MODULE_NAME = XXBLibs;
-				PRODUCT_NAME = XXBLibs;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1116,6 +1100,36 @@
 			};
 			name = Release;
 		};
+		D2EA5E516169F91285AB83481B3E5806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87784BE5A8887F8B94E1C837EE16138 /* XXBLibs.common-Category.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XXBLibs.common-Category/XXBLibs.common-Category.modulemap";
+				PRODUCT_MODULE_NAME = XXBLibs;
+				PRODUCT_NAME = XXBLibs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F6709FD591DEF78CFDDCD6FB4FD247FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81074692FC3FAED4153941706AE85CDE /* Pods-XXBLibDemoTests.release.xcconfig */;
@@ -1154,29 +1168,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		266CECEB8D880289565AD62D607E08DB /* Build configuration list for PBXNativeTarget "XXBLibs.common" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18AE30C3C16BA8491D975F2D7C7528F6 /* Debug */,
-				0CF904FBE70492AEBC499AC86FF7F4F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		26D84D7240C0053E4725BBC851703844 /* Build configuration list for PBXNativeTarget "XXBLibs.common-Category" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				658D88EAEAA06563759D659D7F52A69B /* Debug */,
-				7C29E42BD087AD72D7855C59958B2C62 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD3BFE691E571D397C16883F6F18799 /* Build configuration list for PBXNativeTarget "XXBLibs.common-Category" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EA5E516169F91285AB83481B3E5806 /* Debug */,
+				1C1FB4B0D89ABCA2919968C97D0E0751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1195,6 +1200,15 @@
 			buildConfigurations = (
 				1EDBD2EDA3399A98A7BD884E7B759C75 /* Debug */,
 				F6709FD591DEF78CFDDCD6FB4FD247FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D820264495B21009542BDDD508030487 /* Build configuration list for PBXNativeTarget "XXBLibs.common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EADE09F85BAECFB1631D668FAA3CEAF /* Debug */,
+				071EC86D830957A069910E9C1CDAAC3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

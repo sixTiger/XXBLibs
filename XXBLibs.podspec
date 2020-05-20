@@ -16,8 +16,13 @@ Pod::Spec.new do |s|
 
   s.subspec 'Others' do |ss|
     ss.ios.deployment_target = '8.0'
-    ss.source_files = 'XXBLib/Others/Reachability/Reachability.{h,m}'
-    ss.public_header_files = 'XXBLib/Others/Reachability/Reachability.h'
+    ss.source_files = 'XXBLib/Others/*.{h,m}'
+    
+    ss.subspec 'Reachability' do |sss|
+      sss.public_header_files = 'XXBLib/Others/Reachability/Reachability.h'
+      sss.source_files = 'XXBLib/Others/Reachability/Reachability.{h,m}'
+      sss.public_header_files = 'XXBLib/Others/Reachability/Reachability.h'
+    end
   end
 
   s.subspec 'Class' do |ss|

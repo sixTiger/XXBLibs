@@ -4,7 +4,9 @@ PODS:
   - XXBLibs/Category (0.0.6)
   - XXBLibs/Class (0.0.6):
     - XXBLibs/Others
-  - XXBLibs/Others (0.0.6)
+  - XXBLibs/Others (0.0.6):
+    - XXBLibs/Others/Reachability (= 0.0.6)
+  - XXBLibs/Others/Reachability (0.0.6)
 
 DEPENDENCIES:
   - XXBLibs (from `../`)
@@ -16,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XXBLibs: c2fe4ad3b9c005c792b4d9f350f00c0033e4b975
+  XXBLibs: 5122cfe73ee572d6da21062de646fc1363e9634e
 
 PODFILE CHECKSUM: 6752b94fe4347b3331b56fee57df3b09398cc238
 

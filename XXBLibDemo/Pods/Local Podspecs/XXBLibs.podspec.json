@@ -24,8 +24,14 @@
       "platforms": {
         "ios": "8.0"
       },
-      "source_files": "XXBLib/Others/Reachability/Reachability.{h,m}",
-      "public_header_files": "XXBLib/Others/Reachability/Reachability.h"
+      "source_files": "XXBLib/Others/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Reachability",
+          "public_header_files": "XXBLib/Others/Reachability/Reachability.h",
+          "source_files": "XXBLib/Others/Reachability/Reachability.{h,m}"
+        }
+      ]
     },
     {
       "name": "Class",
