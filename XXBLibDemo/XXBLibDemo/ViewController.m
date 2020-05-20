@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "XXBLibs.h"
+#import <XXBLibs/XXBLibs.h>
+#import <XXBLibs/XXBLibsCategory.h>
 #import <WebKit/WebKit.h>
 
 #define XXBMin(a,b) a >= b ? b : a

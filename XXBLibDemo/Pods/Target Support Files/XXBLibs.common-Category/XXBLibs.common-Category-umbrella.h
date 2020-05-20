@@ -11,6 +11,17 @@
 #endif
 
 #import "XXBLibs.h"
+#import "NSArray+XXB.h"
+#import "NSData+Help.h"
+#import "NSDate+Help.h"
+#import "NSDictionary+XXB.h"
+#import "NSString+Help.h"
+#import "UIBarButtonItem+Help.h"
+#import "UIColor+Help.h"
+#import "UIImage+Help.h"
+#import "UIView+Help.h"
+#import "UIView+MotionEffect.h"
+#import "XXBLibsCategory.h"
 #import "XXBBlockHelp.h"
 #import "XXBClassUtil.h"
 #import "XXBDeviceHelp.h"

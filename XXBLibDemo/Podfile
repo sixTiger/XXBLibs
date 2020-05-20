@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'XXBLibDemo' do
     pod 'XXBLibs',:path => "../"
+    pod 'XXBLibs/Category',:path => "../"
+    pod 'XXBLibs/Others',:path => "../"
 end
 
 target 'XXBLibDemoTests' do

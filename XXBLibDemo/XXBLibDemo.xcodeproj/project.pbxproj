@@ -177,7 +177,6 @@
 				62C002CD1B8B1D9300EDE6D9 /* Frameworks */,
 				62C002CE1B8B1D9300EDE6D9 /* Resources */,
 				75783417EE933565C5A99C9D /* [CP] Embed Pods Frameworks */,
-				D2334907E46DB1FD1CF77F40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,7 +196,6 @@
 				E1B818921E2369EC00211C52 /* Frameworks */,
 				E1B818931E2369EC00211C52 /* Resources */,
 				7DA3BDC007D01CD71EC0AD5C /* [CP] Embed Pods Frameworks */,
-				298E4667450CED0AC61CBCF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +218,7 @@
 				TargetAttributes = {
 					62C002CF1B8B1D9300EDE6D9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = XVTV8VU3M3;
 					};
 					E1B818941E2369EC00211C52 = {
 						CreatedOnToolsVersion = 8.2;
@@ -234,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,21 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		298E4667450CED0AC61CBCF8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		687DEEFBCAA1B363829DF02E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,8 +294,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XXBLibs-iOS8.0/XXBLibs.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XXBLibs.common-Category/XXBLibs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -318,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7DA3BDC007D01CD71EC0AD5C /* [CP] Embed Pods Frameworks */ = {
@@ -327,8 +312,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XXBLibs-iOS10.2/XXBLibs.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XXBLibs.common/XXBLibs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -336,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XXBLibDemoTests/Pods-XXBLibDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC4ACF82CF3134C80BDD261E /* [CP] Check Pods Manifest.lock */ = {
@@ -355,21 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2334907E46DB1FD1CF77F40 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBLibDemo/Pods-XXBLibDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -529,6 +499,7 @@
 			baseConfigurationReference = 745B682AF52108CD42B9F99D /* Pods-XXBLibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XVTV8VU3M3;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,6 +513,7 @@
 			baseConfigurationReference = 817C1F7E9E711FD19885842D /* Pods-XXBLibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XVTV8VU3M3;
 				INFOPLIST_FILE = XXBLibDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

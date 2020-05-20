@@ -23,18 +23,6 @@
     #import "XXBFunction.h"
     #import "XXBBlockHelp.h"
     #import "XXBClassUtil.h"
-
-    #import "NSDate+Help.h"
-    #import "UIBarButtonItem+Help.h"
-    #import "UIColor+Help.h"
-    #import "UIImage+Help.h"
-    #import "NSString+Help.h"
-    #import "UIView+Help.h"
-    #import "UIView+MotionEffect.h"
-    #import "NSData+Help.h"
-    #import "NSArray+XXB.h"
-    #import "NSDictionary+XXB.h"
-
     #import "XXBTextField.h"
     #import "XXBFPSLabel.h"
 #endif

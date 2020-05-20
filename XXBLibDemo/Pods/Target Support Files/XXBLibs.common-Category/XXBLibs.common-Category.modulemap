@@ -1,5 +1,5 @@
 framework module XXBLibs {
-  umbrella header "XXBLibs-iOS8.0-umbrella.h"
+  umbrella header "XXBLibs.common-Category-umbrella.h"
 
   export *
   module * { export * }
